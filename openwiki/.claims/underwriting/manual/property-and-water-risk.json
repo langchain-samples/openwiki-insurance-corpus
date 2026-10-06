@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:47d3dddc5044236b20afe5c4bd4e1262c73d5de63b0d7c66d928f2c79f33a243",
+  "pageVersion": "sha256:30ed59c5e551fd38e2d928687644074667d96b92fe3a6c3caf7ae2a36a04d7cb",
   "claims": [
     {
       "id": "claim_de419dbd33c74222a34f226586882a93",
@@ -351,10 +351,52 @@
           "version": "repo-lines-v1:sha256:38523748c16f344685ae6d96d3e0a3a88a6db8086ce6ad27ae45fcad34c86f8f:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2MyZjAyNWFjODhkYjYzYWYwZTViZDZhN2RmNDI5MmUzY2ZhYzQ0MjRmY2FlYmVlOGFiNjAwOTQ3NGEzNGU4MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2JhZWQ1YWVhNTlmMWZhZDRhMWY5NGJmOTgyNmJmYTRiYTkzZDg0NWVjZDhkNGY1Mjc0OGYwZTI2ODI2NWIwMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWQ1YzBlNGU5YzkwZWM3YjQzNzM1NTI0ZjkwYTIzOTcxNjZlM2YyOGVkZDZhNDIxNGU1ZDBkNjNlZTVjNjAyOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjZiZGIxNGM0ODAwNDc1YzlkOWU4NWYyNDgxYzEwMjUyOGI1ZGU2OGU0N2MyMjE2YmI5MTE5MGJiZDdlOTFlMSJ9"
         }
       ]
+    },
+    {
+      "id": "claim_62158cc22e9046c8ac2c2f4f58851e58",
+      "statement": "HO 04 90 (2026-01) covers qualifying sewer or drain backup and sump overflow or discharge only when attached, with a $10,000 per-policy-period sublimit unless a higher limit is shown in the Declarations and a separate $1,000 deductible per loss; these are contractual terms distinct from Rule 220 underwriting authority thresholds.",
+      "evidence": [
+        {
+          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L23",
+          "version": "repo-lines-v1:sha256:44fbc09b562906a7d7d0f563bbf57baf9643320b85ba1c2bf8203ba183da7f26:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiNWQ2ZDE2MWMxZGZkMzhmZmM4ZWY3NzZlNTFkY2I2MmJmYmNiY2NkYWYzMjIzNWVmOGNiNDYzMmI3NDAwZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0ZDJlMTg2YmMxNTFiMzUyOTJjYzg1ZDFhNGI0OTM1NThjMTc0MjFkOTNkODk3MmU1MzBlNGIwMGEzMDM3NWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3OTJjZGFkMTM5NmI5NmZmYTk2OWIzMWQ3ZTVmOTVmMDJhODk1YmM0Yzc5ZDA3NjBjMmE0Njg5MWNiY2E2MzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2YmVmMzE4ZmRkODlkMjA1ODgyNjFjODIxY2E2YjAzZDFkYmE5MGExM2MxNTk5YTRlYjVmMWZkNjZiOTI3ZDAifQ"
+        },
+        {
+          "resource": "repo://manuals/underwriting/manual.md#L2731-L2747",
+          "version": "repo-lines-v1:sha256:d7d4b8ec8fab03a102af79a2defc7d50dcce3dbdef66667d0f3091b3eb4f4ada:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzMjMyODIwNjFhMGI1NGFhNTJmODc5ZWI3NWU4NWViMmFiMDg2NTlkOWM1MGZjNjRmNjNiYTViODNkNDEzY2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1OGY3NGMzOTdhMzBiNDA3MWQwZjhkNzVkZWM4NzEzOTczYzkwMTZjNTRiYjMyY2M0YzQ1YjNlYTAxZjg4NWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwNGY1ZThkOWQ4YzIzNzg2NmJmNzg4MzQyOGY4MTFhYTc0MzUwZDA2Njg4ZjZlYTM4ZDZjMWQ0MGU4MDRkNTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMzZjk4OTQ2OTEzMjc4NDAzYTEyZTYzYWYyYmYyMDlkY2E3YjE3NTgyMjQ3MmI3YThmY2FiNmZjNTk1Zjc1YzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_58edc0b6a1dd4bfe8042644b837f70b7",
+      "statement": "For a residence with finished below-grade area, HO 04 90 (2026-01) makes endorsement coverage conditional on a backwater valve or equivalent backflow-prevention device being installed and operable on the serving sewer line at the time of loss; underwriting should separately obtain and retain evidence of installation and operability and hold or refer when evidence is absent or conflicting.",
+      "evidence": [
+        {
+          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L42-L47",
+          "version": "repo-lines-v1:sha256:aa77a1112520bcab7d9e081aa035c4ac9cd4aa7d09b7fc2664774230269ff067:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTMwNGJlM2MwNDU5ZjA0MzQ2MWZjZGM3MTgzOThiNDQ3ZDFkNmIxYTlhNmJiODI3NTZlZjc1YTIzOGYyOTM2YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmI3MGEwYTEwZWQxMTU4YzI4YTQ3YzI3MjYyZmM0NWE1NzBkZDgyYTIyYjlhZWEyZDBmYThjM2FiMzA2YTE4MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDlmNTQyMmQ5MDRjNjNjZjc3ZGViZWEzM2IwZjVmYmM5Mjc5Y2RlZjBjZjMxYTY5MjQyZjFiZGFhM2M0NzFkYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTU5NzZkNGM1NTM0YzIxMDg3ZDExYmExMDYzZGVjMDRkODdiN2IxOTFiNTIzMzUwOGRiYmY3MmZiYzFlY2NiNCJ9"
+        },
+        {
+          "resource": "repo://manuals/underwriting/manual.md#L2959-L2969",
+          "version": "repo-lines-v1:sha256:dbd866ed5af2bc5e6a615d26ca2779f5c1ce744abf74116fd69bc17f5bd077c1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmNzFjMjZlNmI4ZmY2ZDc3YWI3MjExYmIzMDJjMWNkZjEzOWUwNzJhNDhlNGVkZjMzM2I2MTdkYWNjMjY1NGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkODE5OTljN2Q4ODZkYWM2MjFjMTJlZjM5NDNiNjJiNzE1YjA5NDBhMWE0OTA3YjcwOTk4MWY0Yzc5YWVmMDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI1MTM5YjhjMzYzMjI0ZDI4ZDBlZjkzNzAwMzhlMDQyN2MwNDFmODM4YjYyNTRkMDQzYmE1ZmYxNjg5ODAyNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlNGE2YWQwNzQwYWY2YzEwYjBmMGNkMzRkNDdkY2YzNzVjZDAyOWQ3NDM2ZmZkNjE2MjE0OWNlN2ZkZWEwNWMifQ"
+        },
+        {
+          "resource": "repo://manuals/underwriting/manual.md#L57-L73",
+          "version": "repo-lines-v1:sha256:9f9f8e245ff74778ea9cc00304cf72e2d5fcef54a4016c9770f0d5ec77ea2be9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzMGRhNTVkOGMwY2Q1ZTg4YTY5MmVkMGUzMTNiOTE1NzQzOTJjMGViZDRkNTI5YzQ2MjUxMGIwZGU4MGFjNmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1ZmU0ZjMyYTg4MTc1ZDkzMjJiNjJlMTM0YjViNDgwYjY0ODQwMDA2MmNlNDkwZDI1ODkzZmVlNzNhZjdiZDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5NTFlZDBhNWNkYmQxMWM3NjhiNTc0YTQxZmRmZDk0NTU5YjY3NmEwNGZiOTllYzExOGIyYWRiZmJhZjhjMjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwODQ0YmYwMTg2ZDdmNDQ0OTY2MjI0ZWJjNjk0ZThmYWVlNjZhYmNlNTVlNzM2YzU2ZmU5YjNkNjMyY2NjN2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f184942d86044b549666d74600fb717c",
+      "statement": "HO 04 90 (2026-01) excludes external water and below-ground seepage pathways and excludes loss under the endorsement when a known failure to maintain the serving sewer, drain, sump, or pump should reasonably have been remedied; these contract provisions must not be rewritten as underwriting eligibility rules or used to decide coverage without applying the full attached policy.",
+      "evidence": [
+        {
+          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L25-L40",
+          "version": "repo-lines-v1:sha256:97756f66925ea51f523ccaf3f6af8f24460febe3e438af3b035c8b9b732645d6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYzVlNmYxMTk4MDk2MzI0ODI3OTVhMWM3MGM3NjdiMDJlZjBhMjc3YWJkZTZlZjU4YTk2NzRjOTliNDAzMjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmZDlmZTU5ZmQ0YTg2NTFjOTY2MWIxOTZmMjRjOWU4NDRkN2I5MTJiODUwNzEwNTc1NDU0MDA5ZGY4OTliMDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRmOTQyODJjNzM0YzBjMTU4NGRiN2MyMGE2NmQ3ZDMyMTQzMzU3NDM2Y2Y1NDkwNGFiYWM3ZGY2ZDUwNzI5ZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyNTY3YTMyY2M2YmRlODFjZWIyMmE5MGI1ZWU1ZTM4Y2I5ZTlmYWU1Mjk4OTk2NjRmMWI0Zjk0MTY5ZTYzYzQifQ"
+        }
+      ]
     }
   ],
   "verification": {
-    "by": "openwiki/0.5.2",
-    "at": "2026-09-19T07:29:25.602Z"
+    "by": "openwiki/0.6.1",
+    "at": "2026-10-06T14:45:10.478Z"
   }
 }

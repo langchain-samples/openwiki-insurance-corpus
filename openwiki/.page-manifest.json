@@ -2,371 +2,371 @@
   "schemaVersion": 1,
   "pages": {
     "/openwiki/claims/guidelines/liability-claim-handling.md": {
-      "pageVersion": "sha256:505973f70bd71542587a3abde028f4de5c136d22c5e4715beabefae87cc96bb3",
+      "pageVersion": "sha256:d3dceed88bc6d62a86a72805c8c108ae2b686982e1ca2748651f25d58f1fe412",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/claims/guidelines/mold-claim-handling.md": {
-      "pageVersion": "sha256:60e8ef102fb90592913cac9bc4ee123fe2a049cb04f81dbcbc7a90bb00c7fc8a",
+      "pageVersion": "sha256:4cdc7650d1b855306518b02a5ad254264d88c7fc6fd8cccbc8e1d7820cabc74d",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/claims/guidelines/roof-claim-handling.md": {
-      "pageVersion": "sha256:bd991af4eaf57716314049bcbf679e2d09af630895a1aa947fef53f1b1040040",
+      "pageVersion": "sha256:eacfc58de908eb7fb2185af12e3a91dc0d74e7d444bbde03132e52454c4f6c8d",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/claims/guidelines/water-loss-handling.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:ad4687a358c6d3bd2266bf0d53f4aaaeb92aad3c35c8adfc420deb96f71bbb09",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/claims/manual/conditions-authority-and-state-operations.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:a7bb1a28974fc78e2b74fbecc9ddc491b6414b62f79bc916e32adbe75cdaf83b",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/claims/manual/intake-investigation-and-mitigation.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:74542162046438e8e80701305927119b0ff7cbe12e0a8dbcafcd7dd53a184a0b",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/claims/manual/liability-specialty-and-recovery.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:6ae7255cdf43d29c562dd594be4acaead0ee30b9794e6579a42654557334a52b",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/claims/manual/property-perils-and-loss-types.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:8572045b6daea5134de45afdca7107db50d608cb307d589b9c43458abd64b761",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/conditions/ordinance-law.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:5b3441998c101b3a6a806ebd5fa3a5f8dd76093e0186102be2113a387fda4b8b",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/forms/dp-3.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:d9a44f9daea3109e8d5d5c2ef29d84a284817bb2e2e0f93cca353484d808d796",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/forms/ho-3.md": {
-      "pageVersion": "sha256:c881e3b980e9443fd03c43d71e94290cbddaeb2e697bbf2d3dc45336e89ec6a8",
-      "completedBy": "openwiki/0.6.1",
-      "completedRunId": "0c486647-2729-48ea-aebb-534dc8995637",
-      "gitHead": "dd7bd09873d8b6ad228e33a0cfd087afa499edda",
-      "sourceFingerprint": "sha256:da4ef1eb5a695621a2f210ad46171943aa65c24f03a74ea516ad7049edef7df9"
+      "pageVersion": "sha256:62fc37676d2dfc2db09df05afcb741c5d245b11ca76d8c6cf2c842a0677f8574",
+      "completedBy": "openwiki/0.5.2",
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/forms/ho-4.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:9b8c2b6ca6f927e8c689858ea9719d93609c7f3814210b60c5d38d8faebb2d09",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/forms/ho-5.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:422ec0e33b6962813630abebe65d8d6db2fa58d73939b511a015dcd8ddcc3c18",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/forms/ho-6.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:721df1ca37d6237de9a27f2fbf4ceb6088d6a54a5fd2f8b78972b07e06452764",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/liability/incidental-business-and-personal-injury.md": {
-      "pageVersion": "sha256:8278a8516d87ac18561ec367f3910c1a43a5064ff2623a8ca07a6fb880125429",
+      "pageVersion": "sha256:db49bfad80dcee6b9cbfc7c9477558358c33aa95c744a2d6a2a3632bc13337ec",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/parts/liability-e-f.md": {
-      "pageVersion": "sha256:2f2c52446f5887afd93e7091859e979f0b1987c43f30d410cce5f876ae8b8766",
+      "pageVersion": "sha256:329cbb0561bcd370c4d674ec4c5c69bccd2605f3f395e0b72f5085ff57402052",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/parts/property-a-d.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:28d2f4958605b5dc1e90a1dec49afc7aef7cc53bb13ed9bff713ba8fe57da4ef",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/perils/earthquake.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:d491a25e685cdd069f5e292b724b729e0b950320b99b6f7d5aefcf124ab0e031",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/perils/fungi-and-bacteria.md": {
-      "pageVersion": "sha256:5d10a3c10e2f8fc50743dd1e98c72e671aa919af9936943bc81964461aeb5b77",
+      "pageVersion": "sha256:d92397b4a4662a859b5c5d9be192f691b20ad5bd4863b741b47a3d310f687ef0",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/perils/water-backup.md": {
-      "pageVersion": "sha256:a59784a2f0c0221db91932a36c5b83c6a67acf5250ef2123b893a3684a9df882",
-      "completedBy": "openwiki/0.6.1",
-      "completedRunId": "0c486647-2729-48ea-aebb-534dc8995637",
-      "gitHead": "dd7bd09873d8b6ad228e33a0cfd087afa499edda",
-      "sourceFingerprint": "sha256:da4ef1eb5a695621a2f210ad46171943aa65c24f03a74ea516ad7049edef7df9"
+      "pageVersion": "sha256:c6160caaa8bfd768d847e246ac65b5e8278c76a58c7abc4b9e2b47746d467557",
+      "completedBy": "openwiki/0.5.2",
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/perils/water-damage.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:d02bd102943fe9d4206dd151213d92bb86fb10fb82654d0dd359b95b7f1bbce9",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/perils/wind-hail-deductibles.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:46406bf8c699c7c11bcaae62173f9f139a66fa07388168685d50201d8ab6b1ed",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/property/additional-structures-and-insured-interests.md": {
-      "pageVersion": "sha256:ebfa69cef74338970c54f2324e7768a5d5260b01d9607f243b8ef70666bca95d",
+      "pageVersion": "sha256:c82725332df1f8bd11e51ea874d2f48bbf55c4ccb4a6697b610d49fa05745fbd",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/property/loss-assessment.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:02b147a03fc1cfbf3114572053bc9df9093c1aeae563773464da91180a53085f",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/property/personal-property-limits-and-scheduling.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:f5c7230156dcb21649bbeba0a9b0e9c7f8d623b521b591300d457f3a141ea078",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/coverage/settlement/roof-settlement.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:a71e3e76207d721e61151aa7363fc0772b296345fc21798425cb51f237e01094",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/policy-assembly/editions-and-state-attachments.md": {
-      "pageVersion": "sha256:3a2c5ce62a47aa2e516d4330d3539a32f1338a6d8e0f167f2908bf29f760107e",
-      "completedBy": "openwiki/0.6.1",
-      "completedRunId": "0c486647-2729-48ea-aebb-534dc8995637",
-      "gitHead": "dd7bd09873d8b6ad228e33a0cfd087afa499edda",
-      "sourceFingerprint": "sha256:da4ef1eb5a695621a2f210ad46171943aa65c24f03a74ea516ad7049edef7df9"
+      "pageVersion": "sha256:b6186e0ac4161ee1eac6614c9232f0ac842c2b893212af3461bac1023655aa0f",
+      "completedBy": "openwiki/0.5.2",
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/quickstart.md": {
-      "pageVersion": "sha256:db56c976e72d28f2e6312ffc5f4b2dafb41a0e756bd638b2cc0508e0157cb01d",
-      "completedBy": "openwiki/0.6.1",
-      "completedRunId": "0c486647-2729-48ea-aebb-534dc8995637",
-      "gitHead": "dd7bd09873d8b6ad228e33a0cfd087afa499edda",
-      "sourceFingerprint": "sha256:da4ef1eb5a695621a2f210ad46171943aa65c24f03a74ea516ad7049edef7df9"
+      "pageVersion": "sha256:ab066c701617cbeecd54672f4054bc92931b73bceb0cdf1c7dea3d4ff63fcf45",
+      "completedBy": "openwiki/0.5.2",
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/california.md": {
-      "pageVersion": "sha256:87015bbfb753fa0361cc7807a2f4647908b1ea110e827c594a7e3d0326ff54c0",
+      "pageVersion": "sha256:28f3a604d86f8d7e8dded58ad28111ecad5c5a81ca5dfd907f8bc4e32ac57101",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/colorado.md": {
-      "pageVersion": "sha256:bef32c81448a08c7f405fc2ad60f1f1780f4198db76919cc6daa5d108d3852f7",
+      "pageVersion": "sha256:0ee7058f402cec48aa39c645601fb3f1ebc813ecf3c96b48cc1f09a37bdf95ed",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/florida.md": {
-      "pageVersion": "sha256:d5884b10543c0e80c6248b4b267e792f9672ad3f1379565cffd2bf06fd52287d",
+      "pageVersion": "sha256:4f712ab60a521ea35fc9fed36d1ab81daf8b6f771160052a42580735dbd16efb",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/illinois.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:297e45ca660af6c3db19a234af0adfb048ddf47c20dbd83a92a8f8fa7946eb08",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8"
+      "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/louisiana.md": {
-      "pageVersion": "sha256:85a81e01f425f285c22757fe1a0f6e7757984e1fcb12e9bb3e8ef27a414bb2c4",
+      "pageVersion": "sha256:6d4935d611c096f9ce6a0a8537dd2320413f0544941c277259e0fff4efc97193",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/new-york.md": {
-      "pageVersion": "sha256:41ba47bce2a65c1cd635d778a373151ccc6109786415925cf42da2a9b61de0a5",
+      "pageVersion": "sha256:8a4819fed531248dd8959f6ae1ecacf13b779b76caa01c79653a577dd4ecf432",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/north-carolina.md": {
-      "pageVersion": "sha256:55bc9f4946bc4789dd5f34b0f29f3ef8db0ff73fef0f9ce47140979ae764e24f",
+      "pageVersion": "sha256:7f4edfff5c1fb85994da5f81dc813b0bf3580330f27b00049f2fd196bac51a48",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/state-overlays/texas.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:f7e9a86d488937a9e6ade862aa075df11929ec76cd19ba7c072cc9a3d763eb9b",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/binding-authority.md": {
-      "pageVersion": "sha256:236388b48e50df937b32c5b5ad185e5fb66d79341fae1f849c1a7c53e28aa08b",
+      "pageVersion": "sha256:4ce384a3351402abb551c19c3e8f3cea402c75d63f7a2787d67c3433a1dbf271",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/california-appetite.md": {
-      "pageVersion": "sha256:6a232a10fbb400f8101634ff4e6d00cd53accbb8e0c48696e1f1cf9bdba71a6a",
+      "pageVersion": "sha256:9bf6b3bcb591fb8365ab97c9c39359c316147e0efd6caf3892b197d6c43bcb7b",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/florida-appetite.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:139ef6323c85936243c996fa00cee414c2ebfe483b98f9aaff03571590382561",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/louisiana-appetite.md": {
-      "pageVersion": "sha256:392661377902bf8e267f7900585e6db841e48ab560971f3701e6b2063ab77124",
+      "pageVersion": "sha256:4449fdfa148b900bcd9c2f2a2eca81c98a9a002b906a190e1f61741bd60b7d28",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/new-york-appetite.md": {
-      "pageVersion": "sha256:c10be82735e123b4df7db3bd47bea04d6a664a57186c599a4d68ec5535635274",
+      "pageVersion": "sha256:aa112b0074d06aface48c9d128c9da3cea089fb802e65dc47f1f9745658bb28c",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/north-carolina-appetite.md": {
-      "pageVersion": "sha256:d1013747060779dd49fcefe0a3106483477033cd345f887ed8cb57b1ae8ccad6",
+      "pageVersion": "sha256:3b7f01956290475ac7574c4b34db54541543dd4660577d1b585053f764fde262",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/referral-authority.md": {
-      "pageVersion": "sha256:2fdf34e0e8d3a5d537de88fe6356923305ff346c2cf661eda3c72d42e9705a1b",
+      "pageVersion": "sha256:50ccfbc1513ec763f24c4dfd1d1d1d8de0e5f968a9578d5a6f9c3b6f543502e9",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/guidelines/texas-appetite.md": {
-      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
-      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633",
       "pageVersion": "sha256:a61cec87ab48525692a76a7b9d8e7214ab9038a631e0c95daab0399a0f0d278c",
       "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
+      "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
+      "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/authority-referrals-and-clearance.md": {
-      "pageVersion": "sha256:c43a60d9e2482c9314fa898fb04446a71b01783fc7f38c186d051db25dc6bca4",
+      "pageVersion": "sha256:96928276a23b90a8c2795afe3520065b615c3a8004d984d75665503d4518c616",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/eligibility-and-product-lines.md": {
-      "pageVersion": "sha256:c938f17c2f5c2e7bcf38552465609fc503528e7b582c8ae615ec5c697e79ca1c",
+      "pageVersion": "sha256:dcf98cb777be793187649770f3057aa11f116e45245930373abd17efe49a8713",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/endorsements-and-deductibles.md": {
-      "pageVersion": "sha256:02bf8b25726404b18ff81438a1229b3d6072ca876240b5836027c0b50c401227",
+      "pageVersion": "sha256:013a23eab4037f5cf2932c7bef05b27a98fd2bd7f8de39a23cadd4a52bf06672",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/inspection-and-records.md": {
-      "pageVersion": "sha256:e215b0e138eb10e5dbd532b8abcd94cd9a3aa0502b1bd00a528c709b7510836b",
+      "pageVersion": "sha256:e68ecb1fa322e95affa043da1acde4aab651d34ad4ce876f08a2ce31268604fe",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/liability-losses-and-occupancy.md": {
-      "pageVersion": "sha256:c3741fa31695b72903834b74c903e0640406894c3e114612910afc73647c1d1e",
+      "pageVersion": "sha256:f462ed6c657fce3321705a4f9b5cf1e3446bdb11e001cc5bb95f056f7b58efad",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/property-and-water-risk.md": {
-      "pageVersion": "sha256:8ea41c09b18df342dc2ae271de09948039081d6c26ae3a45e0c024c2c45a18c3",
+      "pageVersion": "sha256:47d3dddc5044236b20afe5c4bd4e1262c73d5de63b0d7c66d928f2c79f33a243",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/renewal-and-adverse-action.md": {
-      "pageVersion": "sha256:3286de0456c73f19e01c5dbfd4db966e52a2bbdaebe93d49748722546dde3f0b",
+      "pageVersion": "sha256:d27e9ec451cc00ea9cd71d1c614b99a9e1a45ab579529ce51c675aade7573817",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/manual/state-exceptions.md": {
-      "pageVersion": "sha256:4681e6bca3362e33884d09e5a743c0952bc45030f72373754c98567fa71e6d17",
+      "pageVersion": "sha256:f29a90963b1a4f9662aab3a1485bf8a06674049b091f9b80c209d9763bdddc7f",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "59a2e31a-9263-41bf-82c3-a73a04b098e8",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",
       "sourceFingerprint": "sha256:252d35a0cf5393dee8cc495d0d0bbc83da5e94dc3b03a96051e2640b8853e633"
     },
     "/openwiki/underwriting/rating/inputs-and-adjustments.md": {
-      "pageVersion": "sha256:5bd121c9e405e2d1921d7ef016f5717182d5383bd99ab08f03e352338ca570a7",
+      "pageVersion": "sha256:25cd1aac5027bc789b5c18756c95a472423800ca6f9710097324e1041acc7abb",
       "completedBy": "openwiki/0.5.2",
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47",
       "gitHead": "bb9db4e520fc6931950f1f6eca3deb243debf3d2",

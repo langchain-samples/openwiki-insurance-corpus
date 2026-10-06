@@ -1,7 +1,7 @@
 # OpenWiki Insurance Corpus
 
 A synthetic homeowners insurance corpus, used as the primary source layer for the OpenWiki
-insurance POC. The current tree is the generated corpus of 111 documents (about 125,000 lines); the original
+insurance POC. The current tree is the generated corpus of 111 documents (about 133,000 lines); the original
 sixteen hand-written documents are tagged `small-corpus-v1`, and the 30-document calibration slice is
 commit `f07eb60`. The proposal that motivates it lives in the sibling `openwiki-insurance-poc` repo
 under `docs/poc-proposal.md`.
@@ -62,7 +62,34 @@ Add only the marker; never alter operative text in a superseded file.
 **Keep the worktree clean.** Any untracked file makes OpenWiki's no-op check bail to a full model
 run. Commit or ignore everything before running `--update`.
 
-## Running OpenWiki
+## How the wiki stays current
+
+`openwiki/` is never edited by hand. `.github/workflows/openwiki-update.yml` recompiles it on every
+push to a source folder (`forms/`, `bulletins/`, `guidelines/`, `manuals/`, `memoranda/`,
+`training/`), which is what the POC's ingest API does when it commits an uploaded PDF:
+
+1. **Compile.** OpenWiki (`gpt-5.6-luna` at low effort, 6 page workers, through the LangSmith LLM
+   Gateway) updates the pages and claims the change affects, and commits them as
+   `docs: refresh OpenWiki`. The planner and page workers trace to one LangSmith thread in the
+   `openwiki` project. A run that ends `interrupted` resumes itself, up to three times in a row; a
+   daily scheduled run reconciles anything missed.
+2. **Rebuild the indexes.** `scripts/` rebuilds `.claims-index.json`, the provision index and
+   `.graph-edges.json` from the compiled output, with no model. The code is vendored from the POC
+   repo (`scripts/vendor/`); `scripts/sync-vendor.sh` refreshes it.
+3. **Reset.** With the `AUTO_RESET` variable set to `true`, the workflow then reverts the compile
+   and the ingests it covered in one `reset: undo …` commit, marked `[skip ci]` so it does not
+   compile again. The corpus returns to where it started, so the same demo PDF can be ingested
+   again.
+
+| Setting | Kind | Value |
+| --- | --- | --- |
+| `OPENAI_API_KEY` | secret | the LLM Gateway key (`lsv2_sk_…`), OpenWiki's model spend |
+| `OPENAI_BASE_URL` | secret | `https://gateway.smith.langchain.com/openai/v1` |
+| `LANGSMITH_API_KEY` | secret | a LangSmith key for the compile traces |
+| `LANGSMITH_WORKSPACE_ID` | variable | the workspace the traces land in |
+| `AUTO_RESET` | variable | `true` to reset after each compile |
+
+To run OpenWiki by hand instead:
 
 ```sh
 openwiki --init      # first build; writes openwiki/ and openwiki/.claims/

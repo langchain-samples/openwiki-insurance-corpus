@@ -16,7 +16,7 @@ import tarfile
 import tempfile
 from dataclasses import dataclass, field
 
-from contracts.corpus_manifest import (
+from corpus.integrity import (
     CorpusIntegrityError,
     CorpusUnavailableError,
     git_blob_sha,

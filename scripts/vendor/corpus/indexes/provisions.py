@@ -14,7 +14,7 @@ import json
 import re
 from typing import Any
 
-from contracts.corpus_paths import SOURCE_PREFIXES
+from corpus.paths import SOURCE_PREFIXES
 
 SCHEMA_VERSION = 1
 FRONT_MATTER_LINES = 12

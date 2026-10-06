@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:a63bca5f2e288e98dc82a6ddbc1ab5cd3d425beebf3693654ab51323e8465bcd",
+  "pageVersion": "sha256:013a23eab4037f5cf2932c7bef05b27a98fd2bd7f8de39a23cadd4a52bf06672",
   "claims": [
     {
       "id": "claim_8dbdc848ada341ac8dd7ad51923ed0ac",
@@ -445,62 +445,10 @@
           "version": "repo-lines-v1:sha256:5db58ec7e0fe2dda854d355d3646a7064fd8e25c0c7ed870b6a88cae33b4a1d8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1ZTMwNTQyYjZkNmQxZjRmNDI1ZGFjNTYxZmRkMWRmMTQ5MGMzMzEzMzU1MmEyODU1NDk1OTVjYjZhNDU3NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlOWM3MGRjNTg2MmQyZjcwYmE4NzM1ZWExYjJkNmY5ZGFlMDQyY2ZmMjQ0Y2MzNGVjYjc0Yzg5NGUxNWM1YjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0M2QyZWIzOGY0ZGUwM2UxYzdmYjlmMjM4NjM4YzRiNjdmNWMxYTAwZWNkZTI2ZTU1ZGVmMzc0YjcwYjc1NjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2YmIwZGM2YTYwNGMyZjdjNGNlYjdmN2UxZGQxZGQ4ZTNiNmVhMjk5Y2ZiZjhiYjgxMDIyZTU3NmYyMjllZWMifQ"
         }
       ]
-    },
-    {
-      "id": "claim_a450581bb0574ecc8c3d3b9b605dd73e",
-      "statement": "HO 04 90 2026-01 is a multistate HO-3 endorsement for policies written on or after 2026-01-01, and it applies only when attached and made part of the policy.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L4",
-          "version": "repo-lines-v1:sha256:8cba05ab8e0cbad994634ac3d64f39694b3fe0d0ce4f8a69af0c5fcfb3d501cb:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGU3Yjk3YTQ3YmJhMWVjNjgwZTdkZDE5ZmY4YWZiM2UzODRkMWFjNWI4MWVhMjlmMTY4NTVmNTc1ZmVkN2M4NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTE4Zjg2NDZiYzNiZjJhODEyYzI2NTVmNWFiNGNlNGYyZGNiOGQ0MTZkMGEwMTM3ZTJhZmRmYzc0NTIwMDNmMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2ZhMGE1YTJjMDQwOWFkZDZjYTk3ZjlmZDQ3NzQ4MzM4MTlmZGVmNTZiODNmZWUxODUxN2ZhMzk4NmIzY2I0OCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_9a12b3bd2189487d90d94b2be4f7392f",
-      "statement": "HO 04 90 2026-01 provides direct physical loss coverage for water backing up through sewers or drains and sump overflow or discharge for Coverage A, B, and C property; its default $10,000 amount is a per-policy-period sublimit that is part of, not in addition to, those coverage limits.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L18",
-          "version": "repo-lines-v1:sha256:70d28d3669ea7ecf3054f5fe6bcc1deeb3d5d0b9011981120249a6f77b704ed6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiNWQ2ZDE2MWMxZGZkMzhmZmM4ZWY3NzZlNTFkY2I2MmJmYmNiY2NkYWYzMjIzNWVmOGNiNDYzMmI3NDAwZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwZWI5ZmM5MTk4OGJjYjgyZjQxODBhZDFlZjZmYjAzNWE5NTcxZmExOWQ2Yzc2ZmViNzY1OTQ0OTk1ZmM1ZWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3OTJjZGFkMTM5NmI5NmZmYTk2OWIzMWQ3ZTVmOTVmMDJhODk1YmM0Yzc5ZDA3NjBjMmE0Njg5MWNiY2E2MzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcyYzM1ZTRlMTgwYjAwNTJhMDFmYjZhZWVlYmQ4YTY0MDRkM2MzMDJhNzg4ODE2Y2U4Yjc1NTFlNjljYjlkY2EifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_6cba95b15d4b4e3dba74f70305339b93",
-      "statement": "HO 04 90 2026-01 imposes a separate contractual $1,000 deductible for each covered loss under the endorsement, and the Section I deductible in the Declarations does not apply to that loss.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L20-L23",
-          "version": "repo-lines-v1:sha256:ab796533f5d176a89961854db553600c6230a9d9e62d3d22449adf57c669ef4a:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDVkYmUwZDEwOWNhYmY0YTU4ZGU3MGIxOTY3YzU4NTRjMzk3YTU0Y2MzMWRjNjdlNzE2Njk0M2M1NTUzYmQ4NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTRkMmUxODZiYzE1MWIzNTI5MmNjODVkMWE0YjQ5MzU1OGMxNzQyMWQ5M2Q4OTcyZTUzMGU0YjAwYTMwMzc1ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmI5MzE1MzNlOWM3OGUyMmU5NjhiNDIxNmQ3ZTRhZmM5NmM0NWI1Nzg3NmEyOTExNTU2YTcwZTY3OWIyNmU5NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDZiZWYzMThmZGQ4OWQyMDU4ODI2MWM4MjFjYTZiMDNkMWRiYTkwYTEzYzE1OTlhNGViNWYxZmQ2NmI5MjdkMCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_ad3360624c4f4562a24cc2110670e3ec",
-      "statement": "Internal underwriting rules constrain attachment, evidence, deductible selection, and referral but do not change HO 04 90 2026-01's contractual $10,000 sublimit or $1,000 separate deductible; a requested water-backup limit above $25,000 requires documented authority approval before binding.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L13-L23",
-          "version": "repo-lines-v1:sha256:b740bb1391c0ac47acfe16bef0c86a5c4c35ed9d90045c88c9912ec5c7a0a307:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiZDQ2ZWMxOGExMDBkOWQ2M2M2ZmMzYTJjNDExNWI0ZGM1NjhiOTUyNjQwMGZiMDJmNjRiOTVmZmYxZmFkMzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0ZDJlMTg2YmMxNTFiMzUyOTJjYzg1ZDFhNGI0OTM1NThjMTc0MjFkOTNkODk3MmU1MzBlNGIwMGEzMDM3NWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNlZDA1OWQ0ZTk3NjJlMTlkMDY2Nzc5N2M3ODFjOGQwNWNiYjczY2Y5ZDY2YzhiM2M5Mzk0ZjlkODlmOThhZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2YmVmMzE4ZmRkODlkMjA1ODgyNjFjODIxY2E2YjAzZDFkYmE5MGExM2MxNTk5YTRlYjVmMWZkNjZiOTI3ZDAifQ"
-        },
-        {
-          "resource": "repo://guidelines/authority/referral-matrix.md#L403-L417",
-          "version": "repo-lines-v1:sha256:5d0bd3ec212e055680ccabe95916b802a7c291d937488428a2b11b77e65cb605:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3NzNlNGQ2ZmI1YzdhNDRmZGNmMTk4ZmFjMDNjMDQ4NTg2MTk3MDYyMDcyZmVlZTEyNTVjMjZhNmI2ZmI5MTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhYmM0ODA2M2JiMzM5YWVkZmNkMWFlNWE3ZDQ3MzcyMzM2ZmM4MzM5OGYzZTlhYjlkNWUxOWRlZDFiYWIxNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk5YjM0NzcwY2Y1MzJkNDFmYmYwYmNjNjQ4YTdjMjUyMGE1NDkxNThhNWZlMzkwMDFmOWQyY2EwMTRlMDBlMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk4M2NhZGVkYWIxNDM4NWM0NDc2ZmZkMjU1MGY3NDRjZDVhYTQyNDRhM2Y1YmM1MDgyZDIyNWMzNjE3ODE1MmIifQ"
-        },
-        {
-          "resource": "repo://manuals/underwriting/manual.md#L5163-L5173",
-          "version": "repo-lines-v1:sha256:2a257881c5d0ac2a82f09f2afc953c474082382438cab9e349b239b81c7c4a6f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1NjI3MjI0YjZiZGYwNTZiZTY5MTdjMjJhMTk1MDUxMjU0MjQxY2U1NGUzNmRiZTdhMTdiYjBmYTk5MmU2NTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxY2JlMDAzNDNiYTczY2ViMThiYjBkZmNkNGU4ZWI4NDZhNjY3ODAzZjZjNzVmODUwNDYwZWU4ODI3Y2IyYWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3NzhiYmU2NjQwNzQ5MjdiMzJmMjQwM2VmMmY0NWJjZDNiZGI1YjI1ODMxNWRhMDgzZWIxMzdjNTM0Zjk4YzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxODdjMjg4MzE3NDBhNDBkYzJmYTk0Y2RkZmFlMDMyODBlMWRhOWRmNmZlNjlmMzIwYjZhZjQyMjIwYmNmNTkifQ"
-        },
-        {
-          "resource": "repo://manuals/underwriting/manual.md#L5421-L5455",
-          "version": "repo-lines-v1:sha256:cb5390e0ecd21bb409a7b156aff12c7154cf657ce1bbae644bfa985d8dac80bb:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3OTQwODRjMjk4ZTA4MjBkNGMxNWVjZTI4ODAwMDg2NjlkNDg5MjljOWM5NmNhMzc4NDAzMjdjMDMwYjJmYmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkNTE2MWE2MzFlNmFiYWYzNGEwZWUwOGM2ZjY1MGJmM2IwNWMyN2IyOGMzODA1MTgwMjY4NzY1YzQ5M2YxZGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3YmYxY2Y3MDVhZTYyYWEyZTE4NjM1YjhkNzQxNWRmOTZjN2Y4ZGJmNDdjYzE0ODM1NGU2YjY4ZWY3NjdlNDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYyMDcwNTE1NjRmNDIxZmFkZjcyMWZjZTdhNzA5MDcwNDI4MzFiYWM2OTczMDcyNTI0MzE4MWUwOWQ0NDAwYWQifQ"
-        }
-      ]
     }
   ],
   "verification": {
-    "by": "openwiki/0.6.1",
-    "at": "2026-10-06T14:45:10.478Z"
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-19T07:29:25.602Z"
   }
 }

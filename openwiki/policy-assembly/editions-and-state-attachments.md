@@ -1,22 +1,16 @@
 ---
 type: policy-assembly
-title: Policy Editions and State Attachments
-description: Selects the governing HO 04 90 edition by policy effective date, verifies attachment to HO-3, and separates contract wording from Declarations, Illinois state overlays, regulatory disclosure, and internal underwriting controls.
-tags: [policy assembly, HO-3, water backup, endorsements, state overlays]
+title: Editions, Endorsements, and State Attachments
+description: A policy-assembly workflow for routing by line, state, effective date, Declarations, and the complete issued package before interpreting coverage. It separates contract forms, regulatory bulletins, and internal guidance while resolving endorsement and state-form conflicts.
+tags: [policy assembly, insurance forms, endorsements, state attachments]
 verified:
-  - by: openwiki/0.6.1
-    at: 2026-10-06T03:09:51.060Z
+  - by: openwiki/0.5.2
+    at: 2026-09-19T07:29:25.602Z
 sources:
-  - id: openwiki-source-6f2e8c6b93df2e40df6addd5
-    resource: repo://bulletins/IL/idoi-2017-10-water-backup-disclosure.md
   - id: openwiki-source-38049e374f54d1eb9a15f4ef
     resource: repo://bulletins/TX/b-2021-08-windstorm-deductibles.md
-  - id: openwiki-source-0af9506b894fd5b634b6ea44
-    resource: repo://forms/HO/IL/HO-01-12/2015-02.md
   - id: openwiki-source-cd26c30cc942869b52618f95
     resource: repo://forms/HO/MS/HO-04-90/2010-10.md
-  - id: openwiki-source-36bcf8e9754ce8cd9b63db52
-    resource: repo://forms/HO/MS/HO-04-90/2026-01.md
   - id: openwiki-source-6a71dbfe57881e21b8a0e5ea
     resource: repo://forms/HO/MS/HO-04-90/2027-01.md
   - id: openwiki-source-f4ebd2ece3eaf490178dfc41
@@ -43,92 +37,119 @@ sources:
     resource: repo://training/choosing-the-governing-edition.md
   - id: openwiki-source-a6e7a7f52df2ed58605a3898
     resource: repo://training/guidance-versus-contract.md
-generated: { by: "openwiki/0.6.1", at: "2026-10-06T03:09:51.060Z" }
+generated: { by: "openwiki/0.5.2", at: "2026-09-19T07:29:25.602Z" }
 ---
 
-# Policy Editions and State Attachments
 
-Policy assembly answers two different questions: **which wording governs**, and **which documents were actually issued**. Select the HO-3 base form and HO 04 90 edition by the policy effective date, then confirm the endorsement, completed Declarations, and any state amendatory form are in the issued package. A form label or system schedule is an index, not proof that the endorsement attached.
+# Editions, Endorsements, and State Attachments
 
-## Authority and document order
+A policy position is assembled from documents with different jobs. Start with the issued policy package: the base form edition, Declarations, attached endorsements, and any applicable state amendatory form are contract authority. Bulletins are regulatory authority that constrains how the carrier files, issues, discloses, and administers the contract. Filing memoranda and training explain or teach; the underwriting manual and appetite guide constrain carrier action. None of those interpretive or internal documents changes the contract conclusion ([README, document families](repo://README.md#L15-L21), [README, authority model](repo://README.md#L35-L41), [Guidance Versus Contract Language](repo://training/guidance-versus-contract.md#L15-L23)).
 
-The issued policy package is contract authority: the applicable HO-3, Declarations, attached endorsements, and applicable state amendatory form. The endorsement **modifies** the base policy only within its stated terms; unchanged policy terms remain applicable. A state amendatory form **modifies** the policy only on matters it addresses and normally preserves compatible terms. Regulatory bulletins **constrain** issuance, disclosure, and administration; they do not create a coverage grant. Manuals, appetite rules, memoranda, and training **constrain** internal action or explain wording, but do not alter contract coverage.
+## Authority layers and relationship vocabulary
 
-Always identify the acting document first and use a directional relationship: `supersedes`, `modifies`, `writes back`, `preserves`, `implements`, or `constrains`. Cite both provisions when describing an interaction. This prevents an Illinois disclosure rule or underwriting referral from being mistaken for the water-backup grant.
+| Document | Responsibility | Safe relationship to state |
+| --- | --- | --- |
+| Base form | Supplies the coverage grants, definitions, limits, exclusions, conditions, and settlement rules for its line and edition. | Read the edition that applies to the issued policy. |
+| Attached endorsement | Changes the base policy only within its stated terms and only when attached. | The endorsement modifies the base form; unchanged terms remain applicable. ([HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36), [HO-3 2024-03](repo://forms/HO/MS/HO-3/2024-03.md#L593-L597)) |
+| State amendatory form | Adds state-specific contract wording and a precedence rule for matters it addresses. | The state form implements the relevant bulletin; it is not the bulletin. ([HO 01 45 2022-01](repo://forms/HO/TX/HO-01-45/2022-01.md#L13-L23), [B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L13-L27)) |
+| Regulator bulletin | Constrains issuance, disclosure, filing, underwriting, rating, or claim administration. | It constrains the carrier, but does not create a deductible or coverage term absent from the policy ([B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L19-L27), [B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L63-L69)). |
+| Filing memorandum and training | Explain an edition or teach a review method. | Interpretation only; they do not replace the filed form ([README](repo://README.md#L20-L21), [Choosing the Governing Edition](repo://training/choosing-the-governing-edition.md#L101-L107)). |
+| Appetite guide and underwriting manual | Set eligibility, authority, referral, documentation, and attachment controls. | Internal guidance constrains binding or attachment; it does not alter coverage ([manual Rules 100.B-100.E](repo://manuals/underwriting/manual.md#L21-L43), [Texas appetite guide](repo://guidelines/appetite/tx-homeowners.md#L13-L35)). |
 
-## Edition selection by effective date
+For a composed proposition, name the acting document first and use one of the repository’s directional verbs: `supersedes`, `writes back`, `preserves`, `modifies`, `implements`, or `constrains`. For example, **HO 04 90 2027-01 writes back HO-3 2024-03 X.8-X.9** only within its stated water-backup coverage, while **HO 04 90 2027-01 preserves HO-3 2024-03 terms** that it does not modify. Cite both documents whenever the proposition connects them ([HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36), [HO 04 90 2027-01 coverage](repo://forms/HO/MS/HO-04-90/2027-01.md#L256-L282), [HO-3 2024-03](repo://forms/HO/MS/HO-3/2024-03.md#L593-L597)).
 
-The repository records HO 04 90 2010-10 as effective 2010-10-01 and superseded for policies effective on or after 2027-01-01. HO 04 90 2026-01 says it replaces 2010-10 for policies written on or after 2026-01-01. HO 04 90 2027-01 is effective 2027-01-01. These statements create an important overlap in the source set: **do not infer a 2027 transition rule from the 2010-10 supersession banner alone**. For a policy effective in 2026, use the 2026-01 edition when it was the filed and issued edition; for a policy effective on or after 2027-01-01, verify whether 2027-01 governs. Preserve the older edition for policies written under it rather than rewriting historical policies.
+### Entry gate: route before interpreting coverage
 
-The effective date selects a candidate; it does not establish attachment. For each transaction, record:
+Before interpreting coverage, route the matter by **line, state, policy-effective date, Declarations, complete issued attachment package, and applicable state form**. The repository path carries line, state, form, and edition; the Declarations identify the insurance and applicable limits; and the issued package supplies the wording actually made part of the policy ([README, layout and load-bearing path](repo://README.md#L13-L31), [HO-3 2018-09 agreement](repo://forms/HO/MS/HO-3/2018-09.md#L13-L21)). Treat a schedule or system label as an index, not as the operative endorsement language: a listed-but-missing form needs the complete package or a reliable issued copy, while an attached-but-unlisted form must be reconciled to the policy record ([Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L65-L87), [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L221-L227)).
 
-1. line and state;
-2. policy effective date and term;
-3. HO-3 edition;
-4. HO 04 90 edition and completed Declarations limit;
-5. all schedules, referenced pages, and state forms; and
-6. the complete issued package tied to the insured, location, and property.
+Do not begin a detailed coverage interpretation until the candidate base form, Declarations, all referenced pages and schedules, attached endorsements, and state amendatory form are identified. If the package is incomplete, labels conflict, or the relevant attachment cannot be tied to the insured, term, location, and property, record the uncertainty and obtain or escalate the missing evidence rather than choosing the wording that produces the preferred result ([Choosing the Governing Edition](repo://training/choosing-the-governing-edition.md#L109-L119), [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L193-L215)).
 
-If the package is incomplete, labels conflict, or a schedule is blank, hold the coverage conclusion and obtain the issued copy or escalate. Do not choose the edition or interpretation that produces the preferred result.
+## Date-sensitive edition selection
+
+Use the policy-effective date to select the candidate base and endorsement editions, then verify that the selected wording and endorsements were actually issued and attached. A later frozen authority does not rewrite an older policy: prior editions remain in force for policies written under them ([README, frozen authority](repo://README.md#L35-L37), [Choosing the Governing Edition](repo://training/choosing-the-governing-edition.md#L69-L79)).
+
+For the representative HO-3 package:
+
+- **HO-3 2018-09** is effective 2018-09-01 and is marked superseded by **HO-3 2024-03** for policies effective on or after 2024-03-01. **HO-3 2024-03 supersedes HO-3 2018-09** only at that boundary; the 2018-09 form remains live for policies written under it ([HO-3 2018-09](repo://forms/HO/MS/HO-3/2018-09.md#L1-L9), [HO-3 2024-03](repo://forms/HO/MS/HO-3/2024-03.md#L1-L7)).
+- **HO 04 90 2010-10** is marked superseded by **HO 04 90 2027-01** for policies effective on or after 2027-01-01. **HO 04 90 2027-01 supersedes HO 04 90 2010-10** for that later interval; the 2010-10 wording remains the applicable edition for an earlier policy ([HO 04 90 2010-10](repo://forms/HO/MS/HO-04-90/2010-10.md#L1-L9), [HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L1-L7)).
+
+The effective date is a selection rule, not permission to assume attachment. The endorsement training requires review of the request, insured, location, policy term, schedules, and complete package; a listed-but-missing endorsement needs correction or a reliable issued copy ([Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L65-L87), [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L201-L215)). The 2027 endorsement itself says it is effective only when attached and forms part of the policy, and separately says that attachment does not create a separate contract ([HO 04 90 2027-01 attachment](repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36), [HO 04 90 2027-01 contract relationship](repo://forms/HO/MS/HO-04-90/2027-01.md#L55-L60)).
 
 ```mermaid
 flowchart TD
-    A["Policy line state effective date and Declarations"] --> B["Find candidate HO 3 and HO 04 90 editions"]
-    B --> C{"Edition effective for policy date"}
-    C -->|"no"| D["Retain the historical frozen edition"]
-    C -->|"yes"| E["Verify filed wording and edition"]
+    A["Line state effective date Declarations and issued package"] --> B["Route to candidate base and state form"]
+    B --> C{"Does the edition match the policy date"}
+    C -->|"no"| D["Preserve the applicable older frozen edition"]
+    C -->|"yes"| E["Verify the candidate edition"]
     D --> E
-    E --> F{"Attached package complete"}
-    F -->|"no"| G["Hold interpretation and obtain evidence"]
-    F -->|"yes"| H["Read HO 3 with endorsement and Declarations"]
-    H --> I["Apply state contract form"]
-    I --> J["Apply regulatory and internal controls separately"]
-    J --> K["Interpret assembled contract"]
+    E --> F{"Are attachments schedules and referenced pages complete"}
+    F -->|"no"| G["Hold interpretation obtain package or escalate"]
+    F -->|"yes"| H["Read base form with attached endorsements"]
+    H --> I["Apply the applicable state amendatory form"]
+    I --> J["Apply bulletin constraints to operations"]
+    J --> K["Run manual and appetite controls separately"]
+    K --> L["Interpret the assembled contract"]
 ```
 
-*This flow shows date routing, historical preservation, attachment verification, contract composition, and the separation of state and internal controls.*
+*This flow shows routing, date selection, package completeness, contract composition, state implementation, regulatory administration, and separate internal controls before coverage interpretation.*
 
-## How HO 04 90 composes with HO-3
+### Selection procedure
 
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-3/2024-03.md#L593-L601] heading anchor "L593-L601" does not exist in "../../forms/HO/MS/HO-3/2024-03.md". Fix the href or restore the target, then delete this comment. -->
-HO-3 2024-03 excludes water damage from flood and surface water in X.7 and excludes sewer, drain, and sump backup in X.8-X.9. Its X.8 cross-reference recognizes an attached water-backup endorsement; the exclusion is not itself a grant ([HO-3 2024-03](../../forms/HO/MS/HO-3/2024-03.md#L593-L601)).
+1. **Identify the transaction.** Record the line, state, policy-effective date, Declarations, issued form labels, complete attachment package, schedules, and referenced pages. Match each endorsement to the named insured, policy term, location, and insured property. If labels conflict, a schedule is blank, or an attachment is missing, preserve the uncertainty and obtain the issued package rather than choosing the wording that produces the preferred result ([Choosing the Governing Edition](repo://training/choosing-the-governing-edition.md#L109-L119), [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L65-L107), [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L193-L227)).
+2. **Select the base edition.** Choose the edition whose effective interval contains the policy-effective date. Do not substitute the current repository file for a superseded edition that governed the policy when written ([HO-3 2018-09](repo://forms/HO/MS/HO-3/2018-09.md#L1-L9), [HO-3 2024-03](repo://forms/HO/MS/HO-3/2024-03.md#L1-L7)).
+3. **Select and verify each endorsement.** Match its edition and effective application to the transaction, confirm it is actually attached to the complete issued package, verify any completed schedule, and read the endorsement with the base form and other attachments. Attachment is required before the endorsement’s contract language can be used ([HO 04 90 2010-10](repo://forms/HO/MS/HO-04-90/2010-10.md#L13-L33), [HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L15-L39), [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L173-L207)).
+4. **Add the state contract overlay.** Read the state form’s scope and precedence terms with the base form and endorsements. Texas HO 01 45 says a conflicting term in its section governs, a nonconflicting term remains applicable, and the amendatory terms do not provide coverage unless expressly provided ([HO 01 45 2022-01](repo://forms/HO/TX/HO-01-45/2022-01.md#L13-L23)).
+5. **Apply the regulatory overlay to operations.** For Texas separate windstorm and hail deductibles, B-2021-08 requires clear identification, a stated trigger and calculation basis, policy-consistent application, supporting records, and at least 30 days’ written notice before a windstorm-deductible increase ([B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L19-L27), [B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L47-L71), [B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L153-L171)).
+6. **Run internal controls separately.** Before binding or renewing, apply delegated authority and referral rules, document the decision, and review every requested endorsement. Rule 400 requires supported, eligible, correctly matched attachments and referral for incomplete or conflicting information; it does not change the selected form’s coverage ([manual Rules 100.C-100.E](repo://manuals/underwriting/manual.md#L27-L43), [manual Rule 400](repo://manuals/underwriting/manual.md#L5089-L5129)).
 
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-04-90/2026-01.md#L1-L23] heading anchor "L1-L23" does not exist in "../../forms/HO/MS/HO-04-90/2026-01.md". Fix the href or restore the target, then delete this comment. -->
-**HO 04 90 2026-01 modifies HO-3 Section I Exclusions A.3** and covers direct physical loss to Coverage A, B, and C property caused by sewer or drain backup or sump, sump-pump, or related-equipment overflow or discharge, including mechanical breakdown. Its $10,000 limit is per policy period, is part of—not additional to—the Coverage A, B, and C limits, and may be higher only when the Declarations show a higher limit. A separate $1,000 deductible applies to each loss; the Section I deductible does not apply ([HO 04 90 2026-01](../../forms/HO/MS/HO-04-90/2026-01.md#L1-L23)).
+## Conflict resolution and document precedence
 
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-04-90/2026-01.md#L25-L47] heading anchor "L25-L47" does not exist in "../../forms/HO/MS/HO-04-90/2026-01.md". Fix the href or restore the target, then delete this comment. -->
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-04-90/2026-01.md#L49-L56] heading anchor "L49-L56" does not exist in "../../forms/HO/MS/HO-04-90/2026-01.md". Fix the href or restore the target, then delete this comment. -->
-The 2026 endorsement **preserves** its exclusions for flood, surface water, waves, tidal water, storm surge, body-of-water overflow, and below-surface water; HO-3 A.1 and A.2 continue in full. It adds a known-and-unremedied maintenance condition and, for a finished below-grade area, requires an installed and operable backwater valve or equivalent device at the time of loss. The latter requirement is new in 2026 and did not appear in 2010-10 ([HO 04 90 2026-01](../../forms/HO/MS/HO-04-90/2026-01.md#L25-L47)). Coverage A and B loss follows the attached policy’s settlement basis; Coverage C is actual cash value unless the endorsement Declarations say otherwise ([HO 04 90 2026-01](../../forms/HO/MS/HO-04-90/2026-01.md#L49-L56)).
+When documents overlap, resolve the relationship from the acting document’s operative language, not from a title, memorandum, or preferred outcome. **HO 04 90 2027-01 modifies HO-3 2024-03** within its attached scope: W.4 makes the endorsement control a conflict, W.5 applies the policy terms that it does not change, and W.6 confirms that it supplies no coverage beyond the endorsement and policy. Read the endorsement and base provision together, then give effect only to the stated write-back ([HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36), [HO-3 2024-03 water exclusions](repo://forms/HO/MS/HO-3/2024-03.md#L591-L601)).
 
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-04-90/2010-10.md#L13-L33] heading anchor "L13-L33" does not exist in "../../forms/HO/MS/HO-04-90/2010-10.md". Fix the href or restore the target, then delete this comment. -->
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-04-90/2010-10.md#L107-L113] heading anchor "L107-L113" does not exist in "../../forms/HO/MS/HO-04-90/2010-10.md". Fix the href or restore the target, then delete this comment. -->
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-04-90/2010-10.md#L157-L167] heading anchor "L157-L167" does not exist in "../../forms/HO/MS/HO-04-90/2010-10.md". Fix the href or restore the target, then delete this comment. -->
-For comparison, HO 04 90 2010-10 provides a $5,000 water-backup limit and $500 deductible and states that attachment forms part of the policy while preserving unmodified exclusions ([HO 04 90 2010-10](../../forms/HO/MS/HO-04-90/2010-10.md#L13-L33), [HO 04 90 2010-10](../../forms/HO/MS/HO-04-90/2010-10.md#L107-L113), [HO 04 90 2010-10](../../forms/HO/MS/HO-04-90/2010-10.md#L157-L167)). Do not carry the 2026 amounts, below-grade device condition, or Coverage C settlement rule backward into a 2010-10 policy. Likewise, do not carry 2027-01 wording into a 2026 policy merely because 2027 is the repository’s later edition.
+For Texas, **HO 01 45 2022-01 modifies the applicable HO-3 contract** only within the matters it addresses: T.2 gives its conflicting term precedence, T.3 reads compatible provisions together, and T.4 does not provide coverage unless expressly stated. It therefore preserves nonconflicting HO-3 and attached-endorsement terms rather than replacing the entire policy ([HO 01 45 2022-01](repo://forms/HO/TX/HO-01-45/2022-01.md#L13-L23), [HO-3 2024-03 agreement](repo://forms/HO/MS/HO-3/2024-03.md#L15-L39)). **HO 01 45 2022-01 implements Texas Bulletin B-2021-08** through its contractual windstorm-and-hail deductible, while the bulletin constrains disclosure and administration; neither document silently supplies a term missing from the other ([HO 01 45 deductible](repo://forms/HO/TX/HO-01-45/2022-01.md#L59-L91), [B-2021-08 requirements](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L47-L73)).
 
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-04-90/2027-01.md#L14-L36] heading anchor "L14-L36" does not exist in "../../forms/HO/MS/HO-04-90/2027-01.md". Fix the href or restore the target, then delete this comment. -->
-<!-- openwiki: broken internal link [../../forms/HO/MS/HO-3/2024-03.md#L593-L601] heading anchor "L593-L601" does not exist in "../../forms/HO/MS/HO-3/2024-03.md". Fix the href or restore the target, then delete this comment. -->
-HO 04 90 2027-01 **modifies** the applicable HO-3 when attached and controls conflicts while leaving unmodified policy provisions unchanged. It supplies its own water-backup scope, limit, deductible, and exclusions; therefore it must be read with the HO-3 exclusion it writes back, not substituted for the base policy ([HO 04 90 2027-01](../../forms/HO/MS/HO-04-90/2027-01.md#L14-L36), [HO-3 2024-03](../../forms/HO/MS/HO-3/2024-03.md#L593-L601)).
+For multiple endorsements, compare the complete package’s operative grants, exclusions, definitions, conditions, limits, deductibles, schedules, and effective dates. Do not stack or choose the broader wording merely because several forms address the same subject. Resolve duplicate or unsupported attachments through the approved correction process; if the operative language cannot be reasonably reconciled, escalate before making a final coverage conclusion ([Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L173-L215), [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L501-L517), [Manual Rule 400.Z-400.AB](repo://manuals/underwriting/manual.md#L5241-L5257)). **Manual Rule 400 constrains** whether an endorsement may attach, but it does not resolve a contract conflict or alter the issued form ([Manual Rule 100.B-100.D](repo://manuals/underwriting/manual.md#L21-L37), [Manual Rule 400.A-400.G](repo://manuals/underwriting/manual.md#L5091-L5131)).
 
-## State attachments and Illinois water-backup disclosures
+## How contract documents compose
 
-<!-- openwiki: broken internal link [../state-overlays/illinois.md#L37-L41] heading anchor "L37-L41" does not exist in "../state-overlays/illinois.md". Fix the href or restore the target, then delete this comment. -->
-For Illinois, the HO 01 12 amendatory endorsement is contract wording when attached. It controls an expressly changed provision and preserves an unaddressed provision; it does not provide coverage beyond an express grant or remove an exclusion without saying so ([Illinois overlay](../state-overlays/illinois.md#L37-L41)). Assemble HO-3, HO 04 90, HO 01 12, and the Declarations together. Do not treat the Illinois form’s water-backup disclosure language as a substitute for the attached HO 04 90 grant.
+### Base form and water-backup endorsement
 
-<!-- openwiki: broken internal link [../state-overlays/illinois.md#L67-L81] heading anchor "L67-L81" does not exist in "../state-overlays/illinois.md". Fix the href or restore the target, then delete this comment. -->
-<!-- openwiki: broken internal link [../state-overlays/illinois.md#L111-L115] heading anchor "L111-L115" does not exist in "../state-overlays/illinois.md". Fix the href or restore the target, then delete this comment. -->
-IDOI-2017-10 **constrains** Illinois disclosure and claims administration for applicable policies issued or renewed on or after 2017-10-02 and transactions that change water-backup treatment. The disclosure must accurately state whether coverage is included, limited, excluded, or available by endorsement, including material exclusions, conditions, limit, and separate deductible. Its $5,000 figure is a disclosure requirement in that bulletin, not a universal replacement for the limit in the attached contract ([Illinois overlay](../state-overlays/illinois.md#L67-L81)). On a claim, the bulletin requires policy-specific investigation and a written explanation of any denial, limitation, exclusion, condition, deductible, or reduction; those duties do not expand coverage ([Illinois overlay](../state-overlays/illinois.md#L111-L115)).
+The base form’s exclusion is the starting point. HO-3 2018-09 excludes water or waterborne material backing up through sewers, drains, or sumps and sump discharge or overflow in A.12 ([HO-3 2018-09 I.A A.12](repo://forms/HO/MS/HO-3/2018-09.md#L109-L111)). HO-3 2024-03 excludes flood and surface water and separately excludes sewer, drain, and sump water in X.7-X.9, while X.8 identifies an attached water-backup endorsement as the exception ([HO-3 2024-03 X.7-X.9](repo://forms/HO/MS/HO-3/2024-03.md#L593-L597)). **HO 04 90 2027-01 writes back HO-3 2024-03 X.8-X.9** for direct physical loss caused by Water Backup or Sump Discharge or Overflow, subject to its terms and $10,000 limit; it **preserves HO-3 2024-03 exclusions** outside that stated scope. The endorsement itself excludes flood and surface water and does not establish a separate contract ([HO 04 90 2027-01 W.0-W.5](repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36), [HO 04 90 2027-01 W.12-W.13](repo://forms/HO/MS/HO-04-90/2027-01.md#L55-L60), [HO 04 90 2027-01 coverage and exclusions](repo://forms/HO/MS/HO-04-90/2027-01.md#L256-L282), [HO-3 2024-03 X.7-X.9](repo://forms/HO/MS/HO-3/2024-03.md#L593-L597)).
 
-## Contract versus internal controls
+The 2010-10 endorsement has the same assembly boundary: it is attached to and forms part of the policy, changes policy provisions only as expressly stated, and preserves other exclusions. Its water-backup limit is $5,000 and its endorsement deductible is $500 ([HO 04 90 2010-10 W.0-W.1](repo://forms/HO/MS/HO-04-90/2010-10.md#L15-L33), [HO 04 90 2010-10 limit](repo://forms/HO/MS/HO-04-90/2010-10.md#L107-L113), [HO 04 90 2010-10 deductible](repo://forms/HO/MS/HO-04-90/2010-10.md#L157-L167)). **HO 04 90 2027-01 modifies the endorsement’s limit and deductible relative to HO 04 90 2010-10** to $10,000 and $1,000, but that comparison does not backdate the 2027 amounts to a policy carrying 2010-10 ([HO 04 90 2027-01 metadata](repo://forms/HO/MS/HO-04-90/2027-01.md#L1-L7), [HO 04 90 2027-01 limit](repo://forms/HO/MS/HO-04-90/2027-01.md#L256-L265), [HO 04 90 2027-01 deductible](repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L407), [HO 04 90 2010-10 metadata](repo://forms/HO/MS/HO-04-90/2010-10.md#L1-L9)).
 
-<!-- openwiki: broken internal link [../state-overlays/illinois.md#L117-L121] heading anchor "L117-L121" does not exist in "../state-overlays/illinois.md". Fix the href or restore the target, then delete this comment. -->
-The underwriting manual **constrains** eligibility, referral, authority, documentation, and attachment before binding. Illinois Rule 570 requires referral when the requested water-backup limit exceeds $15,000 and flags recurring intrusion, defective plumbing, unreliable sump systems, and related risks. These are acceptance controls, not hidden policy limits ([Illinois overlay](../state-overlays/illinois.md#L117-L121)). Similarly, a memorandum may explain why an edition changed, but the filed endorsement supplies the operative limit, deductible, conditions, and exclusions.
+### Texas amendatory form and bulletin
+
+A state form and a regulator bulletin are complementary but different. **HO 01 45 Texas 2022-01 implements Texas Bulletin B-2021-08** through a separate Windstorm and Hail Deductible shown in the Declarations, a 1%–10% contractual range, an applicable-limit calculation, and mixed-cause provisions ([HO 01 45 T.1-T.16](repo://forms/HO/TX/HO-01-45/2022-01.md#L59-L91), [B-2021-08 B.2.1-B.2.10](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L47-L71)). **B-2021-08 constrains HO 01 45 and related policy communications** by requiring clear disclosure at application, issuance, and renewal, consistent records, policy-based claim application, and at least 30 days’ notice before a windstorm-deductible increase ([B-2021-08 B.1.3-B.1.6](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L19-L27), [B-2021-08 B.3.9-B.3.18](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L153-L171), [HO 01 45 T.1-T.5](repo://forms/HO/TX/HO-01-45/2022-01.md#L59-L71)). The bulletin’s regulatory thresholds must not be silently substituted for the contractual terms in the attached form.
+
+### Memoranda, training, and internal guidance
+
+The filing memorandum for HO-3 2018-09 describes revision reasons such as clarifying coverage conditions, exclusions, exceptions, valuation, deductibles, and insured responsibilities. It is interpretation, not a second policy form; the 2018 filed wording supplies the operative result ([HO-3 2018-09 memorandum](repo://memoranda/HO-3-2018-09.md#L13-L99), [HO-3 2018-09 form](repo://forms/HO/MS/HO-3/2018-09.md#L13-L39)). The HO-3 2024-03 memorandum likewise explains deductible wording and multi-cause handling, but the filed 2024-03 form remains the authority ([HO-3 2024-03 memorandum](repo://memoranda/HO-3-2024-03.md#L23-L31), [HO-3 2024-03 form](repo://forms/HO/MS/HO-3/2024-03.md#L15-L39)). The HO 04 90 2027-01 memorandum similarly explains changes made for clarity, organization, terminology, and deductible wording; it does not replace the 2027 endorsement’s coverage, limit, deductible, or exclusions ([HO 04 90 memorandum](repo://memoranda/HO-04-90-2027-01.md#L13-L31), [HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L41-L81)).
+
+Training supports the review method: read the complete endorsement, compare it with the request and policy package, and escalate missing or conflicting material. It does not establish a live policy’s coverage ([Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L15-L23), [Choosing the Governing Edition](repo://training/choosing-the-governing-edition.md#L35-L49)). The appetite guide and manual operate before binding. **Manual Rule 400 constrains endorsement attachment** by requiring supported, eligible, correctly matched, complete, and intent-consistent requests; **the manual preserves the boundary that carrier-issued terms determine coverage** ([manual Rules 100.B-100.E](repo://manuals/underwriting/manual.md#L21-L43), [manual Rule 400.A-400.G](repo://manuals/underwriting/manual.md#L5091-L5129), [HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L15-L39)). For Texas, Rule 510 adds internal authority and risk controls: Coverage A up to $800,000 may be within line-underwriter authority, amounts through $1,200,000 require senior referral, water-backup limits over $25,000 require referral, a 15-year roof inspection is required, and the Texas address must be verified. These are not hidden policy limits ([manual Rule 510](repo://manuals/underwriting/manual.md#L6227-L6263)).
+
+## Worked assemblies
+
+These examples assume the listed forms are actually issued and attached. They demonstrate the selection method, not a substitute for the policy record.
+
+### Texas HO-3 policy effective 2023-06-01
+
+- **Base:** HO-3 2018-09, because the policy date precedes the 2024-03 boundary. **HO-3 2024-03 supersedes HO-3 2018-09** only for its later interval ([HO-3 2018-09](repo://forms/HO/MS/HO-3/2018-09.md#L1-L9), [HO-3 2024-03](repo://forms/HO/MS/HO-3/2024-03.md#L1-L7)).
+- **Water backup:** HO 04 90 2010-10, because 2027-01 is not the applicable endorsement interval. **HO 04 90 2010-10 modifies the HO-3 2018-09 water exclusions** for its stated coverage and preserves policy exclusions not changed by the endorsement; use its $5,000 limit and $500 deductible ([HO-3 2018-09 A.12](repo://forms/HO/MS/HO-3/2018-09.md#L109-L111), [HO 04 90 2010-10](repo://forms/HO/MS/HO-04-90/2010-10.md#L15-L33), [HO 04 90 2010-10 limit](repo://forms/HO/MS/HO-04-90/2010-10.md#L107-L113), [HO 04 90 2010-10 deductible](repo://forms/HO/MS/HO-04-90/2010-10.md#L157-L167)).
+- **Texas overlay:** HO 01 45 2022-01, if attached, implements the Texas bulletin’s separate-deductible requirements. The bulletin constrains disclosure and administration but does not replace the form’s contractual wording ([HO 01 45](repo://forms/HO/TX/HO-01-45/2022-01.md#L59-L91), [B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L19-L27)).
+- **Pre-bind boundary:** the appetite guide and Rules 400 and 510 constrain eligibility, authority, referral, and attachment; they do not modify the HO-3 or HO 04 90 coverage terms ([Texas appetite guide](repo://guidelines/appetite/tx-homeowners.md#L13-L35), [manual Rule 400](repo://manuals/underwriting/manual.md#L5089-L5129), [manual Rule 510](repo://manuals/underwriting/manual.md#L6227-L6263)).
+
+### Texas HO-3 policy effective 2027-02-01
+
+- **Base:** HO-3 2024-03. **HO-3 2024-03 supersedes HO-3 2018-09** for this effective period; do not carry forward the older base wording ([HO-3 2024-03](repo://forms/HO/MS/HO-3/2024-03.md#L1-L7), [HO-3 2018-09 supersession](repo://forms/HO/MS/HO-3/2018-09.md#L8-L9)).
+- **Water backup:** HO 04 90 2027-01, if attached. **HO 04 90 2027-01 writes back HO-3 2024-03 X.8-X.9** for the stated water-backup and sump events, preserves unmodified policy terms, and supplies the $10,000 limit and $1,000 deductible ([HO-3 2024-03 X.7-X.9](repo://forms/HO/MS/HO-3/2024-03.md#L593-L597), [HO 04 90 2027-01 attachment and scope](repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36), [HO 04 90 2027-01 limit](repo://forms/HO/MS/HO-04-90/2027-01.md#L256-L265), [HO 04 90 2027-01 deductible](repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L407)).
+- **Texas overlay and operations:** HO 01 45 2022-01 implements the state contract mechanism, B-2021-08 constrains disclosure and administration, and current internal guidance constrains binding and attachment. These layers remain distinct ([HO 01 45](repo://forms/HO/TX/HO-01-45/2022-01.md#L13-L23), [B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L153-L171), [manual Rule 400](repo://manuals/underwriting/manual.md#L5091-L5129)).
 
 ## Failure checks
 
-- **Wrong edition:** reselect by policy effective date and preserve the historical form.
-- **Assumed attachment:** obtain the complete issued package; a schedule or system label alone is insufficient.
-- **Backdated 2026 terms:** do not apply the $10,000 limit, $1,000 deductible, backwater-valve condition, or Coverage C actual-cash-value rule to 2010-10 unless the issued policy actually contains the applicable edition.
-- **Disclosure as coverage:** use the filed endorsement and Declarations to determine coverage; use IDOI-2017-10 for disclosure and claims duties.
-- **State or manual overreach:** apply HO 01 12 only within its contract wording and keep Rule 570 and other internal guidance separate from the coverage conclusion.
+- **Wrong edition:** a quote, renewal, or claim file uses HO-3 2024-03 for a policy effective before 2024-03-01, or HO 04 90 2027-01 before 2027-01-01. Re-select by the transaction and preserve the older frozen edition ([README](repo://README.md#L35-L37), [Choosing the Governing Edition](repo://training/choosing-the-governing-edition.md#L251-L265)).
+- **Unattached write-back:** someone applies HO 04 90 coverage because the title or schedule appears in a system, without confirming the endorsement is attached. Obtain the complete issued package; the endorsement’s attachment is part of its contract boundary ([Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L81-L87), [HO 04 90 2027-01](repo://forms/HO/MS/HO-04-90/2027-01.md#L15-L39)).
+- **Authority inversion:** an adjuster or underwriter uses a bulletin, memorandum, training page, appetite guide, or manual as though it changes the contract. Return to the applicable issued form and endorsement; use the other document for its regulatory, interpretive, or internal function ([Guidance Versus Contract Language](repo://training/guidance-versus-contract.md#L73-L83), [manual Rule 100.D](repo://manuals/underwriting/manual.md#L33-L37)).
+- **Regulatory-contract mismatch:** a Texas separate deductible appears in declarations or communications without a supporting policy provision, trigger, calculation basis, and record. B-2021-08 requires consistency and prohibits applying a deductible not permitted by the policy ([B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L19-L27), [B-2021-08](repo://bulletins/TX/b-2021-08-windstorm-deductibles.md#L63-L89)).
 
-For the base form, see [HO-3 forms](../coverage/forms/ho-3.md). For the Illinois contract and regulatory overlay, see [Illinois State Overlay](../state-overlays/illinois.md). For internal attachment and deductible controls, see [Endorsements and Deductibles](../underwriting/manual/endorsements-and-deductibles.md).
+For line-specific editions, continue to [HO-3 forms](/openwiki/coverage/forms/ho-3.md). For state requirements, see [Texas state overlays](/openwiki/state-overlays/texas.md). For internal attachment and referral decisions, see [endorsements and deductibles](/openwiki/underwriting/manual/endorsements-and-deductibles.md) and keep those decisions separate from the contract analysis.

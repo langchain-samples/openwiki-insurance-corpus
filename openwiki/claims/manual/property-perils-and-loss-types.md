@@ -14,6 +14,8 @@ sources:
     resource: repo://forms/HO/MS/HO-04-27/2016-05.md
   - id: openwiki-source-0de2907066d0f023c5c2e68b
     resource: repo://forms/HO/MS/HO-04-81/2018-09.md
+  - id: openwiki-source-36bcf8e9754ce8cd9b63db52
+    resource: repo://forms/HO/MS/HO-04-90/2026-01.md
   - id: openwiki-source-6a71dbfe57881e21b8a0e5ea
     resource: repo://forms/HO/MS/HO-04-90/2027-01.md
   - id: openwiki-source-5802aac0ff04777c19a4717f
@@ -28,17 +30,17 @@ sources:
     resource: repo://guidelines/claims/water-loss-handling.md
   - id: openwiki-source-77e27410bda4d59c2b779d5e
     resource: repo://manuals/claims/manual.md
-generated: { by: "openwiki/0.5.2", at: "2026-09-19T07:29:25.602Z" }
+generated: { by: "openwiki/0.6.1", at: "2026-10-06T03:09:51.060Z" }
 verified:
-  - by: openwiki/0.5.2
-    at: 2026-09-19T07:29:25.602Z
+  - by: openwiki/0.6.1
+    at: 2026-10-06T03:09:51.060Z
 ---
 
 # Property Perils and Loss Types
 
 This page is a **claims-handling index**, not a coverage grant. The claims manual supplies the investigation, evidence, mitigation, valuation, authority, payment, and escalation process. The policy form and any applicable endorsement supply coverage, exclusions, limits, deductibles, conditions, and settlement terms. Internal guidance makes the same boundary explicit: it cannot create, expand, restrict, or waive coverage ([water-loss guidance](repo://guidelines/claims/water-loss-handling.md#L13-L17); [roof guidance](repo://guidelines/claims/roof-claim-handling.md#L14-L21); [manual, Chapter 1](repo://manuals/claims/manual.md#L13-L19)).
 
-Always verify the policy and endorsement edition before relying on a provision. The examples below use HO-3 (2024-03), DP-3 (2026-01), HO 04 27 (2016-05), HO 04 81 (2018-09), HO 04 90 (2027-01), and HO 23 74 (2025-05), with California CDI-2022-03 and Colorado DOI-2022-08 as state-rule examples; they are not substitutes for the form, endorsement, or law applicable to the loss.
+Always verify the policy and endorsement edition before relying on a provision. The examples below use HO-3 (2024-03), DP-3 (2026-01), HO 04 27 (2016-05), HO 04 81 (2018-09), HO 04 90 (2026-01), and HO 23 74 (2025-05), with California CDI-2022-03 and Colorado DOI-2022-08 as state-rule examples; they are not substitutes for the form, endorsement, or law applicable to the loss.
 
 ## Common property-loss lifecycle
 
@@ -77,7 +79,7 @@ Start with the source, path, duration, and affected property. Distinguish an acc
 
 The HO-3 example separately excludes flood, surface water, below-surface water, and sewer, drain, or sump backup unless a water-backup endorsement is attached ([HO-3 X.7-X.8](repo://forms/HO/MS/HO-3/2024-03.md#L681-L685)). The 2016-05 HO 04 27 form must therefore be checked when attached rather than assumed from the base form; it describes limited water-damage coverage and retains exclusions for repeated leakage, maintenance, defective work, seepage, and specified external or drainage causes ([HO 04 27](repo://forms/HO/MS/HO-04-27/2016-05.md#L41-L85); [HO 04 27 exclusions](repo://forms/HO/MS/HO-04-27/2016-05.md#L207-L319)).
 
-For sewer, drain, sump, or related backup, consult the attached edition of HO 04 90. In the 2027-01 example, the endorsement covers direct physical loss to insured property caused by water backing up through a sewer or drain, or by accidental water discharging or overflowing from a sump, sump pump, or related equipment; it also includes reasonable protection and water-removal expenses when necessary to prevent further covered damage ([HO 04 90 W.1](repo://forms/HO/MS/HO-04-90/2027-01.md#L62-L117); [HO 04 90 W.2](repo://forms/HO/MS/HO-04-90/2027-01.md#L254-L316)). The endorsement’s $10,000 limit is the maximum for loss caused by water backup or sump discharge or overflow, regardless of the number of insured persons, claims, or covered-property items; covered protection and removal expenses are included within that limit, not paid as an additional amount ([HO 04 90 W.2](repo://forms/HO/MS/HO-04-90/2027-01.md#L254-L316)). The endorsement also requires the loss to occur during the policy period, keeps other policy exclusions and covered-property requirements in force, and provides a $1,000 deductible for each covered water-backup loss ([HO 04 90 W.1 and W.2](repo://forms/HO/MS/HO-04-90/2027-01.md#L247-L252); [HO 04 90 W.3](repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L412)). Do not infer separate limits from the number of properties or claims, or apply this endorsement without confirming that it is attached.
+For sewer, drain, sump, or related backup, consult the attached edition of HO 04 90. In the 2026-01 edition, the endorsement covers direct physical loss to property described in Coverage A, B, and C caused by water or waterborne material backing up through sewers or drains, or overflowing or discharging from a sump, sump pump, or related equipment, including when mechanical breakdown causes the event ([HO 04 90 W.1](repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L11)). Its $10,000 sublimit is the maximum for all loss under the endorsement in one policy period unless a higher Declarations limit applies, and it is part of—not additional to—the applicable Coverage A, B, and C limits ([HO 04 90 W.2](repo://forms/HO/MS/HO-04-90/2026-01.md#L13-L18)). A separate $1,000 deductible applies to each endorsement loss, replacing the Section I deductible for that loss ([HO 04 90 W.3](repo://forms/HO/MS/HO-04-90/2026-01.md#L20-L23)). Confirm attachment and the loss date: this edition replaces 2010-10 for policies written on or after 2026-01-01 ([HO 04 90](repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L4)). It does not broaden the water peril to flood, surface water, waves, tidal water, storm surge, body-of-water overflow, or water below the ground surface; those exclusions remain in full under W.4 ([HO 04 90 W.4](repo://forms/HO/MS/HO-04-90/2026-01.md#L25-L33)). The endorsement also excludes a known failure to maintain the serving sewer, drain, sump, or pump ([HO 04 90 W.5](repo://forms/HO/MS/HO-04-90/2026-01.md#L35-L40)) and requires an operable backwater valve or equivalent device for finished areas below grade ([HO 04 90 W.6](repo://forms/HO/MS/HO-04-90/2026-01.md#L42-L47)).
 
 ### Evidence and scope checklist
 

@@ -1,14 +1,14 @@
 {
  "schema_version": 1,
- "corpus_sha": "b09b85660af8f91fe5e7023860d587a7e3307999",
- "provisions_fingerprint": "50db08c2fb128007e9a1c8eaae9b930f2b4ee209f6041f94bda19632e1b29aa0",
+ "corpus_sha": "66a6fe987d6a114de5f1cb473c0418e860dce67d",
+ "provisions_fingerprint": "a0e3dbab50098bea43ba83c27cc1e7bac77c5b3ee6a2bccc08c5b65d4a9c6a84",
  "counts": {
   "amends": 36,
   "attaches_to": 101,
-  "cites": 36880,
+  "cites": 36949,
   "lists": 70,
   "refers_to": 76,
-  "supersedes": 16
+  "supersedes": 17
  },
  "edges": [
   {
@@ -137877,6 +137877,489 @@
    "label": "repo://memoranda/HO-3-2024-03.md#L13-L31"
   },
   {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p4",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p5",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p6",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p7",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p8",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p9",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p10",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p11",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p12",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p13",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/attaching-endorsements.md#L.2.p14",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/attaching-endorsements.md#L65-L87"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/choosing-the-governing-edition.md#L.2.25",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/choosing-the-governing-edition.md#L109-L119"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/choosing-the-governing-edition.md#L.2.26",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/choosing-the-governing-edition.md#L109-L119"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/choosing-the-governing-edition.md#L.2.27",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/choosing-the-governing-edition.md#L109-L119"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/choosing-the-governing-edition.md#L.2.28",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/choosing-the-governing-edition.md#L109-L119"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/choosing-the-governing-edition.md#L.2.29",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/choosing-the-governing-edition.md#L109-L119"
+  },
+  {
+   "from": "claim_427710bfdd134c4a86e98d7c3ede1850",
+   "to": "training/choosing-the-governing-edition.md#L.2.30",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/choosing-the-governing-edition.md#L109-L119"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L1-L9"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.2/W.1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L107-L113"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.2/W.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L107-L113"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.2/W.3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L107-L113"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.3/W.1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L157-L167"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.3/W.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L157-L167"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.3/W.3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L157-L167"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.3/W.4",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L157-L167"
+  },
+  {
+   "from": "claim_a61a054050934a069e2feda64359e049",
+   "to": "forms/HO/MS/HO-04-90/2010-10.md#W.3/W.5",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2010-10.md#L157-L167"
+  },
+  {
+   "from": "claim_4d790048f7ae4cf8b7912de7b7459f41",
+   "to": "forms/HO/MS/HO-04-90/2026-01.md#W.2 Sublimit.p1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L23"
+  },
+  {
+   "from": "claim_4d790048f7ae4cf8b7912de7b7459f41",
+   "to": "forms/HO/MS/HO-04-90/2026-01.md#W.3 Deductible.p1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L23"
+  },
+  {
+   "from": "claim_b53c5e62136a46ce9ecf562eb67fff2e",
+   "to": "forms/HO/MS/HO-04-90/2026-01.md#W.4 What Remains Excluded.p1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2026-01.md#L25-L33"
+  },
+  {
+   "from": "claim_b53c5e62136a46ce9ecf562eb67fff2e",
+   "to": "forms/HO/MS/HO-04-90/2026-01.md#W.4 What Remains Excluded.p2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2026-01.md#L25-L33"
+  },
+  {
+   "from": "claim_b53c5e62136a46ce9ecf562eb67fff2e",
+   "to": "forms/HO/MS/HO-04-90/2026-01.md#W.6 Backflow Prevention Requirement.p1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2026-01.md#L42-L47"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.0/W.1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.0/W.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.0/W.3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.0/W.4",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.0/W.5",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.0/W.6",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.2/W.1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L256-L265"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.2/W.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L256-L265"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.3/W.1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L407"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.3/W.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L407"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.3/W.3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L407"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.4",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.5",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.6",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.7",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.8",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.9",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_8e7e27309d3548e999ec675abc4fc395",
+   "to": "forms/HO/MS/HO-04-90/2027-01.md#W.1/W.10",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L103"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.1.1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L15-L23"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.1.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L15-L23"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.1.3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L15-L23"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.1.4",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L15-L23"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.1.5",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L15-L23"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.1",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.2",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.3",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.4",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.5",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.6",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.7",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.8",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.9",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.10",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.11",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
+   "from": "claim_661477949ad24113a59eab4f6642bef1",
+   "to": "training/guidance-versus-contract.md#L.2.12",
+   "type": "cites",
+   "via": "claims",
+   "label": "repo://training/guidance-versus-contract.md#L61-L83"
+  },
+  {
    "from": "claim_6c7b1111c26745c6ba7d3fa67596dfec",
    "to": "bulletins/CA/cdi-2022-03-earthquake-offer.md#B.2.1",
    "type": "cites",
@@ -258753,6 +259236,13 @@
    "label": "Edition 2020-11 supersedes 2012-02"
   },
   {
+   "from": "forms/HO/MS/HO-04-90/2010-10.md",
+   "to": "forms/HO/MS/HO-04-90/2026-01.md",
+   "type": "supersedes",
+   "via": "structure",
+   "label": "Edition 2010-10 supersedes ?"
+  },
+  {
    "from": "forms/HO/MS/HO-04-90/2027-01.md",
    "to": "forms/HO/MS/HO-04-90/2010-10.md",
    "type": "supersedes",
@@ -260593,6 +261083,7 @@
    "edition": "2010-10",
    "effective": "2010-10-01"
   },
+  "forms/HO/MS/HO-04-90/2026-01.md": {},
   "forms/HO/MS/HO-04-90/2027-01.md": {
    "type": "endorsement",
    "line": "HO-3",
@@ -261390,6 +261881,12 @@
   "forms/HO/MS/HO-04-90/2010-10.md#W.6": "W.6 — Special Requirements",
   "forms/HO/MS/HO-04-90/2010-10.md#W.7": "W.7 — Loss Settlement",
   "forms/HO/MS/HO-04-90/2010-10.md#W.8": "W.8 — Definitions",
+  "forms/HO/MS/HO-04-90/2026-01.md#W.2 Sublimit": "W.2 Sublimit",
+  "forms/HO/MS/HO-04-90/2026-01.md#W.3 Deductible": "W.3 Deductible",
+  "forms/HO/MS/HO-04-90/2026-01.md#W.4 What Remains Excluded": "W.4 What Remains Excluded",
+  "forms/HO/MS/HO-04-90/2026-01.md#W.5 Maintenance Condition": "W.5 Maintenance Condition",
+  "forms/HO/MS/HO-04-90/2026-01.md#W.6 Backflow Prevention Requirement": "W.6 Backflow Prevention Requirement",
+  "forms/HO/MS/HO-04-90/2026-01.md#W.7 Loss Settlement": "W.7 Loss Settlement",
   "forms/HO/MS/HO-04-90/2027-01.md#W.0": "W.0 — Preamble and Attachment",
   "forms/HO/MS/HO-04-90/2027-01.md#W.1": "W.1 — Coverage Provided",
   "forms/HO/MS/HO-04-90/2027-01.md#W.2": "W.2 — Limit of Liability",

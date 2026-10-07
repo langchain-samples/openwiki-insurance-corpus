@@ -10,9 +10,8 @@ set -euo pipefail
 POC="${1:-../openwiki-insurance-poc}"
 here="$(cd "$(dirname "$0")" && pwd)"
 rm -rf "$here/vendor/contracts" "$here/vendor/corpus" "$here/vendor/tools"
-for rel in contracts/__init__.py contracts/corpus_manifest.py contracts/corpus_paths.py \
-           contracts/evidence_anchor.py contracts/relation_types.py \
-           corpus/__init__.py corpus/snapshot/__init__.py corpus/snapshot/loader.py \
+for rel in corpus/__init__.py corpus/paths.py corpus/integrity.py corpus/anchors.py corpus/relations.py \
+           corpus/snapshot/__init__.py corpus/snapshot/loader.py \
            corpus/indexes/__init__.py corpus/indexes/claims.py corpus/indexes/edges.py corpus/indexes/provisions.py; do
   mkdir -p "$here/vendor/$(dirname "$rel")"
   cp "$POC/agent/$rel" "$here/vendor/$rel"

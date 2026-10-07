@@ -11,7 +11,7 @@ import hashlib
 import json
 from dataclasses import dataclass, field
 
-from contracts.evidence_anchor import parse_resource
+from corpus.anchors import parse_resource
 
 SIDECAR_PREFIX = "openwiki/.claims/"
 
@@ -126,7 +126,7 @@ def relation_edges(index: ClaimsIndex) -> list[dict]:
 
     Shared by find_relations and the workflow's index builder.
     """
-    from contracts.relation_types import normalize
+    from corpus.relations import normalize
 
     edges: dict[tuple[str, str], dict] = {}
     for claim in index.claims:

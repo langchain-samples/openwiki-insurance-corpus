@@ -19,7 +19,7 @@ from typing import Literal
 
 RESOURCE_RE = re.compile(r"^repo://([^#]+)#L(\d+)-L(\d+)$")
 
-#: As contracts/corpus_paths.py writes it (a test keeps the two in step). The one insertion
+#: As corpus/paths.py writes it (a test keeps the two in step). The one insertion
 #: the corpus makes inside a document, so the one the verifier can see through.
 SUPERSEDED_MARKER_RE = re.compile(r"^> (?:\*\*)?SUPERSEDED(?:\*\*)? by .+")
 

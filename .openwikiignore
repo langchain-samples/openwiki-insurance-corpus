@@ -22,6 +22,9 @@ demo/
 # corpus change and force a full 20-page regeneration.
 .github/
 
+# Git's own ignore list (Python bytecode from the vendored scripts).
+.gitignore
+
 # Instructions addressed to coding agents working ON this repo, as opposed to
 # the policy documents the wiki is built FROM.
 AGENTS.md

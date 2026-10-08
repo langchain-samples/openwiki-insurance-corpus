@@ -14,6 +14,8 @@ sources:
     resource: repo://bulletins/TX/b-2019-02-prompt-payment.md
   - id: openwiki-source-38049e374f54d1eb9a15f4ef
     resource: repo://bulletins/TX/b-2021-08-windstorm-deductibles.md
+  - id: openwiki-source-36bcf8e9754ce8cd9b63db52
+    resource: repo://forms/HO/MS/HO-04-90/2026-01.md
   - id: openwiki-source-6a71dbfe57881e21b8a0e5ea
     resource: repo://forms/HO/MS/HO-04-90/2027-01.md
   - id: openwiki-source-5802aac0ff04777c19a4717f
@@ -60,10 +62,10 @@ sources:
     resource: repo://training/choosing-the-governing-edition.md
   - id: openwiki-source-a6e7a7f52df2ed58605a3898
     resource: repo://training/guidance-versus-contract.md
-generated: { by: "openwiki/0.6.1", at: "2026-10-07T07:41:42.292Z" }
+generated: { by: "openwiki/0.6.1", at: "2026-10-08T20:20:37.274Z" }
 verified:
   - by: openwiki/0.6.1
-    at: 2026-10-07T07:41:42.292Z
+    at: 2026-10-08T20:20:37.274Z
 ---
 
 # Coverage Wiki Quickstart
@@ -130,6 +132,14 @@ For Texas, Bulletin B-2021-08 requires clear and consistent administration and d
 Use the policy-effective date and issued policy record to select the base form and endorsement editions. Confirm the wording itself, declarations, schedules, and complete attachment package; do not substitute the newest repository file, specimen, quote, or familiar form title for the wording issued with the policy ([governing edition](repo://training/choosing-the-governing-edition.md#L61-L83)). Frozen forms and regulator bulletins remain live by edition, while guidelines and manuals are living guidance revised in place; an older form edition continues to govern policies written under it ([source lifecycle](repo://README.md#L33-L41), [edition markers](repo://README.md#L53-L60)).
 
 Use [Editions, Endorsements, and State Attachments](policy-assembly/editions-and-state-attachments.md) when the answer composes documents. Record line, state, effective date, declarations, form labels, selected limits and deductibles, and the coverage part or damaged interest before interpreting the wording.
+
+### Newly added HO 04 90 2026-01 route
+
+For an HO-3 policy written on or after **2026-01-01**, treat HO 04 90 2026-01 as the candidate edition, then verify that the complete issued package actually attaches it; the form itself says it replaces 2010-10 for that interval ([HO 04 90 2026-01](repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L5)). The frozen edition remains live for policies written under it: do not carry the 2026 wording, amounts, or conditions backward to an older attached edition ([source lifecycle](repo://README.md#L33-L41)).
+
+If attached, route the contract question to [Water Backup and Sump Overflow](coverage/perils/water-backup.md): the endorsement writes back direct physical loss to Coverage A, B, and C property from sewer or drain backup or sump discharge or overflow, including equipment breakdown, subject to a $10,000-per-policy-period sublimit unless Declarations show higher and a separate $1,000 deductible ([HO 04 90 2026-01](repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L23)). It preserves flood, surface-water, and below-ground-water exclusions, imposes the known-maintenance condition, and requires an operable backwater valve or equivalent for finished below-grade areas ([HO 04 90 2026-01](repo://forms/HO/MS/HO-04-90/2026-01.md#L25-L47)). Coverage C is settled at actual cash value unless the Declarations state otherwise ([HO 04 90 2026-01](repo://forms/HO/MS/HO-04-90/2026-01.md#L49-L56)).
+
+Then route work to [Water Loss Handling](claims/guidelines/water-loss-handling.md) for internal intake, mitigation, evidence, causation, and payment workflow, and to [Intake, Investigation, and Mitigation](claims/manual/intake-investigation-and-mitigation.md) for manual checkpoints. Those pages constrain operations; they do not create, expand, restrict, or waive the contract. Return to [Editions, Endorsements, and State Attachments](policy-assembly/editions-and-state-attachments.md) for attachment reconciliation, state wording, and final assembly. The form modifies the base contract; claims and underwriting guidance constrains handling and eligibility rather than supplying coverage ([claims boundary](repo://openwiki/claims/guidelines/water-loss-handling.md#L12-L16), [authority layers](repo://openwiki/policy-assembly/editions-and-state-attachments.md#L15-L26)).
 
 Use a filing memorandum to locate the meaningful edition delta, not to establish the result. For example, the HO-3 2024-03 memorandum explains revised deductible, multiple-cause, water-damage, settlement, and condition wording, while the filed HO-3 2024-03 provisions control the answer ([HO-3 memorandum](repo://memoranda/HO-3-2024-03.md#L13-L31), [HO-3 form](repo://forms/HO/MS/HO-3/2024-03.md#L13-L39)). Apply the same discipline to DP-3 and the other edition memoranda: compare the memorandum's explanation with the applicable frozen form, and preserve the older form when its effective interval governs.
 

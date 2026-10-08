@@ -3,10 +3,9 @@ type: claims-guidance
 title: "Claims Intake, Investigation, and Mitigation"
 description: "A concise property-claims workflow for receiving notice, creating and controlling the claim file, developing cause and damage evidence, protecting property, and separating investigation from coverage and payment authority. Internal guidance is not a policy grant or amendment."
 tags: [claims-handling, claim-intake, investigation, mitigation, authority-controls]
-verified:
-  - by: openwiki/0.5.2
-    at: 2026-09-19T07:29:25.602Z
 sources:
+  - id: openwiki-source-36bcf8e9754ce8cd9b63db52
+    resource: repo://forms/HO/MS/HO-04-90/2026-01.md
   - id: openwiki-source-6a71dbfe57881e21b8a0e5ea
     resource: repo://forms/HO/MS/HO-04-90/2027-01.md
   - id: openwiki-source-7176aead92778c93cb0441d2
@@ -19,7 +18,12 @@ sources:
     resource: repo://guidelines/claims/water-loss-handling.md
   - id: openwiki-source-77e27410bda4d59c2b779d5e
     resource: repo://manuals/claims/manual.md
-generated: { by: "openwiki/0.5.2", at: "2026-09-19T07:29:25.602Z" }
+  - id: openwiki-source-d2ea423343a02d2233c77383
+    resource: repo://training/attaching-endorsements.md
+generated: { by: "openwiki/0.6.1", at: "2026-10-08T20:20:37.274Z" }
+verified:
+  - by: openwiki/0.6.1
+    at: 2026-10-08T20:20:37.274Z
 ---
 
 # Claims Intake, Investigation, and Mitigation
@@ -92,7 +96,7 @@ The key internal timing controls are:
 2. **Reservation of rights:** when known facts may limit or preclude coverage but investigation must continue, use approved language and issue the reservation within **10 days**. State the known facts, potentially applicable policy language, and investigation needed; do not use vague or unsupported language ([Manual 2.X–2.Z](repo://manuals/claims/manual.md#L481-L491); [Water guidance H.6.4–H.6.7](repo://guidelines/claims/water-loss-handling.md#L487-L493)). A reservation is not a denial, acceptance, or payment commitment. Continue fact gathering and necessary mitigation unless an authorized coverage resource directs otherwise ([Manual 2.AB–2.AE](repo://manuals/claims/manual.md#L497-L511)).
 3. **Water mitigation:** the manual directs mitigation to begin promptly and, when covered water affects insured property, within **3 days after discovery** ([Manual 3.A](repo://manuals/claims/manual.md#L709-L715)). The water guidance repeats the instruction to begin reasonable mitigation within 3 days after discovery of water damage ([Water guidance H.6.8–H.6.10](repo://guidelines/claims/water-loss-handling.md#L495-L499)). This is an operational direction to reduce additional damage, not a promise that the resulting expense or claim is covered.
 
-The applicable policy may impose a different or additional insured duty. For example, the attached HO 04 90 endorsement requires notice within 30 days after discovery and requires reasonable protection, access, preservation, evidence, and mitigation ([HO 04 90 W.5.1–W.5.7](repo://forms/HO/MS/HO-04-90/2027-01.md#L791-L819)). That contract language must be analyzed for the policy and endorsement actually in force; the internal three-day handling instruction cannot replace or amend it.
+The applicable policy may impose different or additional insured duties. Under the HO-3 2024-03 form, the insured must give prompt notice, protect the property from further damage, preserve damaged property, provide reasonable access, cooperate and provide requested records, and obtain consent before permanent repairs when the work may affect coverage or amount; emergency measures may be taken when reasonably necessary ([HO-3 A.18–A.25](repo://forms/HO/MS/HO-3/2024-03.md#L133-L147)). These are contractual duties, not manual workflow controls. The 2026-01 HO 04 90 file supplies coverage, a $10,000 policy-period sublimit unless Declarations show more, a $1,000 separate deductible, exclusions, a known-maintenance condition, and a below-grade backflow-device requirement; it does not supply the obsolete 30-day notice language used by the prior edition ([HO 04 90 2026-01 W.1–W.6](repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L47)). Analyze duties and coverage only from the policy and endorsement actually in force.
 
 For a mold or fungi exposure, note an internal timing conflict rather than silently choosing a contractual deadline: Chapter 3 and the mold guidance direct reasonable mitigation within **3 days after discovery**, while Manual Chapter 9 describes a **5-day-after-discovery** mitigation threshold. These are internal instructions, not policy conditions. Escalate for direction when the conflict affects handling and never communicate either number as a universal insured obligation ([Manual 3.A](repo://manuals/claims/manual.md#L709-L727); [Manual 9.E](repo://manuals/claims/manual.md#L3063-L3079); [Mold Claim Handling](repo://guidelines/claims/mold-claim-handling.md#L37-L43)).
 
@@ -136,13 +140,33 @@ Review mitigation and restoration in separate categories:
 
 Do not direct nonemergency work beyond authority or require permanent repairs before cause and scope are reasonably documented. Reinspect or obtain support before reconstruction when drying or hidden moisture remains uncertain ([Manual 3.V–3.Z](repo://manuals/claims/manual.md#L837-L865); [Manual 3.AZ–3.BA](repo://manuals/claims/manual.md#L1017-L1027); [Water guidance H.6.11, H.6.20–H.6.24](repo://guidelines/claims/water-loss-handling.md#L501-L527)).
 
-## 4. Keep coverage, scope, payment, and recovery distinct
+## 4. Verify the issued package before using HO 04 90
+
+<!-- openwiki: broken internal link [../policy-assembly/editions-and-state-attachments.md#L61-L76] file "../policy-assembly/editions-and-state-attachments.md" does not exist. Fix the href or restore the target, then delete this comment. -->
+A title, endorsement schedule, underwriting note, or system label is an index—not the operative contract wording. Before applying HO 04 90 to a claim, record the line and state, policy-effective date, Declarations, named insured, residence premises, complete issued package, schedules, and all referenced pages. Match the endorsement to the insured, policy term, location, and property; confirm that the full form is legible and actually attached. A listed-but-missing endorsement requires the complete package or reliable issued copy, while an attached-but-unlisted form must be reconciled before interpretation ([Editions and Endorsements](../policy-assembly/editions-and-state-attachments.md#L61-L76); [Attaching Endorsements Correctly](repo://training/attaching-endorsements.md#L65-L87)).
+
+<!-- openwiki: broken internal link [../policy-assembly/editions-and-state-attachments.md#L67-L76] file "../policy-assembly/editions-and-state-attachments.md" does not exist. Fix the href or restore the target, then delete this comment. -->
+Select the edition by the policy-effective date, not by the current repository file. HO 04 90 2026-01 replaces 2010-10 for policies written on or after 2026-01-01; preserve and use 2010-10 for an earlier applicable policy ([HO 04 90 2026-01](repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L4); [Editions and Endorsements](../policy-assembly/editions-and-state-attachments.md#L67-L76)). If edition, attachment, schedule, or package completeness is uncertain, document the uncertainty, obtain the issued evidence, and escalate; do not use the endorsement merely because the reported mechanism sounds like backup or sump overflow.
+
+```mermaid
+flowchart TD
+    report["Water backup or sump report"] --> package["Collect declarations and complete issued package"]
+    package --> edition{"Edition matches policy-effective date"}
+    edition -->|"no"| hold["Hold interpretation and obtain correct edition"]
+    edition -->|"yes"| attached{"Endorsement actually attached and complete"}
+    attached -->|"no"| hold
+    attached -->|"yes"| terms["Read HO 04 90 with base form and other attachments"]
+    terms --> facts["Compare source path facts and contractual conditions"]
+    hold --> package
+```
+
+*Figure 2. Package and edition gate before an HO 04 90 coverage analysis; it is an internal control, not a coverage grant.*
 
 ### Coverage analysis follows fact development
 
 The investigation establishes facts; it does not decide what the policy covers. Review the applicable declarations, form edition, endorsements, definitions, grants, exclusions, conditions, deductibles, limits, and settlement terms against verified facts. Keep coverage issues and valuation issues in distinct file entries, and do not treat an estimate as a coverage decision ([Manual 1.F, 1.I–1.J](repo://manuals/claims/manual.md#L45-L73)).
 
-For example, the HO-3 2024-03 form provides direct-physical-loss coverage subject to exclusions and conditions, excludes sewer or drain backup and sump overflow unless a water-backup endorsement is attached, and separately describes accidental plumbing discharge and continuous or repeated leakage ([HO-3 AGR.3, AGR.9](repo://forms/HO/MS/HO-3/2024-03.md#L15-L31); [HO-3 P.29–P.33](repo://forms/HO/MS/HO-3/2024-03.md#L525-L533); [HO-3 X.7–X.9](repo://forms/HO/MS/HO-3/2024-03.md#L593-L599)). If HO 04 90 2027-01 is actually attached, its terms modify the policy where they conflict and provide the stated backup or sump coverage subject to its conditions and limit ([HO 04 90 W.1–W.5](repo://forms/HO/MS/HO-04-90/2027-01.md#L16-L36); [HO 04 90 W.1–W.4](repo://forms/HO/MS/HO-04-90/2027-01.md#L64-L80)). The adjuster must not generalize that example to a policy that does not contain the endorsement.
+For example, the HO-3 2024-03 form provides direct-physical-loss coverage subject to exclusions and conditions, excludes sewer or drain backup and sump overflow unless a water-backup endorsement is attached, and separately describes accidental plumbing discharge and continuous or repeated leakage ([HO-3 AGR.3, AGR.9](repo://forms/HO/MS/HO-3/2024-03.md#L15-L31); [HO-3 P.29–P.33](repo://forms/HO/MS/HO-3/2024-03.md#L525-L533); [HO-3 X.7–X.9](repo://forms/HO/MS/HO-3/2024-03.md#L593-L599)). If HO 04 90 2026-01 is verified as attached, its terms cover direct physical loss caused by sewer or drain backup or sump discharge or overflow, subject to the $10,000 policy-period sublimit unless Declarations show a higher amount, a separate $1,000 deductible per loss, the stated flood, surface-water, below-ground-water, and known-maintenance exclusions, and the below-grade backflow-device requirement ([HO 04 90 2026-01 W.1–W.6](repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L47)). It does not apply merely because a schedule or claim system names the endorsement; the adjuster must not generalize it to a policy that does not contain the verified form.
 
 ### Scope and payment controls
 

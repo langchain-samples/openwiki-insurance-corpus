@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:70779a52ddce12034cf2b89a80c6501f02c7b74c3e20238e430550504b0ac0d0",
+  "pageVersion": "sha256:74542162046438e8e80701305927119b0ff7cbe12e0a8dbcafcd7dd53a184a0b",
   "claims": [
     {
       "id": "claim_8c78bc131046466a8bf5b80e563dc4ce",
@@ -293,58 +293,10 @@
           "version": "repo-lines-v1:sha256:c12ab8ce401254edfef88a88f1f5cabac19349415be3e87b369fb240740b0889:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1MGMwZjRhMzg0ODIyYjk5MjQ0ZWE4ZWU5MzhiZTc4NDRlODNmZjNlYWJlMzNhYzA5YTViMWMxYzMzYmZlM2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkOTI2YTYzNDg4ZGY1ZGIyZjlkYjlhODBmYWUxYmU0NGY3ZDA1NzhjOGI4YzY4NWJhYzBlM2MyNzc4N2NjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3OWIxNTJlZjFiMTdhZGJmMjQwNGMwODI2ZWI0MWNlYzAxNTY1MzM5ZjhkYjRhN2Y3NDA4OTIwMmFhMmYxYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkY2ExNDQ1ODgwNzE2NWUxMGFjN2JmOTdhMDVhMTRiNDc1ZGM0NTI0ZDU1NDM2YTk1NGNhYzUwNjliNDdiNzUifQ"
         }
       ]
-    },
-    {
-      "id": "claim_0d70da69bad4493280f11e606502b491",
-      "statement": "Before using HO 04 90 in a claim decision, the handler must verify the complete issued policy package, including declarations, schedules, referenced pages, attachment status, insured, policy term, location, and property; a schedule or system label alone is not operative endorsement wording.",
-      "evidence": [
-        {
-          "resource": "repo://training/attaching-endorsements.md#L173-L203",
-          "version": "repo-lines-v1:sha256:b387a701be81d5dfd9763f0d8d94d54bc9e27885863c0bf733cd70a237c148db:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyOGU5NjFlMTIxNmZhYzdkZGM4NmU1ZWE5ZTRiMjM0Yjg3MTViMDc5MmQ5YWY0MDQyMzY5ZGNmYmQzYjdjNjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1OWFkMmU3YWUwMDFjMzE0ODFhOTZkZDI1N2ZiMzJkNjIyODQxYzNmZDlmM2M3ZTljZjNiY2YwMjNlNmU2YjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5ZjY3MTc2OWFkMTI4ZmUyYTcyMDlkN2NkMDZhMzFlYmU4NTcxMGEzZmYzN2Q0OWE0ZWRlZDlkM2Y2ZGZkZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwNmUxZTE4MmJlYmMzMjIwMzY4NWJhNDVkMzlkODA4NWE0MzBmN2VmYjc1MjAwOTQ3MzY4OTZiM2FiMzY1OGUifQ"
-        },
-        {
-          "resource": "repo://training/attaching-endorsements.md#L65-L87",
-          "version": "repo-lines-v1:sha256:20557c37b933bd0559a5720fea9a06dc18617f8efd324274f2495697ea62bd5d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0N2RhZmY5ZDZlN2QyMzIyZDQ2NzAxYjUxMGY0YmNmNDA2MjJmYzJhZDNmYmI5NDBjYTE1YzA0ODczNDg3Y2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmNTk0NmNlMDdhMWU4YzQxNWY5MjRhMDk1NzFmMTMxNDQ4MmM4M2EyZWE4ZmU0MGQ1OGI4MDk0NzYyOWZjYzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ4ZmVjMzg5M2I1MTEwMzFjYTI1MWViNGU0NjEyZTMxMjlkNGY4N2YzNzZmZjMxMGIzOGMwMjRjMDg5YWMwODgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE4NDdjOTEyZjBmMGNkNDJhM2Q1YmY5MzE4ZDFkNTVkNDU3OTVhZmZmNmM5N2M4ODMxZTE5MTk4MDcyOTYxNjkifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_050163d55e9744a8aed8d7e878dea168",
-      "statement": "HO 04 90 2026-01 replaces the 2010-10 edition for policies written on or after 2026-01-01, so the applicable endorsement edition must be selected from the policy-effective date rather than from the current repository file.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L4",
-          "version": "repo-lines-v1:sha256:8cba05ab8e0cbad994634ac3d64f39694b3fe0d0ce4f8a69af0c5fcfb3d501cb:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGU3Yjk3YTQ3YmJhMWVjNjgwZTdkZDE5ZmY4YWZiM2UzODRkMWFjNWI4MWVhMjlmMTY4NTVmNTc1ZmVkN2M4NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTE4Zjg2NDZiYzNiZjJhODEyYzI2NTVmNWFiNGNlNGYyZGNiOGQ0MTZkMGEwMTM3ZTJhZmRmYzc0NTIwMDNmMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2ZhMGE1YTJjMDQwOWFkZDZjYTk3ZjlmZDQ3NzQ4MzM4MTlmZGVmNTZiODNmZWUxODUxN2ZhMzk4NmIzY2I0OCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_ded027597dc54a0289e8a51d247148aa",
-      "statement": "The HO-3 2024-03 contract imposes insured duties after loss to give prompt notice, protect property, preserve damaged property, provide access and cooperation, provide requested records, and obtain consent before permanent repairs that may affect coverage or amount; these contractual duties are distinct from the claims manual's internal three-day mitigation workflow.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-3/2024-03.md#L133-L147",
-          "version": "repo-lines-v1:sha256:ed1be389fb9b61ad94b64746133954d800f4eeee4fa7d7898946a24e79fa5511:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5OTM3YjkxNWZhMmQ5Y2JjZmRlMjIyNzMzZjI1OTU5N2JjNzFjNWExMWQ1YTNhMzg3ZWFhNTRjMzQwMjVlNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkNjk0YjljZjNiY2E2YzJlZWJkYTRkMWFkMGEzNGJjMzI4N2Q2OTkwODBmOGRiMTZjZDcyYjdkNjUyZjI4ODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNjM2I4MGI2ZDNlOTQxOThiMjRhNzk1OWMwNjk5ZjUyNjljZWJmNTVkYzk0ODIyMmU0ZjE0MWZjNWY2MDNjMjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzNzJmNjk5NDczNjA0MTBjZWFhYTVkMmQ2MzZjOTdmYmMyZTVmYjhhNjBiYTgxNTc4ZWM1ZmYxNjVjZWRlYTcifQ"
-        },
-        {
-          "resource": "repo://manuals/claims/manual.md#L709-L727",
-          "version": "repo-lines-v1:sha256:c12ab8ce401254edfef88a88f1f5cabac19349415be3e87b369fb240740b0889:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1MGMwZjRhMzg0ODIyYjk5MjQ0ZWE4ZWU5MzhiZTc4NDRlODNmZjNlYWJlMzNhYzA5YTViMWMxYzMzYmZlM2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkOTI2YTYzNDg4ZGY1ZGIyZjlkYjlhODBmYWUxYmU0NGY3ZDA1NzhjOGI4YzY4NWJhYzBlM2MyNzc4N2NjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3OWIxNTJlZjFiMTdhZGJmMjQwNGMwODI2ZWI0MWNlYzAxNTY1MzM5ZjhkYjRhN2Y3NDA4OTIwMmFhMmYxYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkY2ExNDQ1ODgwNzE2NWUxMGFjN2JmOTdhMDVhMTRiNDc1ZGM0NTI0ZDU1NDM2YTk1NGNhYzUwNjliNDdiNzUifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_0aa4900f122248239b8b968c406071da",
-      "statement": "When actually attached, HO 04 90 2026-01 covers direct physical loss caused by sewer or drain backup or sump discharge or overflow, subject to its policy-period sublimit, separate deductible, stated exclusions, maintenance condition, and below-grade backflow-prevention requirement.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L47",
-          "version": "repo-lines-v1:sha256:88beb9cdb35542fdf53c33655dd888a474b64e9e1b2543480052dd5c73b64590:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiNWQ2ZDE2MWMxZGZkMzhmZmM4ZWY3NzZlNTFkY2I2MmJmYmNiY2NkYWYzMjIzNWVmOGNiNDYzMmI3NDAwZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiNzBhMGExMGVkMTE1OGMyOGE0N2MyNzI2MmZjNDVhNTcwZGQ4MmEyMmI5YWVhMmQwZmE4YzNhYjMwNmExODIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3OTJjZGFkMTM5NmI5NmZmYTk2OWIzMWQ3ZTVmOTVmMDJhODk1YmM0Yzc5ZDA3NjBjMmE0Njg5MWNiY2E2MzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU1OTc2ZDRjNTUzNGMyMTA4N2QxMWJhMTA2M2RlYzA0ZDg3YjdiMTkxYjUyMzM1MDhkYmJmNzJmYmMxZWNjYjQifQ"
-        }
-      ]
     }
   ],
   "verification": {
-    "by": "openwiki/0.6.1",
-    "at": "2026-10-08T20:20:37.274Z"
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-19T07:29:25.602Z"
   }
 }

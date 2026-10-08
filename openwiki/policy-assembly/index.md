@@ -1,3 +1,3 @@
 # Files
 
-- [Editions, Endorsements, and State Attachments](editions-and-state-attachments.md) - Select HO 04 90 2026-01 by policy effective date and confirm the actual issued attachment before applying it. Assemble the base form, declarations, endorsements, and state wording while keeping memoranda and guidance separate from contract authority.
+- [Editions, Endorsements, and State Attachments](editions-and-state-attachments.md) - A policy-assembly workflow for routing by line, state, effective date, Declarations, and the complete issued package before interpreting coverage. It separates contract forms, regulatory bulletins, and internal guidance while resolving endorsement and state-form conflicts.

@@ -4,7 +4,7 @@ okf_version: "0.2"
 
 # Files
 
-- [Coverage Wiki Quickstart](quickstart.md) - Route a coverage or operational question by line, state, effective date, declarations, and attachments before opening the governing form or the relevant claims, underwriting, rating, or state page. Use this map to preserve contract, guidance, authority, and evidence boundaries.
+- [Coverage Wiki Quickstart](quickstart.md) - Compact routing map for coverage and operational questions across line, state, effective date, policy editions, endorsements, claims, underwriting, and rating. Use it to locate the updated HO-3 water-backup and policy-assembly guidance without treating operational material as contract wording.
 
 # Directories
 

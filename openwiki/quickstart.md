@@ -14,6 +14,10 @@ sources:
     resource: repo://bulletins/TX/b-2019-02-prompt-payment.md
   - id: openwiki-source-38049e374f54d1eb9a15f4ef
     resource: repo://bulletins/TX/b-2021-08-windstorm-deductibles.md
+  - id: openwiki-source-cd26c30cc942869b52618f95
+    resource: repo://forms/HO/MS/HO-04-90/2010-10.md
+  - id: openwiki-source-36bcf8e9754ce8cd9b63db52
+    resource: repo://forms/HO/MS/HO-04-90/2026-01.md
   - id: openwiki-source-6a71dbfe57881e21b8a0e5ea
     resource: repo://forms/HO/MS/HO-04-90/2027-01.md
   - id: openwiki-source-5802aac0ff04777c19a4717f
@@ -60,10 +64,10 @@ sources:
     resource: repo://training/choosing-the-governing-edition.md
   - id: openwiki-source-a6e7a7f52df2ed58605a3898
     resource: repo://training/guidance-versus-contract.md
-generated: { by: "openwiki/0.6.1", at: "2026-10-07T07:41:42.292Z" }
+generated: { by: "openwiki/0.6.1", at: "2026-10-09T18:29:07.698Z" }
 verified:
   - by: openwiki/0.6.1
-    at: 2026-10-07T07:41:42.292Z
+    at: 2026-10-09T18:29:07.698Z
 ---
 
 # Coverage Wiki Quickstart
@@ -108,7 +112,7 @@ Open the line page before applying a generic homeowners answer:
 | Condominium unit owner | [HO-6 form editions](coverage/forms/ho-6.md) | Unit property, assessment, liability, and attachments |
 | Dwelling property | [DP-3 form editions](coverage/forms/dp-3.md) | Property coverages, settlement, state form, and DP attachments |
 
-The HO-3 2024-03 form sets Coverage B at ten percent of Coverage A and Coverage C at fifty percent of Coverage A ([Coverage B](repo://forms/HO/MS/HO-3/2024-03.md#L155-L161), [Coverage C](repo://forms/HO/MS/HO-3/2024-03.md#L217-L225)). DP-3 has no Section II E or F liability and medical-payments grants; do not carry an HO-line liability answer into a DP-3 file ([DP-3 2026-01](repo://forms/DP/MS/DP-3/2026-01.md#L13-L39), [HO-3 Section II](repo://forms/HO/MS/HO-3/2024-03.md#L1023-L1071)).
+The HO-3 2024-03 form sets Coverage B at ten percent of Coverage A and Coverage C at fifty percent of Coverage A ([Coverage B](repo://forms/HO/MS/HO-3/2024-03.md#L155-L161), [Coverage C](repo://forms/HO/MS/HO-3/2024-03.md#L217-L225)). For a water-backup question, route through the [HO-3 form editions](coverage/forms/ho-3.md), then the [water-backup coverage page](coverage/perils/water-backup.md), and finally [water-loss claim handling](claims/guidelines/water-loss-handling.md) when the issue is operational rather than purely contractual. DP-3 has no Section II E or F liability and medical-payments grants; do not carry an HO-line liability answer into a DP-3 file ([DP-3 2026-01](repo://forms/DP/MS/DP-3/2026-01.md#L13-L39), [HO-3 Section II](repo://forms/HO/MS/HO-3/2024-03.md#L1023-L1071)).
 
 ## 2. Identify the state overlay
 
@@ -137,7 +141,7 @@ Use a filing memorandum to locate the meaningful edition delta, not to establish
 
 Confirm that every endorsement is attached, complete, legible, matched to the insured, location, subject, and policy term, and consistent with the declarations. An endorsement changes the policy only when properly attached and only within its stated terms. An attached endorsement applies only when attached to the policy, and its provisions control over conflicting policy provisions for the subject the endorsement modifies while unmodified policy terms remain applicable ([attachment and conflict rule](repo://forms/HO/MS/HO-04-90/2027-01.md#L13-L30), [attachment workflow](repo://training/attaching-endorsements.md#L65-L111)).
 
-HO 04 90 2027-01 writes back the HO-3 water-backup and sump-discharge exclusion for an attached policy by providing direct-physical-loss coverage, subject to a shared $10,000 limit and a $1,000 water-backup deductible ([base exclusion](repo://forms/HO/MS/HO-3/2024-03.md#L593-L601), [write-back](repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L83), [limit](repo://forms/HO/MS/HO-04-90/2027-01.md#L254-L265), [deductible](repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L412)). Do not apply that result to an earlier endorsement edition or an unattached policy.
+HO 04 90 2026-01 writes back the HO-3 water-backup and sump-discharge exclusion for an attached policy by providing direct-physical-loss coverage, subject to a default $10,000 policy-period sublimit and a separate $1,000 deductible ([base exclusion](repo://forms/HO/MS/HO-3/2024-03.md#L593-L601), [write-back and limits](repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L23), [conditions and settlement](repo://forms/HO/MS/HO-04-90/2026-01.md#L35-L56)). It supersedes 2010-10 for policies written on or after 2026-01-01; do not apply either edition without confirming the policy date and attachment.
 
 HO 23 74 2025-05 modifies HO-3 2024-03 roof settlement by changing covered roof surfacing to actual cash value when roof age is at least twelve years, with age and condition supported by specified evidence ([roof endorsement](repo://forms/HO/MS/HO-23-74/2025-05.md#L94-L124), [HO-3 settlement](repo://forms/HO/MS/HO-3/2024-03.md#L119-L131)). Establish covered direct physical loss before applying settlement; an ACV schedule is not an underwriting eligibility rule and does not decide whether the loss is covered.
 

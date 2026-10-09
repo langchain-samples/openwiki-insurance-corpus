@@ -23,11 +23,11 @@
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
     },
     "/openwiki/claims/guidelines/water-loss-handling.md": {
-      "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
-      "sourceFingerprint": "sha256:5d23b019b5212a45689714237b093fb9dfaf3ee6e7685b0819a5b76dd971240c",
-      "pageVersion": "sha256:ad4687a358c6d3bd2266bf0d53f4aaaeb92aad3c35c8adfc420deb96f71bbb09",
-      "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "pageVersion": "sha256:c4bec4a5ef3045ed1ee2f2ac39a6a6e1f627d4921049eeb5378434d178c483e1",
+      "completedBy": "openwiki/0.6.1",
+      "completedRunId": "ae9d7779-adb2-47fc-95d0-6ab120b39bfe",
+      "gitHead": "362529a6a7bc500eb70d05f65c969c86c777f2a9",
+      "sourceFingerprint": "sha256:86eb43b5d55ec6bac7dfa4fee665d2ee37a05c902ffc78b0d87bdb78cad79203"
     },
     "/openwiki/claims/manual/conditions-authority-and-state-operations.md": {
       "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
@@ -72,11 +72,11 @@
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
     },
     "/openwiki/coverage/forms/ho-3.md": {
-      "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
-      "sourceFingerprint": "sha256:5d23b019b5212a45689714237b093fb9dfaf3ee6e7685b0819a5b76dd971240c",
-      "pageVersion": "sha256:62fc37676d2dfc2db09df05afcb741c5d245b11ca76d8c6cf2c842a0677f8574",
-      "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "pageVersion": "sha256:22bfae4baa71457c25c5ab21426841b1c913536fd3d05fa7769be2cee48b1deb",
+      "completedBy": "openwiki/0.6.1",
+      "completedRunId": "ae9d7779-adb2-47fc-95d0-6ab120b39bfe",
+      "gitHead": "362529a6a7bc500eb70d05f65c969c86c777f2a9",
+      "sourceFingerprint": "sha256:86eb43b5d55ec6bac7dfa4fee665d2ee37a05c902ffc78b0d87bdb78cad79203"
     },
     "/openwiki/coverage/forms/ho-4.md": {
       "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
@@ -135,11 +135,11 @@
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
     },
     "/openwiki/coverage/perils/water-backup.md": {
-      "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
-      "sourceFingerprint": "sha256:5d23b019b5212a45689714237b093fb9dfaf3ee6e7685b0819a5b76dd971240c",
-      "pageVersion": "sha256:c6160caaa8bfd768d847e246ac65b5e8278c76a58c7abc4b9e2b47746d467557",
-      "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "pageVersion": "sha256:a93847ce89ee283651f69f3c3181b24e669ee218cf49948f10434410cd5b55c7",
+      "completedBy": "openwiki/0.6.1",
+      "completedRunId": "ae9d7779-adb2-47fc-95d0-6ab120b39bfe",
+      "gitHead": "362529a6a7bc500eb70d05f65c969c86c777f2a9",
+      "sourceFingerprint": "sha256:86eb43b5d55ec6bac7dfa4fee665d2ee37a05c902ffc78b0d87bdb78cad79203"
     },
     "/openwiki/coverage/perils/water-damage.md": {
       "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
@@ -184,18 +184,18 @@
       "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
     },
     "/openwiki/policy-assembly/editions-and-state-attachments.md": {
-      "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
-      "sourceFingerprint": "sha256:5d23b019b5212a45689714237b093fb9dfaf3ee6e7685b0819a5b76dd971240c",
-      "pageVersion": "sha256:1050d9c5397fa879ecf4954a7244f1c91205872ca9b56af7f279319048973b4e",
-      "completedBy": "openwiki/0.5.2",
-      "completedRunId": "ea9d9c16-28d0-4175-a8c8-3a0c45a71a47"
+      "pageVersion": "sha256:098aeb4b0c8c139b987742ff35d72bf5561a142549b1b9642bdca0c50ee28581",
+      "completedBy": "openwiki/0.6.1",
+      "completedRunId": "ae9d7779-adb2-47fc-95d0-6ab120b39bfe",
+      "gitHead": "362529a6a7bc500eb70d05f65c969c86c777f2a9",
+      "sourceFingerprint": "sha256:86eb43b5d55ec6bac7dfa4fee665d2ee37a05c902ffc78b0d87bdb78cad79203"
     },
     "/openwiki/quickstart.md": {
-      "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",
-      "sourceFingerprint": "sha256:5d23b019b5212a45689714237b093fb9dfaf3ee6e7685b0819a5b76dd971240c",
-      "pageVersion": "sha256:5cad87c379912bd2bdd221a529aed84cbd20c9ccf4f66c7bf6e79cd3695978d3",
+      "pageVersion": "sha256:816b51f2e41ec3588bb0145d40f9870bb6861531abbdf6fa7253c76d0bac5752",
       "completedBy": "openwiki/0.6.1",
-      "completedRunId": "e009ba41-7eea-4b28-860e-02831087395b"
+      "completedRunId": "ae9d7779-adb2-47fc-95d0-6ab120b39bfe",
+      "gitHead": "362529a6a7bc500eb70d05f65c969c86c777f2a9",
+      "sourceFingerprint": "sha256:86eb43b5d55ec6bac7dfa4fee665d2ee37a05c902ffc78b0d87bdb78cad79203"
     },
     "/openwiki/state-overlays/california.md": {
       "gitHead": "66cf042593c0b739b57c3257a350a0fd4670d17a",

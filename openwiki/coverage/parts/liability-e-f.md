@@ -12,6 +12,8 @@ sources:
     resource: repo://forms/DP/MS/DP-3/2026-01.md
   - id: openwiki-source-9c2b05516073c90ea8ebe398
     resource: repo://forms/HO/MS/HO-04-48/2026-06.md
+  - id: openwiki-source-36bcf8e9754ce8cd9b63db52
+    resource: repo://forms/HO/MS/HO-04-90/2026-01.md
   - id: openwiki-source-6a71dbfe57881e21b8a0e5ea
     resource: repo://forms/HO/MS/HO-04-90/2027-01.md
   - id: openwiki-source-57869e6df01fc9fc3871c8c7
@@ -44,10 +46,10 @@ sources:
     resource: repo://forms/HO/MS/HO-6/2014-04.md
   - id: openwiki-source-9a3362ddf208da1fe1570617
     resource: repo://forms/HO/MS/HO-6/2023-02.md
-generated: { by: "openwiki/0.6.1", at: "2026-10-07T07:41:42.292Z" }
+generated: { by: "openwiki/0.6.1", at: "2026-10-09T19:53:36.444Z" }
 verified:
-  - by: openwiki/0.5.2
-    at: 2026-09-19T07:29:25.602Z
+  - by: openwiki/0.6.1
+    at: 2026-10-09T19:53:36.444Z
 ---
 
 # Liability and Medical Payments Coverages E–F
@@ -164,7 +166,7 @@ An endorsement is part of the contract only when attached. Use the exact relatio
 The supplied changed endorsements are line-specific property endorsements, not Section II liability endorsements:
 
 - **HO 04 48 Other Structures — Increased Limits (2026-06) modifies** HO-3 Coverage B by increasing the limit for covered other-structures loss. It expressly says the changed insurance applies only when attached, does not change the property to which coverage applies, and leaves other provisions unchanged. It therefore does not create or enlarge Section II E/F. ([HO 04 48 attachment and scope](repo://forms/HO/MS/HO-04-48/2026-06.md#L13-L27); [HO 04 48 Coverage B](repo://forms/HO/MS/HO-04-48/2026-06.md#L29-L47); [HO-3 Section II E/F](repo://forms/HO/MS/HO-3/2024-03.md#L933-L985))
-- **HO 04 90 Water Backup and Sump Discharge or Overflow (2027-01) modifies** HO-3 property coverage only when attached. It writes back stated water-backup and sump-discharge property coverage, sets a $10,000 maximum, and applies a $1,000 endorsement deductible; it also says the insured identity and all unmodified policy provisions remain unchanged. It does not modify HO-3 Coverage E or F. ([HO 04 90 attachment and preservation](repo://forms/HO/MS/HO-04-90/2027-01.md#L14-L60); [HO 04 90 coverage](repo://forms/HO/MS/HO-04-90/2027-01.md#L62-L117); [HO 04 90 limit and deductible](repo://forms/HO/MS/HO-04-90/2027-01.md#L254-L276); [HO 04 90 deductible](repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L412); [HO-3 E/F](repo://forms/HO/MS/HO-3/2024-03.md#L933-L985))
+- **HO 04 90 Water Backup and Sump Discharge or Overflow (2026-01) modifies** HO-3 Section I property coverage only when attached. It covers direct physical loss to property described in Coverage A, B, and C caused by sewer or drain backup or sump discharge or overflow; the endorsement sets a $10,000 maximum unless a higher declarations limit applies and a separate $1,000 deductible. Its new backflow-prevention requirement applies to the endorsement’s property coverage, and all other policy provisions remain in force. Because the stated covered property is Coverage A, B, and C property—not Section II liability or medical-payments risks—it does not alter HO-3 Coverage E or F. ([HO 04 90 scope and covered property](repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L11); [HO 04 90 limit and deductible](repo://forms/HO/MS/HO-04-90/2026-01.md#L13-L23); [HO 04 90 exclusions and condition](repo://forms/HO/MS/HO-04-90/2026-01.md#L25-L47); [HO 04 90 settlement and preservation](repo://forms/HO/MS/HO-04-90/2026-01.md#L49-L56); [HO-3 Coverage E and F](repo://forms/HO/MS/HO-3/2024-03.md#L933-L1009))
 - **HO 04 91 Water Backup — Unit-Owners (2019-03) modifies** HO-6 property coverage for direct physical loss caused by water backup or sump overflow. Its stated limit is $7,500 and its deductible section states a $750 amount; it does not change who is an insured or create Section II liability or medical-payments coverage. Apply the endorsement with the applicable HO-6 property and Section II wording, and escalate any internal text conflict rather than borrowing a different line’s amount. ([HO 04 91 coverage and scope](repo://forms/HO/MS/HO-04-91/2019-03.md#L13-L59); [HO 04 91 limit](repo://forms/HO/MS/HO-04-91/2019-03.md#L113-L129); [HO 04 91 deductible wording](repo://forms/HO/MS/HO-04-91/2019-03.md#L161-L173); [HO-6 E/F](repo://forms/HO/MS/HO-6/2023-02.md#L1016-L1118))
 - **HO 04 92 Water Backup — Tenants (2019-03) modifies** HO-4 personal-property coverage for direct physical loss caused by water backup or sump overflow. Its limit is $2,500 and its deductible is $250; the endorsement preserves all policy exclusions, limitations, conditions, and duties unless it expressly changes them. It does not create or modify Section II Coverage E or F. ([HO 04 92 scope and preservation](repo://forms/HO/MS/HO-04-92/2019-03.md#L13-L39); [HO 04 92 coverage and limit](repo://forms/HO/MS/HO-04-92/2019-03.md#L41-L55); [HO 04 92 limit and deductible](repo://forms/HO/MS/HO-04-92/2019-03.md#L113-L127); [HO 04 92 deductible](repo://forms/HO/MS/HO-04-92/2019-03.md#L181-L199); [HO-4 E/F](repo://forms/HO/MS/HO-4/2021-10.md#L1007-L1079))
 

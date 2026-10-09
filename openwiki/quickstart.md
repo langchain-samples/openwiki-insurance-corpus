@@ -14,6 +14,10 @@ sources:
     resource: repo://bulletins/TX/b-2019-02-prompt-payment.md
   - id: openwiki-source-38049e374f54d1eb9a15f4ef
     resource: repo://bulletins/TX/b-2021-08-windstorm-deductibles.md
+  - id: openwiki-source-cd26c30cc942869b52618f95
+    resource: repo://forms/HO/MS/HO-04-90/2010-10.md
+  - id: openwiki-source-36bcf8e9754ce8cd9b63db52
+    resource: repo://forms/HO/MS/HO-04-90/2026-01.md
   - id: openwiki-source-6a71dbfe57881e21b8a0e5ea
     resource: repo://forms/HO/MS/HO-04-90/2027-01.md
   - id: openwiki-source-5802aac0ff04777c19a4717f
@@ -60,10 +64,10 @@ sources:
     resource: repo://training/choosing-the-governing-edition.md
   - id: openwiki-source-a6e7a7f52df2ed58605a3898
     resource: repo://training/guidance-versus-contract.md
-generated: { by: "openwiki/0.6.1", at: "2026-10-07T07:41:42.292Z" }
+generated: { by: "openwiki/0.6.1", at: "2026-10-09T19:53:36.444Z" }
 verified:
   - by: openwiki/0.6.1
-    at: 2026-10-07T07:41:42.292Z
+    at: 2026-10-09T19:53:36.444Z
 ---
 
 # Coverage Wiki Quickstart
@@ -135,9 +139,9 @@ Use a filing memorandum to locate the meaningful edition delta, not to establish
 
 ## 4. Verify attachments
 
-Confirm that every endorsement is attached, complete, legible, matched to the insured, location, subject, and policy term, and consistent with the declarations. An endorsement changes the policy only when properly attached and only within its stated terms. An attached endorsement applies only when attached to the policy, and its provisions control over conflicting policy provisions for the subject the endorsement modifies while unmodified policy terms remain applicable ([attachment and conflict rule](repo://forms/HO/MS/HO-04-90/2027-01.md#L13-L30), [attachment workflow](repo://training/attaching-endorsements.md#L65-L111)).
+Confirm that every endorsement is attached, complete, legible, matched to the insured, location, subject, and policy term, and consistent with the declarations. An endorsement changes the policy only when properly attached and only within its stated terms. An attached endorsement applies only when attached to the policy, and its provisions control over conflicting policy provisions for the subject the endorsement modifies while unmodified policy terms remain applicable ([attachment and conflict rule](repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L4), [attachment workflow](repo://training/attaching-endorsements.md#L65-L111)).
 
-HO 04 90 2027-01 writes back the HO-3 water-backup and sump-discharge exclusion for an attached policy by providing direct-physical-loss coverage, subject to a shared $10,000 limit and a $1,000 water-backup deductible ([base exclusion](repo://forms/HO/MS/HO-3/2024-03.md#L593-L601), [write-back](repo://forms/HO/MS/HO-04-90/2027-01.md#L69-L83), [limit](repo://forms/HO/MS/HO-04-90/2027-01.md#L254-L265), [deductible](repo://forms/HO/MS/HO-04-90/2027-01.md#L391-L412)). Do not apply that result to an earlier endorsement edition or an unattached policy.
+HO 04 90 2026-01 supersedes HO 04 90 2010-10 for policies written on or after 2026-01-01, while preserving the older edition for earlier policies. When attached to an HO-3 policy, it writes back the water-backup and sump-discharge exclusion with direct-physical-loss coverage for Coverage A, B, and C property, a $10,000 policy-period sublimit unless a higher Declarations limit applies, and a separate $1,000 deductible ([base exclusion](repo://forms/HO/MS/HO-3/2024-03.md#L593-L601), [2026-01 endorsement](repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L23)). Verify the complete issued attachment before applying it; do not use a later 2027-01 edition to govern this 2026-01 edition.
 
 HO 23 74 2025-05 modifies HO-3 2024-03 roof settlement by changing covered roof surfacing to actual cash value when roof age is at least twelve years, with age and condition supported by specified evidence ([roof endorsement](repo://forms/HO/MS/HO-23-74/2025-05.md#L94-L124), [HO-3 settlement](repo://forms/HO/MS/HO-3/2024-03.md#L119-L131)). Establish covered direct physical loss before applying settlement; an ACV schedule is not an underwriting eligibility rule and does not decide whether the loss is covered.
 

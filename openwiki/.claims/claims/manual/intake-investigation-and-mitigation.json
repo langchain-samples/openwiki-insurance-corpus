@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:87605aec5e9a0a172209339f3ba3775ef882ff67d7b5df47fb731bb3feb25b12",
+  "pageVersion": "sha256:74542162046438e8e80701305927119b0ff7cbe12e0a8dbcafcd7dd53a184a0b",
   "claims": [
     {
       "id": "claim_8c78bc131046466a8bf5b80e563dc4ce",
@@ -293,110 +293,10 @@
           "version": "repo-lines-v1:sha256:c12ab8ce401254edfef88a88f1f5cabac19349415be3e87b369fb240740b0889:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1MGMwZjRhMzg0ODIyYjk5MjQ0ZWE4ZWU5MzhiZTc4NDRlODNmZjNlYWJlMzNhYzA5YTViMWMxYzMzYmZlM2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkOTI2YTYzNDg4ZGY1ZGIyZjlkYjlhODBmYWUxYmU0NGY3ZDA1NzhjOGI4YzY4NWJhYzBlM2MyNzc4N2NjNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3OWIxNTJlZjFiMTdhZGJmMjQwNGMwODI2ZWI0MWNlYzAxNTY1MzM5ZjhkYjRhN2Y3NDA4OTIwMmFhMmYxYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkY2ExNDQ1ODgwNzE2NWUxMGFjN2JmOTdhMDVhMTRiNDc1ZGM0NTI0ZDU1NDM2YTk1NGNhYzUwNjliNDdiNzUifQ"
         }
       ]
-    },
-    {
-      "id": "claim_6c7e1ee452f641449b69b4c96077e760",
-      "statement": "HO 04 90 2026-01 covers direct physical loss to Coverage A, B, and C property caused by sewer or drain backup or sump, sump-pump, or related-equipment overflow or discharge, including mechanical breakdown, but applies a $10,000 per-policy-period sublimit unless the Declarations show a higher limit and a separate $1,000 deductible per loss.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L6-L23",
-          "version": "repo-lines-v1:sha256:44fbc09b562906a7d7d0f563bbf57baf9643320b85ba1c2bf8203ba183da7f26:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiNWQ2ZDE2MWMxZGZkMzhmZmM4ZWY3NzZlNTFkY2I2MmJmYmNiY2NkYWYzMjIzNWVmOGNiNDYzMmI3NDAwZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0ZDJlMTg2YmMxNTFiMzUyOTJjYzg1ZDFhNGI0OTM1NThjMTc0MjFkOTNkODk3MmU1MzBlNGIwMGEzMDM3NWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU3OTJjZGFkMTM5NmI5NmZmYTk2OWIzMWQ3ZTVmOTVmMDJhODk1YmM0Yzc5ZDA3NjBjMmE0Njg5MWNiY2E2MzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2YmVmMzE4ZmRkODlkMjA1ODgyNjFjODIxY2E2YjAzZDFkYmE5MGExM2MxNTk5YTRlYjVmMWZkNjZiOTI3ZDAifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_a3de7d6d27f24d96b67cde8ad32b7c48",
-      "statement": "Under HO 04 90 2026-01, flood and surface-water causes and below-surface water, seepage, or pressure remain excluded, and a known failure to maintain the serving sewer line, drain, sump, or sump pump can exclude endorsement loss when a reasonable person would have remedied it.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L25-L40",
-          "version": "repo-lines-v1:sha256:97756f66925ea51f523ccaf3f6af8f24460febe3e438af3b035c8b9b732645d6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYzVlNmYxMTk4MDk2MzI0ODI3OTVhMWM3MGM3NjdiMDJlZjBhMjc3YWJkZTZlZjU4YTk2NzRjOTliNDAzMjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmZDlmZTU5ZmQ0YTg2NTFjOTY2MWIxOTZmMjRjOWU4NDRkN2I5MTJiODUwNzEwNTc1NDU0MDA5ZGY4OTliMDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRmOTQyODJjNzM0YzBjMTU4NGRiN2MyMGE2NmQ3ZDMyMTQzMzU3NDM2Y2Y1NDkwNGFiYWM3ZGY2ZDUwNzI5ZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyNTY3YTMyY2M2YmRlODFjZWIyMmE5MGI1ZWU1ZTM4Y2I5ZTlmYWU1Mjk4OTk2NjRmMWI0Zjk0MTY5ZTYzYzQifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_8764fa00f66e42acbe78fd19ac0c163e",
-      "statement": "HO 04 90 2026-01 adds a condition for residences with finished areas below grade: coverage applies only if a backwater valve or equivalent backflow-prevention device was installed and operable on the serving sewer line at the time of loss; this requirement was absent from edition 2010-10.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L42-L47",
-          "version": "repo-lines-v1:sha256:aa77a1112520bcab7d9e081aa035c4ac9cd4aa7d09b7fc2664774230269ff067:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTMwNGJlM2MwNDU5ZjA0MzQ2MWZjZGM3MTgzOThiNDQ3ZDFkNmIxYTlhNmJiODI3NTZlZjc1YTIzOGYyOTM2YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmI3MGEwYTEwZWQxMTU4YzI4YTQ3YzI3MjYyZmM0NWE1NzBkZDgyYTIyYjlhZWEyZDBmYThjM2FiMzA2YTE4MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDlmNTQyMmQ5MDRjNjNjZjc3ZGViZWEzM2IwZjVmYmM5Mjc5Y2RlZjBjZjMxYTY5MjQyZjFiZGFhM2M0NzFkYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTU5NzZkNGM1NTM0YzIxMDg3ZDExYmExMDYzZGVjMDRkODdiN2IxOTFiNTIzMzUwOGRiYmY3MmZiYzFlY2NiNCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_64aee85d7e944a2db7529bd824f6c9c4",
-      "statement": "HO 04 90 2026-01 uses the attached policy's settlement basis for Coverage A and B loss, but settles Coverage C loss at actual cash value despite a replacement-cost personal-property endorsement unless the Declarations provide otherwise for the endorsement.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L49-L56",
-          "version": "repo-lines-v1:sha256:aff48b136b272ae7a04bf3529107f1607cc454e270064b41d8352e8365c1ea32:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTU1YjI2MTM4N2M1NDE4OGJiZmQxMDA1OGE0ZTA1OTRkZmRmZTY2MmI0MzQzYzgxYTRmODdmN2MxM2M3YWZjZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmY2NDU5NTJmY2UwOGEzOWFiMGY1MjhkNDhlYjgxOWYyMTY0MzFiMTEzZDgwYTlmMGQ2NDRmZWYyYTA0MTU4NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWQzNDNmM2NhMjBlYjFkNjMwYjJhOTFkMzc2M2RhMzk2NGJlMGYwNGNmZTQzYTRhMWMyZDc3ZWE1YmM2MjhmYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_7acbd2d7a52e4737b154466ac21eae17",
-      "statement": "The claims manual requires claim intake for informal communications asserting property damage or requesting benefits, prompt acknowledgment without a coverage conclusion, policy and authority verification before commitments, and preservation of evidence and safety-aware mitigation during investigation.",
-      "evidence": [
-        {
-          "resource": "repo://manuals/claims/manual.md#L27-L55",
-          "version": "repo-lines-v1:sha256:1df2b4f7900986cc159908a0f8046a9093cf631d5c73b3a50067699983f5eeaa:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjNTcwYTg2NTRhN2Q5NzkwYzk2YmZhM2IxOWQ0OWI2NmE3NDYwZDc1YzFlYWNiZTVkMTU2ZGFiNTllNjE0ODQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ZDFlYzg5YzEwNGZhZDc5MjZiOWVmNmU5Y2Q1MDUzMmRhYjU4NmQ0YWRiNjFiMzU0MTBmMWI1OTkzNTM0M2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlY2VjNzY4ZjkxYWQ3OWZlMDVjMDlkMGIwN2VhYzg1MWM2ZGNkOTVlNmRiZTgzOThhYjNmZGVjY2ZlYjQ3YzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0MWRhZWNiYzE2NGJkNWFiYzFjMjllZDI0YWI0NTJlMWQ0N2ZhMmJlNGNlYzYzYjZmYjlkOTVjZjYyZTU3MWQifQ"
-        },
-        {
-          "resource": "repo://manuals/claims/manual.md#L387-L447",
-          "version": "repo-lines-v1:sha256:82af97be8b42f3d558b27d80599aaf6243070ca1edc325f52a968c58fafd90ac:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzMWYzNTc4MGRmMmMxMmJkNTA5ODZlMmI1N2JmNzIzYjUwN2ViOTFmNzhhODQwZWVmMGFiMTU5M2NkZDA2NDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyMmFkZWJkMTA1ZWZmOWY1N2QwZGUyY2FjYjMzNDJiY2RlZjcwNmY1N2Y5MDliNzkwNjJiOWUyMzU4Y2NkNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIyOWEzNjQ1OWNlZDczYWU5YTcyYWE5ZjhlZDFiNTRkMGRjMzFiYmJjYTU3NWFlOGRhZjUyNzA3MGUwZmFiZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5NmYxYWY1YmQ1ZWU5OWYzODU5ZGI5NTcxOTlkYzhkMjU2YzIyNGM2ZTJlZDFmZmFiODJjNDUzYmIzZDA3NTgifQ"
-        },
-        {
-          "resource": "repo://manuals/claims/manual.md#L63-L103",
-          "version": "repo-lines-v1:sha256:53730a395fce24ff47e7da8c75ccbdd49a0cc8219153f8063966952e52db754d:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkZTk5MTcyNmM5ODliMGViZmE0MjliYjdlNjMwYzU0MDRhOGZhMmE3YmFjMTU4YzA0OTAxMDIyZmE2ZDc3Y2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkYzAxYjI0NGFiNTFiYTc0ZmIxMjNlZDM2Njg5M2Y1YWE5OWIzZDYzYmI0NzQ5ZWYwNjczOTQ3ZWUyODZiYjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJmZjg2ZjIzZjdmZmEwNDc3NDViNDA5M2Y2ZTk3Mzk0ZjE4ODRkZTVlMjc0N2VmMDhmYTIzODNmNDg5MmRhYWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEzMDU5NjA3YmVlY2Q4MDc0MDZlMjgxNWVjYzE4OGFkMDljYjc0MGI5YTI3MDE1MzExYmNkMDYzZWM4YTJlNDUifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_58e1fc151d504b4696a7dc1927617ef1",
-      "statement": "The claims manual's water-loss workflow requires source and entry-path investigation, pre-demolition inspection when conditions permit, separation of failed components from resulting damage, evaluation of backflow-preventer condition, and qualified referral for uncertain or technically complex causation.",
-      "evidence": [
-        {
-          "resource": "repo://manuals/claims/manual.md#L709-L805",
-          "version": "repo-lines-v1:sha256:efd55efbd6a781e0f7c0aeccd9df05a7c2dee81d31c9b75b23e3ab8684f0cf2f:eyJzZWxlY3RlZExpbmVDb3VudCI6OTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1MGMwZjRhMzg0ODIyYjk5MjQ0ZWE4ZWU5MzhiZTc4NDRlODNmZjNlYWJlMzNhYzA5YTViMWMxYzMzYmZlM2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4OGU1NGE2OGE5YzQxMzg1OTMwYjI0NzE1ZmE1ZGYyOWI3ZThiZWQzMjA1N2E2Y2FhOWY0NDRlN2ViM2IxOTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM3OWIxNTJlZjFiMTdhZGJmMjQwNGMwODI2ZWI0MWNlYzAxNTY1MzM5ZjhkYjRhN2Y3NDA4OTIwMmFhMmYxYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRjMTMyM2ViOTRmMmExMzQ3ZTljOWNjMTcxODhlZTAwZmMzMmNmNjJmZWVlNzVjNmZjMTY1Y2U5Y2RlN2UwYzQifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_03efa168e673412289aef5c0c66bf7d7",
-      "statement": "Internal water-loss guidance requires mitigation within three days after discovery for covered water affecting insured property, but expressly treats the guidance as noncontractual and requires policy and endorsement language to control coverage decisions.",
-      "evidence": [
-        {
-          "resource": "repo://guidelines/claims/water-loss-handling.md#L13-L23",
-          "version": "repo-lines-v1:sha256:4a753829009c3e4f9f1142ccd6085b101cb90e279a709995ecd083ea33b724e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1ZDc4ZDdhZTNmOTExMjQ4ZjEyZTNhYTBkOWM2NDI0Yjg1YzRhY2RhM2ZjOWQxNDEzNTcxODdiODZiMzFiNmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MWNjNTM1MGVlZmJkZGQ2ZGM4Y2M1Zjg5OWY1YjY1OGZlZDllZjE5MzI4MTVkMGE1NTMzM2E0MjYzNGI0MzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZhM2NmNTE5MjM1NGY3MTYxNWFjNTEwMzRiM2U5N2MyMGVkYTk5NjQzZmNhZjViYmU2ZDQxYWQ1OWJkMTIxNjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZhZjhjNWVhOGFlZTkxZTVhMDQzNzVkMWQ3Mzk5N2JjNTZlMjUzYjc3Y2MyNDJjYTJhMjY1MGY0MGQ5MWE1M2IifQ"
-        },
-        {
-          "resource": "repo://guidelines/claims/water-loss-handling.md#L495-L501",
-          "version": "repo-lines-v1:sha256:c1db0905e6d49339a5d36dd62a0dbb2ceb84c4890872e83938472ba2ca8ca82b:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDViMWIxNDQ4MTM2MWQxNzk3YmMxMDk3OWFiZGE2MDUxNTUwYTE3NzM0YTRiY2ZmNWEzMWI5ZGMzNWRhM2RiZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmYzMjk4ZWE2YWU0NjgwMjZkMzgyMjRiNzQ3OWY1ZTgxN2FjNDk1MmY4YzhlNmU0MGZjMzcwZmE0ZGRmY2I2ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTA5ZmZhMWUzOTg2NjlmMWFlZmYyNjMzZGU1YTdjMzk5NWUxYTNiNGU0YWU5MTE5NGE5OWE3YjAxZGE2Y2ExNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNjMWQxZGM2NGZmODY3ZjI2MjA3YmYxNDA2ZmJlMjgxMzc5YWM2MTU1M2MxMmMzYWQzYjNmNWFjZGYwNWFjZiJ9"
-        },
-        {
-          "resource": "repo://manuals/claims/manual.md#L709-L715",
-          "version": "repo-lines-v1:sha256:72237e60764ae0d516d515d225923f510a65d40fe4c1a6ff61e624c5c9947e5e:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDUwYzBmNGEzODQ4MjJiOTkyNDRlYThlZTkzOGJlNzg0NGU4M2ZmM2VhYmUzM2FjMDlhNWIxYzFjMzNiZmUzYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjkzODhlZGIwMmMzMmI3NTQ5NTU5YzFkZTIxZGQ5MWJjZTk0OWE1OWZhMDhjNjMyZWRiNDg1MzgzMGE5NmVhMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzc5YjE1MmVmMWIxN2FkYmYyNDA0YzA4MjZlYjQxY2VjMDE1NjUzMzlmOGRiNGE3Zjc0MDg5MjAyYWEyZjFiZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjI1MzdmMDdjZjYyNmQ3ZjljYmQ5YmE1YWFlNWVjZTU0YTQ4NmU1YTJjOGM1YTk4NmZjMzliNjc5NGVmNzQ2ZCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_f1313832abe34171b7d18c3439a1985a",
-      "statement": "The claims manual requires referral above $25,000 before settlement or payment commitment and prohibits splitting claim activity to avoid authority review; investigation or mitigation expense authority must remain distinct from indemnity authority.",
-      "evidence": [
-        {
-          "resource": "repo://guidelines/claims/water-loss-handling.md#L589-L611",
-          "version": "repo-lines-v1:sha256:ac597d944b1f959a5d182aa0501f215c614a82372795c2ad945e36f05fc44acb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhkMTJmNGQ5ZTI5ZWMzNWQwY2FhMzRkODA0YzdkN2Q3OWRkNzZhNDc3OWZkOWU2YWY2N2EyYjI3MTIyNjNhODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEyMWYxYzA4Zjg5ZjcxNWMyMzNkZTI0ZDYwYzlhYjY5MGQwZTE1ODg5NWEwOTdkYWIyODllNjEyOGE3MjAyYTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwZWZhZTc0YTg2NmE4NjkxNTljNjRmMjg0MzJjZmY5NjNhNDM2MWU2MjdmNGYwNTgyNTU0MzRmN2UzMTZjMGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlmMjRjZDFiYzAyOGE2YWQ0MDE0M2NjYzBkNDYzMjQ4MWIzMDQ1NDFlNjRjOTQ2OWRjNTIzYTgyMmFiNDg2ZGQifQ"
-        },
-        {
-          "resource": "repo://manuals/claims/manual.md#L141-L151",
-          "version": "repo-lines-v1:sha256:ef3eb080044528c9d7018daf4b0936c8b90524f279b57bc09fd7bf4aaee7090e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhZmJjNDBlMWEyYjEwZTg3ZmIxMzZkMDE5Y2U4ZmM5NzQ1ZWNjN2QzMWU0OTkxY2M3ODJiMThiOTkyZjI0Y2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyMGZmZmVmYWEzY2JlMWFjMGE0ZDVjMmNkYTQ1NmUyMDI0MWM1N2IzMTMzYWFiNWZhOTMxYmNiMDBmMDI1NzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0ODY1ZjIwYjZiMzU3MmIwY2ZlNTM2MGM1NjUwZmI4MDVkODE3ZmJiN2IzOTk0OThkOGUzY2YwYzhmMTVjYmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMyNTY3MTNkN2NjNDMzYmVlZDQzYmJiZjVkODFkNTBjMjRhNTU5NDJjODhlODY2MDhkODU2MmE1MDAyZWVjM2EifQ"
-        }
-      ]
     }
   ],
   "verification": {
-    "by": "openwiki/0.6.1",
-    "at": "2026-10-09T19:53:36.444Z"
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-19T07:29:25.602Z"
   }
 }

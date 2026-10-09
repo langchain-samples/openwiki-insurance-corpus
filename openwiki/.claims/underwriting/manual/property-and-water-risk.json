@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:e49039c36d93893bd3f3253242b45733cfa2b6d076bc03557d33ff3ca03e7002",
+  "pageVersion": "sha256:381edf5e587ca669c362e98a3dfafaa249646f8e85ffb38a108cbcb0a0615c99",
   "claims": [
     {
       "id": "claim_de419dbd33c74222a34f226586882a93",
@@ -351,48 +351,10 @@
           "version": "repo-lines-v1:sha256:38523748c16f344685ae6d96d3e0a3a88a6db8086ce6ad27ae45fcad34c86f8f:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2MyZjAyNWFjODhkYjYzYWYwZTViZDZhN2RmNDI5MmUzY2ZhYzQ0MjRmY2FlYmVlOGFiNjAwOTQ3NGEzNGU4MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2JhZWQ1YWVhNTlmMWZhZDRhMWY5NGJmOTgyNmJmYTRiYTkzZDg0NWVjZDhkNGY1Mjc0OGYwZTI2ODI2NWIwMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWQ1YzBlNGU5YzkwZWM3YjQzNzM1NTI0ZjkwYTIzOTcxNjZlM2YyOGVkZDZhNDIxNGU1ZDBkNjNlZTVjNjAyOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjZiZGIxNGM0ODAwNDc1YzlkOWU4NWYyNDgxYzEwMjUyOGI1ZGU2OGU0N2MyMjE2YmI5MTE5MGJiZDdlOTFlMSJ9"
         }
       ]
-    },
-    {
-      "id": "claim_532f999411b44a658a9a79e0d1884a57",
-      "statement": "HO 04 90 edition 2026-01 attaches to HO-3 and covers direct physical loss from sewer or drain backup and sump, sump-pump, or related-equipment overflow or discharge, including mechanical breakdown, subject to its wording.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L1-L11",
-          "version": "repo-lines-v1:sha256:64dac4e57ba73ff32e9975bfa2b7cdbf076ab51141b7f9c9c46bf7b2000c56d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlN2I5N2E0N2JiYTFlYzY4MGU3ZGQxOWZmOGFmYjNlMzg0ZDFhYzViODFlYTI5ZjE2ODU1ZjU3NWZlZDdjODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzM2Q1MDFmNTEwODhjMDkwNDZkZDg2MDAyNGU2MWVjZTRhNDJkZjhhOGQ0ODJiOGU0Y2M1ZDdjMDk1ZTM2YzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwNWE2NzBlYTdiYTQ0Y2E1MmNhYjhhNmYyZTE1NGYwZTY1ZTFlNDM1YmJkZmNiZDliNTM4ZjE5NTZlOWY3MTUifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_3c3cf4f858f241c6bc518223d4598a35",
-      "statement": "HO 04 90 edition 2026-01 sets a $10,000 per-policy-period sublimit unless a higher Declarations limit applies, a separate $1,000 deductible per covered loss, retains exclusions for flood, surface water, tidal or storm water and below-ground water, and includes a known-maintenance-failure condition.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L13-L40",
-          "version": "repo-lines-v1:sha256:db36961d649601ac1fc4b86b9d617e4f2ebada73380b573a66352c5ab3013e57:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiZDQ2ZWMxOGExMDBkOWQ2M2M2ZmMzYTJjNDExNWI0ZGM1NjhiOTUyNjQwMGZiMDJmNjRiOTVmZmYxZmFkMzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmZDlmZTU5ZmQ0YTg2NTFjOTY2MWIxOTZmMjRjOWU4NDRkN2I5MTJiODUwNzEwNTc1NDU0MDA5ZGY4OTliMDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNlZDA1OWQ0ZTk3NjJlMTlkMDY2Nzc5N2M3ODFjOGQwNWNiYjczY2Y5ZDY2YzhiM2M5Mzk0ZjlkODlmOThhZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyNTY3YTMyY2M2YmRlODFjZWIyMmE5MGI1ZWU1ZTM4Y2I5ZTlmYWU1Mjk4OTk2NjRmMWI0Zjk0MTY5ZTYzYzQifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_c6e9d811385c4032b7c2d630e34b9e55",
-      "statement": "For a residence premises with finished below-grade area, HO 04 90 edition 2026-01 requires an installed and operable backwater valve or equivalent backflow-prevention device at the time of loss; this contract condition must not be converted into an underwriting eligibility, inspection, referral, or clearance rule.",
-      "evidence": [
-        {
-          "resource": "repo://forms/HO/MS/HO-04-90/2026-01.md#L42-L47",
-          "version": "repo-lines-v1:sha256:aa77a1112520bcab7d9e081aa035c4ac9cd4aa7d09b7fc2664774230269ff067:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTMwNGJlM2MwNDU5ZjA0MzQ2MWZjZGM3MTgzOThiNDQ3ZDFkNmIxYTlhNmJiODI3NTZlZjc1YTIzOGYyOTM2YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmI3MGEwYTEwZWQxMTU4YzI4YTQ3YzI3MjYyZmM0NWE1NzBkZDgyYTIyYjlhZWEyZDBmYThjM2FiMzA2YTE4MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDlmNTQyMmQ5MDRjNjNjZjc3ZGViZWEzM2IwZjVmYmM5Mjc5Y2RlZjBjZjMxYTY5MjQyZjFiZGFhM2M0NzFkYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTU5NzZkNGM1NTM0YzIxMDg3ZDExYmExMDYzZGVjMDRkODdiN2IxOTFiNTIzMzUwOGRiYmY3MmZiYzFlY2NiNCJ9"
-        },
-        {
-          "resource": "repo://manuals/underwriting/manual.md#L2749-L2759",
-          "version": "repo-lines-v1:sha256:2d3cfd60271a74401a730e665b4c5b53dace47d68a930ad16e7017d0e1163bd5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0M2YzMDhkZWMwOTBiYTYyMjk0MGQyZmJlZjY3NjAwMWVlNTRjYzIxOGRjNDA2YzExMGYzZmVjNDhhY2QzMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkM2I3MWM5MDJkMTAxMmQ5MDIzODcwZDQ2NjFkOWRjZWIxN2U1OWNjNTQ2ZDk3MzZkYmU4YTA0OTM1ZTAwOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI3Mzk1MWE1YzcyYTQ2NGI0MDBkZmY3OTIxOGIzZTRjYmM3ZGMyYzRmYzkwNjQ4MTM1MzI3YmVkM2Q1YTBhZmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRhZGUwMjJjODVkMGYxYzE5NTAzMmNhYzdhOGUyNTQ2NDMwNDVmNzQ2MTg3MmNjZDIwZWEyMmQ4NThiOTQ3NTgifQ"
-        },
-        {
-          "resource": "repo://training/guidance-versus-contract.md#L15-L23",
-          "version": "repo-lines-v1:sha256:3b2a66e8e45f161214ddd2ff811b976dda5d8a25158afa0bb94703ad3ca371fe:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGNkMmEwN2RiMTBlNTlkODJiZGU4ODA4YmY5Nzk3YjU0MTdlYzQ3M2I0YmRjYjRhNGM1MGM2MDRkNWY1MmMyOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGM4OWJlZDMyYzRmZjZjYzc2OTZiMjJlMWJiNjBjNzIzZWE2ZGJhZDVmYzQ2NTJjOTE2ZWM5MzFlNzJjZDk0ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2Y3MDE1MTBiNWY3YjIwNWUzNzUxMWMzNjg5MjMzZjllOWNmYjc2NDQ5NTAwNDZjZjMzNmYwYjg4MWMwMTQzMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjgyZjAyMjA2ZjAwOGU0YjgxNDkwOTdhZmE2YTAzODBmZjY3MGI4ZjYxNzIzY2ZjYmNmN2VjZmQ5NTk2YjRiMCJ9"
-        }
-      ]
     }
   ],
   "verification": {
-    "by": "openwiki/0.6.1",
-    "at": "2026-10-09T19:53:36.444Z"
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-19T07:29:25.602Z"
   }
 }

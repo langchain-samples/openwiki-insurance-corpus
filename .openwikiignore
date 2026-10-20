@@ -37,3 +37,7 @@ CLAUDE.md
 scripts/
 contracts/
 .graph-edges.json
+
+# Invented policy and claim tables for the sidecar's table tools (dynamic-wiki-memory, spec 12 step 5). Not a
+# source document set: OpenWiki never compiles them.
+data/

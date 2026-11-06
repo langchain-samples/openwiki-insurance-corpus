@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "compiled_from": "ed02a25aaceb15bbc869830a03b57a9fe41203a5",
+  "compiled_from": "12f7f876e478235e561ba268bdb50e69bd427c56",
   "status": "complete",
-  "compiled_at": "2026-11-05T07:23:31Z",
+  "compiled_at": "2026-11-06T07:23:37Z",
   "attempts": 1,
-  "workflow_run_url": "https://github.com/langchain-samples/openwiki-insurance-corpus/actions/runs/41986813770",
+  "workflow_run_url": "https://github.com/langchain-samples/openwiki-insurance-corpus/actions/runs/42180482208",
   "claims": {
     "total": 1094,
     "added": 0,

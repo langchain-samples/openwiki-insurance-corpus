@@ -224,50 +224,52 @@ N-0222,C-5092,2026-12-11,H-04,"Acknowledged receipt by letter; requested photos,
 N-0223,C-5092,2026-12-29,H-04,Denied: sewer is excluded under the policy form; denial letter sent
 N-0224,C-5093,2027-01-26,H-01,Acknowledged receipt by email; requested photos and receipts
 N-0225,C-5093,2027-02-09,H-01,Denied: water backup is excluded under the policy form; denial letter sent
-N-0226,C-5094,2027-02-09,H-01,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0227,C-5094,2027-02-19,H-01,Denied: sewer is excluded under the policy form; denial letter sent
-N-0228,C-5095,2027-02-05,H-03,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
-N-0229,C-5096,2027-02-15,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0230,C-5097,2027-02-16,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0231,C-5097,2027-02-25,H-02,Moisture behind the finished basement wall
-N-0232,C-5098,2027-02-23,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0233,C-5098,2027-02-25,H-03,Moisture behind the finished basement wall
-N-0234,C-5099,2024-06-05,H-03,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
-N-0235,C-5099,2024-06-09,H-03,Mitigation company on site; drying equipment placed
-N-0236,C-5099,2024-06-27,H-03,Requested items received; payment issued and claim closed
-N-0237,C-5100,2026-12-22,H-02,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
-N-0238,C-5101,2024-05-14,H-02,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
-N-0239,C-5101,2024-05-31,H-02,Mitigation company on site; drying equipment placed
-N-0240,C-5101,2024-05-31,H-02,Requested items received; payment issued and claim closed
-N-0241,C-5102,2027-02-04,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0242,C-5102,2027-02-04,H-02,Moisture behind the finished basement wall
-N-0243,C-5102,2027-02-16,H-02,Requested items received; payment issued and claim closed
-N-0244,C-5103,2026-10-26,H-03,Acknowledged receipt by email; requested photos and receipts
-N-0245,C-5104,2025-01-17,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0246,C-5104,2025-02-04,H-02,Requested items received; payment issued and claim closed
-N-0247,C-5105,2025-03-11,H-03,Acknowledged receipt by email; requested photos and receipts
-N-0248,C-5105,2025-03-27,H-03,Requested items received; payment issued and claim closed
-N-0249,C-5106,2027-02-04,H-04,Acknowledged receipt by email; requested photos and receipts
-N-0250,C-5107,2027-02-01,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0251,C-5108,2027-01-08,H-04,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0252,C-5108,2027-01-09,H-04,Roof inspected; shingles missing on the south slope
-N-0253,C-5109,2027-02-17,H-02,New claim assigned from the intake queue
-N-0254,C-5110,2027-02-10,H-03,New claim assigned from the intake queue
-N-0255,C-5111,2027-02-13,H-02,New claim assigned from the intake queue
-N-0256,C-5112,2027-02-19,H-04,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0257,C-5113,2027-02-25,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0258,C-5113,2027-02-27,H-03,Receipts requested for jewelry and electronics
-N-0259,C-5114,2027-02-25,H-02,New claim assigned from the intake queue
-N-0260,C-5115,2026-12-23,H-03,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
-N-0261,C-5116,2027-01-06,H-02,Acknowledged receipt by email; requested photos and receipts
-N-0262,C-5116,2027-01-25,H-02,Receipts requested for jewelry and electronics
-N-0263,C-5117,2027-01-21,H-04,Acknowledged receipt by email; requested photos and receipts
-N-0264,C-5117,2027-02-25,H-04,Claim accepted; payment to issue
-N-0265,C-5118,2027-02-02,H-02,Acknowledged receipt by email; requested photos and receipts
-N-0266,C-5118,2027-02-10,H-02,"Insured disputes the cause: says a washing machine supply line failed, not a drain backup"
-N-0267,C-5118,2027-02-26,H-02,Inspected; water came up through the basement floor drain
-N-0268,C-5119,2027-01-19,H-02,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
-N-0269,C-5119,2027-02-05,H-02,"Two contractor estimates, $9,800 (dry out and patch) and $21,400 (replace drywall, cabinets and flooring)"
-N-0270,C-5120,2027-01-28,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
-N-0271,C-5120,2027-02-08,H-03,"Insured disputes the cause: says the dishwasher drain line split, not a sewer backup"
-N-0272,C-5120,2027-02-09,H-03,Referred to Tobias Okafor (senior adjuster): insured disputes the cause
+N-0226,C-5093,2027-02-16,H-01,"Insured disputes the cause after the denial letter: says the water heater supply line burst, not a drain backup"
+N-0227,C-5094,2027-02-09,H-01,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0228,C-5094,2027-02-19,H-01,Denied: sewer is excluded under the policy form; denial letter sent
+N-0229,C-5094,2027-02-24,H-01,"Insured disputes the cause after the denial letter: says a toilet supply line cracked and flooded the lower level, not a sewer backup"
+N-0230,C-5095,2027-02-05,H-03,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
+N-0231,C-5096,2027-02-15,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0232,C-5097,2027-02-16,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0233,C-5097,2027-02-25,H-02,Moisture behind the finished basement wall
+N-0234,C-5098,2027-02-23,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0235,C-5098,2027-02-25,H-03,Moisture behind the finished basement wall
+N-0236,C-5099,2024-06-05,H-03,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
+N-0237,C-5099,2024-06-09,H-03,Mitigation company on site; drying equipment placed
+N-0238,C-5099,2024-06-27,H-03,Requested items received; payment issued and claim closed
+N-0239,C-5100,2026-12-22,H-02,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
+N-0240,C-5101,2024-05-14,H-02,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
+N-0241,C-5101,2024-05-31,H-02,Mitigation company on site; drying equipment placed
+N-0242,C-5101,2024-05-31,H-02,Requested items received; payment issued and claim closed
+N-0243,C-5102,2027-02-04,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0244,C-5102,2027-02-04,H-02,Moisture behind the finished basement wall
+N-0245,C-5102,2027-02-16,H-02,Requested items received; payment issued and claim closed
+N-0246,C-5103,2026-10-26,H-03,Acknowledged receipt by email; requested photos and receipts
+N-0247,C-5104,2025-01-17,H-02,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0248,C-5104,2025-02-04,H-02,Requested items received; payment issued and claim closed
+N-0249,C-5105,2025-03-11,H-03,Acknowledged receipt by email; requested photos and receipts
+N-0250,C-5105,2025-03-27,H-03,Requested items received; payment issued and claim closed
+N-0251,C-5106,2027-02-04,H-04,Acknowledged receipt by email; requested photos and receipts
+N-0252,C-5107,2027-02-01,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0253,C-5108,2027-01-08,H-04,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0254,C-5108,2027-01-09,H-04,Roof inspected; shingles missing on the south slope
+N-0255,C-5109,2027-02-17,H-02,New claim assigned from the intake queue
+N-0256,C-5110,2027-02-10,H-03,New claim assigned from the intake queue
+N-0257,C-5111,2027-02-13,H-02,New claim assigned from the intake queue
+N-0258,C-5112,2027-02-19,H-04,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0259,C-5113,2027-02-25,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0260,C-5113,2027-02-27,H-03,Receipts requested for jewelry and electronics
+N-0261,C-5114,2027-02-25,H-02,New claim assigned from the intake queue
+N-0262,C-5115,2026-12-23,H-03,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
+N-0263,C-5116,2027-01-06,H-02,Acknowledged receipt by email; requested photos and receipts
+N-0264,C-5116,2027-01-25,H-02,Receipts requested for jewelry and electronics
+N-0265,C-5117,2027-01-21,H-04,Acknowledged receipt by email; requested photos and receipts
+N-0266,C-5117,2027-02-25,H-04,Claim accepted; payment to issue
+N-0267,C-5118,2027-02-02,H-02,Acknowledged receipt by email; requested photos and receipts
+N-0268,C-5118,2027-02-10,H-02,"Insured disputes the cause: says a washing machine supply line failed, not a drain backup"
+N-0269,C-5118,2027-02-26,H-02,Inspected; water came up through the basement floor drain
+N-0270,C-5119,2027-01-19,H-02,"Acknowledged receipt by letter; requested photos, receipts and a signed proof of loss"
+N-0271,C-5119,2027-02-05,H-02,"Two contractor estimates, $9,800 (dry out and patch) and $21,400 (replace drywall, cabinets and flooring)"
+N-0272,C-5120,2027-01-28,H-03,Acknowledged receipt by phone; explained the claim process and requested a proof of loss
+N-0273,C-5120,2027-02-08,H-03,"Insured disputes the cause: says the dishwasher drain line split, not a sewer backup"
+N-0274,C-5120,2027-02-09,H-03,Referred to Tobias Okafor (senior adjuster): insured disputes the cause

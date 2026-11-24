@@ -19,6 +19,7 @@ the document tools (`ls`, `glob`, `grep`, `read_file`) never show them, and Open
   `acknowledged_date`, `items_complete_date` or `decision_date` means it has not happened yet. `items_complete_date`
   is when the last requested item arrived; `decision_date` is when the claim was accepted, denied or closed.
 - `edition_applied` and `deductible_applied` are what the handler used, which is not always what the policy says.
+  A denied claim adjudicated nothing, so both are empty on it.
 - Notes stand in for claim documents.
 
 Forms, editions and endorsements name documents in `forms/`. Ids, names, dates, amounts and notes mean nothing
@@ -26,5 +27,6 @@ outside the demo. Some claims carry an issue on purpose, for the claims desk to 
 this repo.
 
 Rebuild with `python3 data/generate.py` (deterministic: byte-identical output). `--key-out PATH` also writes the
-claims desk's answer key to `PATH`; the generator fails if a seeded issue or a look-alike does not hold, or if a
-provision it cites no longer says what the issue rests on.
+claims desk's answer key to `PATH`; the generator fails if a seeded issue or a look-alike does not hold, judged only
+from the tables as written (the rows the agent reads), or if a provision it cites no longer says what the issue
+rests on.

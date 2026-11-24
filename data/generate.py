@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import io
 import json
 import random
 import re
@@ -213,15 +214,16 @@ for c in claims:
     if c["status"] != "open":  # decided within every deadline that could apply (10 business days, TX 2022-01)
         items_day = ack + timedelta(days=rng2.randrange(3, 30))
         items, decision = items_day.isoformat(), add_business_days(items_day, rng2.randrange(2, 10)).isoformat()
-    # closed rows were paid net of the policy's own deductible (the original paid_amount), so that is what was applied
-    deductible = int(p["deductible"]) if c["status"] != "open" else correct_deductible(c, p)
+    # closed rows were paid net of the policy's own deductible (the original paid_amount), so that is what was applied;
+    # a denial adjudicates nothing, so it records no deductible and no edition
+    deductible = {"open": correct_deductible(c, p), "closed": int(p["deductible"]), "denied": ""}[c["status"]]
     reserve = 0
     if c["status"] == "open":
         exposure = max(0, c["reported_amount"] - deductible)
         if c["endorsement_applied"] == "HO-04-90":
             exposure = min(exposure, HO0490[editions(p)["HO-04-90"]]["limit"])
         reserve = round50(exposure * factor)
-    code = c["endorsement_applied"]
+    code = c["endorsement_applied"] if c["status"] != "denied" else ""
     c.update({"reported_date": reported_date.isoformat(), "handler_id": handler, "reserve": reserve,
               "acknowledged_date": ack.isoformat(), "items_complete_date": items, "decision_date": decision,
               "edition_applied": f"{code}@{editions(p)[code]}" if code else "", "deductible_applied": deductible})
@@ -242,11 +244,11 @@ for c in claims:
 
 NEW_CLAIMS = [
     # 1 · wrongful denial: water backup or sewer denied although the policy carries HO 04 90
-    ("C-5091", "P-1041", "water backup", "denied", "2026-11-14", 4_650, 0, "2026-11-16", "H-02", "2026-11-17", "2026-11-30", "2026-12-04", "", 2_500, 0, "no"),
-    ("C-5092", "P-1043", "sewer", "denied", "2026-12-08", 3_900, 0, "2026-12-09", "H-04", "2026-12-11", "2026-12-21", "2026-12-29", "", 1_000, 0, "no"),
-    # 1 + 5 · the same, by an adjuster whose authority is below what the endorsement would pay
-    ("C-5093", "P-1042", "water backup", "denied", "2027-01-24", 12_400, 0, "2027-01-25", "H-01", "2027-01-26", "2027-02-03", "2027-02-09", "", 2_500, 0, "no"),
-    ("C-5094", "P-1048", "sewer", "denied", "2027-02-06", 9_300, 0, "2027-02-08", "H-01", "2027-02-09", "2027-02-15", "2027-02-19", "", 1_000, 0, "no"),
+    ("C-5091", "P-1041", "water backup", "denied", "2026-11-14", 4_650, 0, "2026-11-16", "H-02", "2026-11-17", "2026-11-30", "2026-12-04", "", "", 0, "no"),
+    ("C-5092", "P-1043", "sewer", "denied", "2026-12-08", 3_900, 0, "2026-12-09", "H-04", "2026-12-11", "2026-12-21", "2026-12-29", "", "", 0, "no"),
+    # 1 + 8 · the same, and after the denial letter the insured disputes the cause (a note); not referred
+    ("C-5093", "P-1042", "water backup", "denied", "2027-01-24", 12_400, 0, "2027-01-25", "H-01", "2027-01-26", "2027-02-03", "2027-02-09", "", "", 0, "no"),
+    ("C-5094", "P-1048", "sewer", "denied", "2027-02-06", 9_300, 0, "2027-02-08", "H-01", "2027-02-09", "2027-02-15", "2027-02-19", "", "", 0, "no"),
     # 2 · wrong edition applied, both directions; look-alikes: the right edition on either side of 2027-01-01
     ("C-5095", "P-1041", "water backup", "open", "2027-02-03", 4_300, 0, "2027-02-04", "H-03", "2027-02-05", "", "", "HO-04-90@2027-01", 1_000, 3_300, "no"),
     ("C-5096", "P-1042", "sewer", "open", "2027-02-11", 3_600, 0, "2027-02-12", "H-02", "2027-02-15", "", "", "HO-04-90@2010-10", 500, 3_100, "no"),
@@ -297,12 +299,14 @@ for (cid, pid, loss, status, loss_date, reported, paid, reported_date, handler, 
         "items_complete_date": items, "decision_date": decision, "edition_applied": edition,
         "deductible_applied": deductible, "referred": referred,
     })
-CLAIM = {c["claim_id"]: c for c in claims}
 
 # ---- claim notes ----------------------------------------------------------------------------------------------------
 
 DISPUTE, ESTIMATES = "dispute", "estimates"
+DISPUTE_TEXT, ESTIMATES_TEXT = "Insured disputes the cause", "Two contractor estimates"  # how a kind 8 note opens
 SCENARIO_NOTES = {  # claim -> [(date, text, tag)]: facts a rule needs (kind 8) or a handler's stated reason
+    "C-5093": [("2027-02-16", "Insured disputes the cause after the denial letter: says the water heater supply line burst, not a drain backup", DISPUTE)],
+    "C-5094": [("2027-02-24", "Insured disputes the cause after the denial letter: says a toilet supply line cracked and flooded the lower level, not a sewer backup", DISPUTE)],
     "C-5118": [("2027-02-10", "Insured disputes the cause: says a washing machine supply line failed, not a drain backup", DISPUTE)],
     "C-5120": [("2027-02-08", "Insured disputes the cause: says the dishwasher drain line split, not a sewer backup", DISPUTE)],
     "C-5119": [("2027-02-05", "Two contractor estimates, $9,800 (dry out and patch) and $21,400 (replace drywall, cabinets and flooring)", ESTIMATES)],
@@ -366,7 +370,6 @@ for c in claims:
     for day, text in sorted(written, key=lambda w: w[0]):
         notes.append({"note_id": f"N-{len(notes) + 1:04d}", "claim_id": c["claim_id"], "date": day.isoformat(),
                       "handler_id": c["handler_id"], "text": text})
-TAGS = {cid: {tag for _, _, tag in rows} for cid, rows in SCENARIO_NOTES.items()}
 
 # ---- provisions: every rule an issue rests on, located and quoted at build (R3) ------------------------------------
 
@@ -436,6 +439,43 @@ for (code, edition), (lo, hi) in PCT_RANGE.items():  # the percentages written a
     section = text[text.index("## T.1 "):text.index("## T.2 ")]
     assert f"{NUMBER[lo]} percent" in section and f"{NUMBER[hi]} percent" in section, f"{path}: range {lo}-{hi}%"
 
+# ---- serialize, then read the tables back as the agent's tools serve them ------------------------------------------
+# Every condition below reads only these parsed rows (strings, as in the CSV files), never the generator's own
+# variables: an issue the tables do not show cannot be seeded (01 §7).
+
+POLICY_COLUMNS = ["policy_id", "form", "form_edition", "state", "status", "effective_date", "coverage_a_limit",
+                  "deductible", "endorsements", "endorsement_editions", "windstorm_deductible_pct"]
+CLAIM_COLUMNS = ["claim_id", "policy_id", "loss_type", "loss_date", "status", "reported_amount", "paid_amount",
+                 "endorsement_applied", "reported_date", "handler_id", "reserve", "acknowledged_date",
+                 "items_complete_date", "decision_date", "edition_applied", "deductible_applied", "referred"]
+TABLES = {"policies": (policies, POLICY_COLUMNS), "claims": (claims, CLAIM_COLUMNS),
+          "handlers": (HANDLERS, list(HANDLERS[0])), "claim_notes": (notes, list(notes[0]))}
+
+
+def to_csv(rows: list[dict], columns: list[str]) -> str:
+    buffer = io.StringIO()
+    writer = csv.DictWriter(buffer, fieldnames=columns)
+    writer.writeheader()
+    writer.writerows(rows)
+    return buffer.getvalue()
+
+
+TEXT = {name: to_csv(rows, columns) for name, (rows, columns) in TABLES.items()}
+SEEN = {name: list(csv.DictReader(io.StringIO(text, newline=""))) for name, text in TEXT.items()}
+S_POLICY = {p["policy_id"]: p for p in SEEN["policies"]}
+S_HANDLER = {h["handler_id"]: h for h in SEEN["handlers"]}
+S_CLAIM = {c["claim_id"]: c for c in SEEN["claims"]}
+S_NOTES: dict[str, list[str]] = {}
+for n in SEEN["claim_notes"]:
+    S_NOTES.setdefault(n["claim_id"], []).append(n["text"])
+
+
+def note_tags(claim_id: str) -> set[str]:
+    """The kind 8 facts a claim's notes record."""
+    openings = {DISPUTE: DISPUTE_TEXT, ESTIMATES: ESTIMATES_TEXT}
+    return {tag for tag, opening in openings.items() if any(t.startswith(opening) for t in S_NOTES.get(claim_id, []))}
+
+
 # ---- the issue conditions (01 §4), evaluated on every claim -----------------------------------------------------------
 
 
@@ -454,9 +494,10 @@ def decision_late(claim: dict, policy: dict) -> bool:
 
 
 def kinds_of(c: dict) -> list[int]:
-    p = POLICY[c["policy_id"]]
+    p = S_POLICY[c["policy_id"]]
     eds = editions(p)
     status, found = c["status"], []
+    paid, reserve = int(c["paid_amount"]), int(c["reserve"])
     governing = HO0490.get(eds.get("HO-04-90", ""), {})
     wb = c["endorsement_applied"] == "HO-04-90" and status in ("open", "closed")
     right_edition = c["edition_applied"] == (f"HO-04-90@{eds['HO-04-90']}" if "HO-04-90" in eds else None)
@@ -466,14 +507,12 @@ def kinds_of(c: dict) -> list[int]:
         code, _, edition = c["edition_applied"].partition("@")
         if code in eds and eds[code] != edition:
             found.append(2)
-    if wb and max(c["paid_amount"], c["reserve"]) > governing["limit"]:
+    if wb and max(paid, reserve) > governing["limit"]:
         found.append(3)
-    if wb and right_edition and c["deductible_applied"] != governing["deductible"]:
+    if wb and right_edition and int(c["deductible_applied"]) != governing["deductible"]:
         found.append(4)
-    exposure = c["reserve"] if status == "open" else 0
-    if 1 in found:  # what the endorsement would pay
-        exposure = min(c["reported_amount"] - governing["deductible"], governing["limit"])
-    if exposure > HANDLER[c["handler_id"]]["authority_usd"] and c["referred"] == "no":
+    # the exposure the row shows: an open claim's reserve, a closed claim's payment, nothing on a denial
+    if max(paid, reserve) > int(S_HANDLER[c["handler_id"]]["authority_usd"]) and c["referred"] == "no":
         found.append(5)
     if status == "open":
         waited = (D(c["acknowledged_date"]) if c["acknowledged_date"] else TODAY) - D(c["reported_date"])
@@ -481,16 +520,16 @@ def kinds_of(c: dict) -> list[int]:
             found.append(6)
         if decision_late(c, p):
             found.append(7)
-        if c["referred"] == "no" and c["loss_type"] in WATER_LOSS and TAGS.get(c["claim_id"], set()) & {DISPUTE, ESTIMATES}:
-            found.append(8)
-        if c["loss_type"] in ("wind", "hail") and p["windstorm_deductible_pct"] != "" and \
-                c["deductible_applied"] != correct_deductible(c, p):
-            found.append(9)
+    if status != "closed" and c["referred"] == "no" and c["loss_type"] in WATER_LOSS and note_tags(c["claim_id"]):
+        found.append(8)  # a denial the insured disputes is still live
+    if status == "open" and c["loss_type"] in ("wind", "hail") and p["windstorm_deductible_pct"] != "" and \
+            int(c["deductible_applied"]) != correct_deductible(c, p):
+        found.append(9)
     return found
 
 
 def provisions_of(c: dict, kind: int) -> list[str]:
-    p = POLICY[c["policy_id"]]
+    p = S_POLICY[c["policy_id"]]
     eds = editions(p)
     wb = eds.get("HO-04-90")
     ids = {
@@ -503,7 +542,7 @@ def provisions_of(c: dict, kind: int) -> list[str]:
             "FL": [f"fl-ack-{eds.get('HO-01-09')}"]}.get(p["state"], ["manual-ack"]),
         7: (["b-decide"] + ([f"tx-decide-{eds['HO-01-45']}"] if "HO-01-45" in eds else [])) if p["state"] == "TX"
         else ["manual-decide"],
-        8: [{DISPUTE: "disputed-cause", ESTIMATES: "competing-estimates"}[t] for t in sorted(TAGS.get(c["claim_id"], ()))],
+        8: [{DISPUTE: "disputed-cause", ESTIMATES: "competing-estimates"}[t] for t in sorted(note_tags(c["claim_id"]))],
         9: [f"{'tx' if p['state'] == 'TX' else 'fl'}-wind-{eds.get(STATES[p['state']])}"],
     }[kind]
     return [locate(i) for i in ids]
@@ -511,7 +550,7 @@ def provisions_of(c: dict, kind: int) -> list[str]:
 
 # Each seeded claim names its kinds; each look-alike, the kind it resembles. Flags on original rows that their
 # original values already make (paid with the Section I deductible, or above the limit) are listed as existing.
-SEEDED = {"C-5091": [1], "C-5092": [1], "C-5093": [1, 5], "C-5094": [1, 5], "C-5095": [2], "C-5096": [2],
+SEEDED = {"C-5091": [1], "C-5092": [1], "C-5093": [1, 8], "C-5094": [1, 8], "C-5095": [2], "C-5096": [2],
           "C-5099": [3], "C-5100": [3], "C-5103": [4], "C-5104": [4], "C-5010": [5], "C-5107": [5],
           "C-5109": [6], "C-5110": [6], "C-5111": [6], "C-5115": [7], "C-5116": [7], "C-5118": [8], "C-5119": [8],
           "C-5005": [9], "C-5106": [9]}
@@ -539,36 +578,31 @@ LOOKALIKES = {
 
 # ---- checks (01 §7): only what would break the demo -------------------------------------------------------------
 
-found = {c["claim_id"]: kinds_of(c) for c in claims}
+found = {cid: kinds_of(c) for cid, c in S_CLAIM.items()}
 flagged = {cid: k for cid, k in found.items() if k}
 expected = {**SEEDED, **EXISTING}
 assert flagged == expected, f"issue conditions disagree with the seeds: " \
     f"{ {cid: (flagged.get(cid), expected.get(cid)) for cid in set(flagged) | set(expected) if flagged.get(cid) != expected.get(cid)} }"
 for cid, (kind, _) in LOOKALIKES.items():
     assert cid not in flagged and cid not in expected, f"look-alike {cid} carries an issue"
-for c in claims:  # no water loss above $25,000 left unreferred (H.5.9): an issue the key would not name
+for c in S_CLAIM.values():  # no water loss above $25,000 left unreferred (H.5.9): an issue the key would not name
     assert not (c["loss_type"] in WATER_LOSS and c["referred"] == "no"
-                and max(c["reported_amount"], c["reserve"]) > 25_000), f"{c['claim_id']} needs an H.5.9 referral"
-for c in claims:  # keys resolve, and no date runs past today or before the loss
-    assert c["policy_id"] in POLICY and c["handler_id"] in HANDLER, c["claim_id"]
+                and max(int(c["reported_amount"]), int(c["reserve"])) > 25_000), f"{c['claim_id']} needs an H.5.9 referral"
+for c in S_CLAIM.values():  # a denial adjudicates nothing: no deductible, edition or reserve on it
+    if c["status"] == "denied":
+        assert c["deductible_applied"] == c["edition_applied"] == "" and c["reserve"] == "0", c["claim_id"]
+for c in S_CLAIM.values():  # keys resolve, and no date runs past today or before the loss
+    assert c["policy_id"] in S_POLICY and c["handler_id"] in S_HANDLER, c["claim_id"]
     days = [c[k] for k in ("reported_date", "acknowledged_date", "items_complete_date", "decision_date") if c[k]]
     assert all(c["loss_date"] <= d <= TODAY.isoformat() for d in days), c["claim_id"]
-for n in notes:
-    assert n["claim_id"] in CLAIM and n["handler_id"] in HANDLER and n["date"] <= TODAY.isoformat(), n["note_id"]
+for n in SEEN["claim_notes"]:
+    assert n["claim_id"] in S_CLAIM and n["handler_id"] in S_HANDLER and n["date"] <= TODAY.isoformat(), n["note_id"]
 
 # ---- write ---------------------------------------------------------------------------------------------------------
 
-POLICY_COLUMNS = ["policy_id", "form", "form_edition", "state", "status", "effective_date", "coverage_a_limit",
-                  "deductible", "endorsements", "endorsement_editions", "windstorm_deductible_pct"]
-CLAIM_COLUMNS = ["claim_id", "policy_id", "loss_type", "loss_date", "status", "reported_amount", "paid_amount",
-                 "endorsement_applied", "reported_date", "handler_id", "reserve", "acknowledged_date",
-                 "items_complete_date", "decision_date", "edition_applied", "deductible_applied", "referred"]
-for name, rows, columns in (("policies", policies, POLICY_COLUMNS), ("claims", claims, CLAIM_COLUMNS),
-                            ("handlers", HANDLERS, list(HANDLERS[0])), ("claim_notes", notes, list(notes[0]))):
+for name, text in TEXT.items():
     with open(HERE / f"{name}.csv", "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=columns)
-        writer.writeheader()
-        writer.writerows(rows)
+        f.write(text)
 
 parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
 parser.add_argument("--key-out", type=Path, help="write the triage answer key (JSON lines) to this file or directory")
@@ -579,7 +613,7 @@ if args.key_out:
     for cid in sorted(set(expected) | set(LOOKALIKES)):
         if cid in expected:
             lines.append({"claim_id": cid, "expect": "flag", "kinds": expected[cid],
-                          "provisions": [ref for k in expected[cid] for ref in provisions_of(CLAIM[cid], k)],
+                          "provisions": [ref for k in expected[cid] for ref in provisions_of(S_CLAIM[cid], k)],
                           "origin": "seeded" if cid in SEEDED else "existing"})
         else:
             kind, why = LOOKALIKES[cid]

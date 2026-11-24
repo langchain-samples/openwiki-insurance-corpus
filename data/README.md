@@ -8,7 +8,7 @@ the document tools (`ls`, `glob`, `grep`, `read_file`) never show them, and Open
 | `policies.csv` | 50 | `policy_id` | `form`, `form_edition`, `state`, `status`, `effective_date`, `coverage_a_limit`, `deductible`, `endorsements` (`;`-separated), `endorsement_editions` (`CODE@EDITION`, one per endorsement), `windstorm_deductible_pct` |
 | `claims.csv` | 120 | `claim_id` | `policy_id`, `loss_type`, `loss_date`, `status`, `reported_amount`, `paid_amount`, `endorsement_applied`, `reported_date`, `handler_id`, `reserve`, `acknowledged_date`, `items_complete_date`, `decision_date`, `edition_applied`, `deductible_applied`, `referred` |
 | `handlers.csv` | 6 | `handler_id` | `name`, `role`, `authority_usd` |
-| `claim_notes.csv` | about 270 | `note_id` | `claim_id`, `date`, `handler_id`, `text` |
+| `claim_notes.csv` | about 280 | `note_id` | `claim_id`, `date`, `handler_id`, `text` |
 
 - The demo's today is **2027-03-02**: deadlines are counted to it.
 - `endorsement_editions` gives the edition in force on the policy's `effective_date` (the earliest edition in the
@@ -29,4 +29,6 @@ this repo.
 Rebuild with `python3 data/generate.py` (deterministic: byte-identical output). `--key-out PATH` also writes the
 claims desk's answer key to `PATH`; the generator fails if a seeded issue or a look-alike does not hold, judged only
 from the tables as written (the rows the agent reads), or if a provision it cites no longer says what the issue
-rests on.
+rests on. It also fails if a look-alike trips a rule no issue kind models (an accepted claim not paid within the
+state's window, a loss above $25,000 or a roof loss above $10,000 left unreferred, a late acknowledgment or
+decision on a decided claim), or a flagged claim trips one its key line does not list.

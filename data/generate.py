@@ -106,6 +106,7 @@ HANDLER = {h["handler_id"]: h for h in HANDLERS}
 
 WATER_BACKUP = {"water backup", "sewer"}
 WATER_LOSS = WATER_BACKUP | {"freeze"}  # water-loss handling covers freezing (H.1.35)
+WIND = {"wind", "hail"}  # treated as roof losses for roof claim handling H.5.28 (their notes inspect the roof)
 HO0490 = {"2010-10": {"limit": 5_000, "deductible": 500}, "2027-01": {"limit": 10_000, "deductible": 1_000}}
 NUMBER = {1: "one", 2: "two", 5: "five", 10: "ten", 15: "fifteen"}
 PCT_RANGE = {  # windstorm and hail deductible percentages each amendatory edition allows (its T.1 section)
@@ -186,7 +187,7 @@ def correct_deductible(claim: dict, policy: dict) -> int:
     """The deductible the policy calls for on this loss."""
     if claim["endorsement_applied"] == "HO-04-90":
         return HO0490[editions(policy)["HO-04-90"]]["deductible"]
-    if claim["loss_type"] in ("wind", "hail") and policy["windstorm_deductible_pct"] != "":
+    if claim["loss_type"] in WIND and policy["windstorm_deductible_pct"] != "":
         return int(policy["coverage_a_limit"]) * int(policy["windstorm_deductible_pct"]) // 100
     return int(policy["deductible"])
 
@@ -231,9 +232,12 @@ for c in claims:
 
 OLD_ROW_SEEDS = {  # new columns only, on original rows (R6)
     "C-5010": {"handler_id": "H-04", "reserve": 52_000, "referred": "no"},  # kind 5
-    "C-5005": {"handler_id": "H-05", "deductible_applied": 5_000, "reserve": 23_800, "referred": "no"},  # kind 9
+    # kind 9; referred because a roof loss above $10,000 needs a referral (roof claim handling H.5.28)
+    "C-5005": {"handler_id": "H-05", "deductible_applied": 5_000, "reserve": 23_800, "referred": "yes"},
     "C-5082": {"handler_id": "H-02", "reserve": 48_000, "referred": "yes"},  # look-alike of 5
-    "C-5019": {"handler_id": "H-05", "reserve": 40_000, "referred": "no"},  # look-alike of 5
+    # look-alike of 5: within authority and under the claims manual's $25,000 referral line (1.V, 19.A)
+    "C-5019": {"handler_id": "H-05", "reserve": 24_500, "referred": "no"},
+    "C-5076": {"referred": "yes"},  # look-alike of 9; a roof loss above $10,000 (H.5.28)
 }
 for c in claims:
     c.update(OLD_ROW_SEEDS.get(c["claim_id"], {}))
@@ -263,11 +267,12 @@ NEW_CLAIMS = [
     ("C-5103", "P-1020", "sewer", "open", "2026-10-22", 4_100, 0, "2026-10-23", "H-03", "2026-10-26", "", "", "HO-04-90@2010-10", 2_500, 1_600, "no"),
     ("C-5104", "P-1001", "water backup", "closed", "2025-01-15", 4_200, 3_200, "2025-01-16", "H-02", "2025-01-17", "2025-01-28", "2025-02-04", "HO-04-90@2010-10", 1_000, 0, "no"),
     ("C-5105", "P-1030", "sewer", "closed", "2025-03-08", 3_700, 3_200, "2025-03-10", "H-03", "2025-03-11", "2025-03-20", "2025-03-27", "HO-04-90@2010-10", 500, 0, "no"),
-    # 9 · the flat deductible on a TX wind loss (2% of $380,000 applies); look-alike: FL 5% applied
-    ("C-5106", "P-1043", "wind", "open", "2027-02-01", 18_900, 0, "2027-02-02", "H-04", "2027-02-04", "", "", "", 1_000, 17_900, "no"),
+    # 9 · the flat deductible on a TX wind loss (2% of $380,000 applies); look-alike: FL 5% applied. Both reserves stay
+    # at or under $10,000, so neither roof loss needs a referral (roof claim handling H.5.28)
+    ("C-5106", "P-1043", "wind", "open", "2027-02-01", 10_400, 0, "2027-02-02", "H-04", "2027-02-04", "", "", "", 1_000, 9_400, "no"),
     # 5 · reserve above the handler's authority, not referred
     ("C-5107", "P-1049", "fire", "open", "2027-01-28", 21_800, 0, "2027-01-29", "H-03", "2027-02-01", "", "", "", 1_000, 18_600, "no"),
-    ("C-5108", "P-1046", "wind", "open", "2027-01-05", 41_000, 0, "2027-01-06", "H-04", "2027-01-08", "", "", "", 26_000, 15_000, "no"),
+    ("C-5108", "P-1046", "wind", "open", "2027-01-05", 34_800, 0, "2027-01-06", "H-04", "2027-01-08", "", "", "", 26_000, 8_800, "no"),
     # 6 · not acknowledged, deadline near or passed (TX 15 days, FL 14); look-alikes: acknowledged in time, and a
     # fresh MS claim (the claims manual's 15 days, 12.4, are far off)
     ("C-5109", "P-1043", "theft", "open", "2027-02-15", 7_500, 0, "2027-02-17", "H-02", "", "", "", "", 1_000, 6_500, "no"),
@@ -276,11 +281,12 @@ NEW_CLAIMS = [
     ("C-5112", "P-1043", "fire", "open", "2027-02-16", 15_000, 0, "2027-02-18", "H-04", "2027-02-19", "", "", "", 1_000, 14_000, "no"),
     ("C-5113", "P-1050", "theft", "open", "2027-02-10", 6_200, 0, "2027-02-12", "H-03", "2027-02-25", "", "", "", 1_000, 5_200, "no"),
     ("C-5114", "P-1047", "theft", "open", "2027-02-23", 3_400, 0, "2027-02-25", "H-02", "", "", "", "", 500, 2_900, "no"),
-    # 7 · TX: items complete, no decision after 15 business days; look-alike: decided on business day 12 under
-    # HO 01 45 2019-01 (fifteen business days)
+    # 7 · TX: items complete, no decision after 15 business days; look-alike: accepted on business day 12 under
+    # HO 01 45 2019-01 (fifteen business days) and paid two business days later, inside B-2019-02's five (B.4.13); it
+    # stays open with no exposure left until the payment clears
     ("C-5115", "P-1044", "fire", "open", "2026-12-20", 12_500, 0, "2026-12-21", "H-03", "2026-12-23", "2027-01-29", "", "", 2_500, 10_000, "no"),
     ("C-5116", "P-1049", "theft", "open", "2026-12-30", 7_300, 0, "2027-01-04", "H-02", "2027-01-06", "2027-02-03", "", "", 1_000, 6_300, "no"),
-    ("C-5117", "P-1044", "fire", "open", "2027-01-18", 9_800, 0, "2027-01-19", "H-04", "2027-01-21", "2027-02-09", "2027-02-25", "", 2_500, 7_300, "no"),
+    ("C-5117", "P-1044", "fire", "open", "2027-01-18", 9_800, 7_300, "2027-01-19", "H-04", "2027-01-21", "2027-02-09", "2027-02-25", "", 2_500, 0, "no"),
     # 8 · a note records a disputed cause or competing estimates, not referred; look-alike: the same, referred
     ("C-5118", "P-1047", "water backup", "open", "2027-01-30", 6_900, 0, "2027-02-01", "H-02", "2027-02-02", "", "", "HO-04-90@2010-10", 500, 4_500, "no"),
     ("C-5119", "P-1046", "freeze", "open", "2027-01-17", 21_400, 0, "2027-01-18", "H-02", "2027-01-19", "", "", "", 2_500, 12_500, "no"),
@@ -304,7 +310,9 @@ for (cid, pid, loss, status, loss_date, reported, paid, reported_date, handler, 
 
 DISPUTE, ESTIMATES = "dispute", "estimates"
 DISPUTE_TEXT, ESTIMATES_TEXT = "Insured disputes the cause", "Two contractor estimates"  # how a kind 8 note opens
-SCENARIO_NOTES = {  # claim -> [(date, text, tag)]: facts a rule needs (kind 8) or a handler's stated reason
+PAYMENT = re.compile(r"Payment of \$([\d,]+) issued")  # how a payment note on an accepted, still open claim opens
+SCENARIO_NOTES = {  # claim -> [(date, text, tag)]: facts a rule needs (kind 8, payment) or a handler's stated reason
+    "C-5117": [("2027-03-01", "Payment of $7,300 issued for the fire repairs; the file closes once the payment clears", None)],
     "C-5093": [("2027-02-16", "Insured disputes the cause after the denial letter: says the water heater supply line burst, not a drain backup", DISPUTE)],
     "C-5094": [("2027-02-24", "Insured disputes the cause after the denial letter: says a toilet supply line cracked and flooded the lower level, not a sewer backup", DISPUTE)],
     "C-5118": [("2027-02-10", "Insured disputes the cause: says a washing machine supply line failed, not a drain backup", DISPUTE)],
@@ -359,8 +367,12 @@ for c in claims:
         written.append((D(day), text))
     if c["referred"] == "yes":
         target = referral_target(c)
-        reason = referral(c) or {DISPUTE: "insured disputes the cause", ESTIMATES: "competing estimates"}[
-            SCENARIO_NOTES[c["claim_id"]][0][2]]
+        if referral(c):
+            reason = referral(c)
+        elif c["loss_type"] in WIND:  # roof claim handling H.5.28
+            reason = f"roof loss above $10,000 (reserve ${c['reserve']:,})"
+        else:
+            reason = {DISPUTE: "insured disputes the cause", ESTIMATES: "competing estimates"}[SCENARIO_NOTES[c["claim_id"]][0][2]]
         last = max(day for day, _ in written)
         written.append((min(last + timedelta(days=1), end), f"Referred to {target}: {reason}"))
     if c["decision_date"]:
@@ -377,6 +389,7 @@ HO_04_90 = {"2010-10": "forms/HO/MS/HO-04-90/2010-10.md", "2027-01": "forms/HO/M
 WLH = "guidelines/claims/water-loss-handling.md"
 B_2019_02 = "bulletins/TX/b-2019-02-prompt-payment.md"
 MANUAL = "manuals/claims/manual.md"
+ROOF = "guidelines/claims/roof-claim-handling.md"
 TX_AMEND = {e: f"forms/HO/TX/HO-01-45/{e}.md" for e in ("2019-01", "2022-01")}
 FL_AMEND = {e: f"forms/HO/FL/HO-01-09/{e}.md" for e in ("2019-01", "2023-07")}
 
@@ -407,6 +420,23 @@ PROVISIONS = {
     "disputed-cause": (WLH, "## H.7 ", "**H.7.17**", "disputed cause of loss", "Water-loss handling H.7.17: refer a disputed cause of loss"),
     "competing-estimates": (WLH, "## H.7 ", "**H.7.21**", "competing estimates", "Water-loss handling H.7.21: refer competing estimates"),
     "water-over-25k": (WLH, "## H.5 ", "**H.5.9**", "above $25,000", "Water-loss handling H.5.9: refer a water loss above $25,000"),
+    "manual-refer-25k": (MANUAL, "## Chapter 1 ", "**1.V**", "evaluated amount above $25,000",
+                         "Claims manual 1.V: refer a loss evaluated above $25,000"),
+    "manual-19a": (MANUAL, "## Chapter 19 ", "**19.A**", "incurred amount above $25,000",
+                   "Claims manual 19.A: refer a loss incurred above $25,000"),
+    "roof-10k": (ROOF, "## H.5 ", "**H.5.28**", "incurred amount above $10,000 before authorizing final payment",
+                 "Roof claim handling H.5.28: refer a roof loss above $10,000 before final payment"),
+    # payment of an accepted claim: no claim may trip these (no issue kind models them), but the windows rest on them
+    "b-pay": (B_2019_02, "## B.4 ", "**B.4.13**", "within five (5) business days",
+              "Bulletin B-2019-02 B.4.13: pay an accepted claim within 5 business days"),
+    "tx-pay-2019-01": (TX_AMEND["2019-01"], "## T.5 ", "**T.5**", "within five business days",
+                       "HO 01 45 2019-01 T.5: pay an accepted claim within 5 business days"),
+    "tx-pay-2022-01": (TX_AMEND["2022-01"], "## T.5 ", "**T.8**", "within five business days",
+                       "HO 01 45 2022-01 T.5 (T.8): pay an accepted claim within 5 business days"),
+    "fl-pay-2019-01": (FL_AMEND["2019-01"], "## T.5 ", "**T.62**", "within twenty business days",
+                       "HO 01 09 2019-01 T.5 (T.62): pay an accepted claim within 20 business days"),
+    "fl-pay-2023-07": (FL_AMEND["2023-07"], "## T.5 ", "**T.34**", "within twenty business days",
+                       "HO 01 09 2023-07 T.5 (T.34): pay an accepted claim within 20 business days"),
     "tx-wind-2019-01": (TX_AMEND["2019-01"], "## T.1 ", "**T.4**", "applicable deductible percentage to the deductible basis",
                         "HO 01 45 2019-01 T.1 (T.4): the windstorm and hail percentage applies to the deductible basis"),
     "tx-wind-2022-01": (TX_AMEND["2022-01"], "## T.1 ", "**T.5**", "using the applicable limit of liability",
@@ -465,15 +495,15 @@ SEEN = {name: list(csv.DictReader(io.StringIO(text, newline=""))) for name, text
 S_POLICY = {p["policy_id"]: p for p in SEEN["policies"]}
 S_HANDLER = {h["handler_id"]: h for h in SEEN["handlers"]}
 S_CLAIM = {c["claim_id"]: c for c in SEEN["claims"]}
-S_NOTES: dict[str, list[str]] = {}
+S_NOTES: dict[str, list[tuple[str, str]]] = {}  # claim -> [(date, text)]
 for n in SEEN["claim_notes"]:
-    S_NOTES.setdefault(n["claim_id"], []).append(n["text"])
+    S_NOTES.setdefault(n["claim_id"], []).append((n["date"], n["text"]))
 
 
 def note_tags(claim_id: str) -> set[str]:
     """The kind 8 facts a claim's notes record."""
     openings = {DISPUTE: DISPUTE_TEXT, ESTIMATES: ESTIMATES_TEXT}
-    return {tag for tag, opening in openings.items() if any(t.startswith(opening) for t in S_NOTES.get(claim_id, []))}
+    return {tag for tag, opening in openings.items() if any(t.startswith(opening) for _, t in S_NOTES.get(claim_id, []))}
 
 
 # ---- the issue conditions (01 §4), evaluated on every claim -----------------------------------------------------------
@@ -522,10 +552,50 @@ def kinds_of(c: dict) -> list[int]:
             found.append(7)
     if status != "closed" and c["referred"] == "no" and c["loss_type"] in WATER_LOSS and note_tags(c["claim_id"]):
         found.append(8)  # a denial the insured disputes is still live
-    if status == "open" and c["loss_type"] in ("wind", "hail") and p["windstorm_deductible_pct"] != "" and \
+    if status in ("open", "closed") and c["loss_type"] in WIND and p["windstorm_deductible_pct"] != "" and \
             int(c["deductible_applied"]) != correct_deductible(c, p):
-        found.append(9)
+        found.append(9)  # a closed one was paid with the wrong deductible (02 §3 screens closed claims for it)
     return found
+
+
+PAY_WINDOW = {"TX": 5, "FL": 20}  # business days from acceptance to payment (B-2019-02 B.4.13, HO 01 45; HO 01 09)
+
+
+def payment_late(c: dict, p: dict) -> bool:
+    """An accepted claim (open, with a decision) whose payment is not on record by the state's deadline. Unpaid counts
+    as due or overdue: TX allows five business days. A payment shows as a note naming the amount paid."""
+    if c["status"] != "open" or not c["decision_date"]:
+        return False
+    paid_on = [D(day) for day, text in S_NOTES.get(c["claim_id"], [])
+               if (m := PAYMENT.match(text)) and int(m.group(1).replace(",", "")) == int(c["paid_amount"])]
+    if int(c["paid_amount"]) <= 0 or not paid_on:
+        return True
+    window = PAY_WINDOW.get(p["state"])
+    return window is not None and min(paid_on) > add_business_days(D(c["decision_date"]), window)
+
+
+def other_issues(c: dict) -> list[str]:
+    """Rules outside the nine kinds that a row's columns can still trip; a look-alike must trip none, and a flagged
+    claim only those its key line lists (`also`), or that its kinds already cover."""
+    p = S_POLICY[c["policy_id"]]
+    exposure = max(int(c["paid_amount"]), int(c["reserve"]))
+    found = []
+    if payment_late(c, p):
+        found.append("payment")
+    if c["status"] != "open":  # kinds 6 and 7 judge open claims; a decided one must have met both deadlines too
+        if (D(c["acknowledged_date"]) - D(c["reported_date"])).days > ack_deadline(p):
+            found.append("acknowledgment")
+        if decision_late(c, p):
+            found.append("decision")
+    if exposure > 25_000 and c["referred"] == "no":
+        found.append("refer-25k")  # claims manual 1.V, 19.A: any loss, not only water (H.5.9)
+    if c["loss_type"] in WIND and exposure > 10_000 and c["referred"] == "no":
+        found.append("roof-10k")  # roof claim handling H.5.28
+    return found
+
+
+OTHER_PROVISIONS = {"refer-25k": ["manual-refer-25k", "manual-19a"], "roof-10k": ["roof-10k"]}
+COVERED = {5: {"refer-25k"}}  # kind -> other issues its finding already states (the same referral is missing)
 
 
 def provisions_of(c: dict, kind: int) -> list[str]:
@@ -537,7 +607,7 @@ def provisions_of(c: dict, kind: int) -> list[str]:
         2: ["wb-superseded", "governing-edition", f"wb-ded-{wb}"],
         3: [f"wb-limit-{wb}"],
         4: [f"wb-ded-{wb}"],
-        5: ["authority"],
+        5: ["authority"] + (OTHER_PROVISIONS["refer-25k"] if "refer-25k" in other_issues(c) else []),
         6: {"TX": [f"tx-ack-{eds.get('HO-01-45')}", "b-ack"] if "HO-01-45" in eds else ["b-ack"],
             "FL": [f"fl-ack-{eds.get('HO-01-09')}"]}.get(p["state"], ["manual-ack"]),
         7: (["b-decide"] + ([f"tx-decide-{eds['HO-01-45']}"] if "HO-01-45" in eds else [])) if p["state"] == "TX"
@@ -549,12 +619,15 @@ def provisions_of(c: dict, kind: int) -> list[str]:
 
 
 # Each seeded claim names its kinds; each look-alike, the kind it resembles. Flags on original rows that their
-# original values already make (paid with the Section I deductible, or above the limit) are listed as existing.
+# original values already make (paid with the Section I deductible, above the limit, or with the flat deductible on a
+# wind or hail loss) are listed as existing; `ALSO`, the rules outside the nine kinds such a row also trips.
 SEEDED = {"C-5091": [1], "C-5092": [1], "C-5093": [1, 8], "C-5094": [1, 8], "C-5095": [2], "C-5096": [2],
           "C-5099": [3], "C-5100": [3], "C-5103": [4], "C-5104": [4], "C-5010": [5], "C-5107": [5],
           "C-5109": [6], "C-5110": [6], "C-5111": [6], "C-5115": [7], "C-5116": [7], "C-5118": [8], "C-5119": [8],
           "C-5005": [9], "C-5106": [9]}
-EXISTING = {"C-5045": [3], "C-5046": [4], "C-5054": [3, 4]}
+EXISTING = {"C-5045": [3], "C-5046": [4], "C-5054": [3, 4], "C-5003": [9], "C-5016": [9], "C-5027": [9], "C-5068": [9],
+            "C-5069": [9], "C-5080": [9]}
+ALSO = {"C-5003": ["roof-10k"], "C-5016": ["refer-25k", "roof-10k"], "C-5080": ["roof-10k"]}
 LOOKALIKES = {
     "C-5001": (1, "denied water backup; the policy has no HO 04 90"),
     "C-5043": (1, "denied sewer backup; the policy has HO 01 45 but no HO 04 90"),
@@ -565,15 +638,15 @@ LOOKALIKES = {
     "C-5105": (4, "the endorsement's $500 deductible applied"),
     "C-5055": (4, "the endorsement's $500 deductible applied, not the policy's $1,000"),
     "C-5082": (5, "reserve above the adjuster's authority, and referred"),
-    "C-5019": (5, "reserve within the senior adjuster's $50,000 authority"),
+    "C-5019": (5, "reserve $24,500: within the senior adjuster's $50,000 authority and under the claims manual's $25,000 referral line (1.V, 19.A)"),
     "C-5112": (6, "TX, acknowledged two days after the report"),
     "C-5113": (6, "FL, acknowledged on day 13 of 14"),
     "C-5114": (6, "MS, reported 5 days ago: the claims manual's 15 days (12.4) are not near"),
-    "C-5117": (7, "decided on business day 12; P-1044 carries HO 01 45 2019-01 (fifteen business days)"),
+    "C-5117": (7, "accepted on business day 12 (P-1044 carries HO 01 45 2019-01: fifteen business days) and paid $7,300 two business days later, inside B-2019-02's five"),
     "C-5120": (8, "insured disputes the cause, and the claim was referred"),
     "C-5053": (8, "competing estimates, and the claim was referred"),
-    "C-5108": (9, "FL wind: 5% of the $520,000 Coverage A applied"),
-    "C-5076": (9, "FL hail: the policy's percentage of Coverage A applied"),
+    "C-5108": (9, "FL wind: 5% of the $520,000 Coverage A applied; reserve under the roof referral line"),
+    "C-5076": (9, "FL hail: the policy's percentage of Coverage A applied; referred as a roof loss above $10,000"),
 }
 
 # ---- checks (01 §7): only what would break the demo -------------------------------------------------------------
@@ -585,6 +658,15 @@ assert flagged == expected, f"issue conditions disagree with the seeds: " \
     f"{ {cid: (flagged.get(cid), expected.get(cid)) for cid in set(flagged) | set(expected) if flagged.get(cid) != expected.get(cid)} }"
 for cid, (kind, _) in LOOKALIKES.items():
     assert cid not in flagged and cid not in expected, f"look-alike {cid} carries an issue"
+    assert not other_issues(S_CLAIM[cid]), f"look-alike {cid} trips {other_issues(S_CLAIM[cid])}"
+for cid, kinds in expected.items():  # a flagged claim carries its kinds and only the other issues its key line lists
+    covered = set().union(*(COVERED.get(k, set()) for k in kinds))
+    extra = [i for i in other_issues(S_CLAIM[cid]) if i not in covered]
+    assert extra == ALSO.get(cid, []), f"{cid} also trips {extra}, the key lists {ALSO.get(cid, [])}"
+for c in S_CLAIM.values():  # no issue kind models a late payment, so no claim may have one
+    assert not payment_late(c, S_POLICY[c["policy_id"]]), f"{c['claim_id']}: accepted and not paid in time"
+for pid in ("b-pay", "tx-pay-2019-01", "tx-pay-2022-01", "fl-pay-2019-01", "fl-pay-2023-07"):
+    locate(pid)  # the payment windows above still say what PAY_WINDOW assumes
 for c in S_CLAIM.values():  # no water loss above $25,000 left unreferred (H.5.9): an issue the key would not name
     assert not (c["loss_type"] in WATER_LOSS and c["referred"] == "no"
                 and max(int(c["reported_amount"]), int(c["reserve"])) > 25_000), f"{c['claim_id']} needs an H.5.9 referral"
@@ -612,9 +694,12 @@ if args.key_out:
     lines = []
     for cid in sorted(set(expected) | set(LOOKALIKES)):
         if cid in expected:
-            lines.append({"claim_id": cid, "expect": "flag", "kinds": expected[cid],
-                          "provisions": [ref for k in expected[cid] for ref in provisions_of(S_CLAIM[cid], k)],
-                          "origin": "seeded" if cid in SEEDED else "existing"})
+            line = {"claim_id": cid, "expect": "flag", "kinds": expected[cid],
+                    "provisions": [ref for k in expected[cid] for ref in provisions_of(S_CLAIM[cid], k)],
+                    "origin": "seeded" if cid in SEEDED else "existing"}
+            if cid in ALSO:  # a rule outside the nine kinds the row's original values also break
+                line["also"] = [locate(i) for issue in ALSO[cid] for i in OTHER_PROVISIONS[issue]]
+            lines.append(line)
         else:
             kind, why = LOOKALIKES[cid]
             lines.append({"claim_id": cid, "expect": "clear", "lookalike_of": kind, "why": why})
